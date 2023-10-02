@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-n0h9+@ty5*-4@v%5wac%+h$6d4@&m#30trzk!%fdtu8nqo(+^j'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'wep_tpbboy.apps.WepTpbboyConfig',
+    'webgame.apps.webgameConfig',
 ]
 
 MIDDLEWARE = [

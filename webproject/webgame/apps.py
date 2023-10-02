@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class WepTpbboyConfig(AppConfig):
+class webgameConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'wep_tpbboy'
+    name = 'webgame'

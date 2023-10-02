@@ -17,6 +17,6 @@ from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
-    path('', include('wep_tpbboy.urls')),
     path('admin/', admin.site.urls),
+    path('', include('webgame.urls')),  # Include your app's URLs here
 ]
