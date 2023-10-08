@@ -1,8 +1,23 @@
 from django.shortcuts import render
   
 # Create your views here.
-def index(request):
-      
-    # render function takes argument  - request
-    # and return HTML as response
-    return render(request, "index.html")
+def home(request):
+    return render(request, "home.html")
+
+def signup(request):
+    return render(request, "signup.html")
+
+def login(request):
+    return render(request, "login.html")
+
+def news(request):
+    return render(request, "news.html")
+
+def history(request):
+    return render(request, "history.html")
+
+def chat(request):
+    return render(request, "chat.html")
+
+def about(request):
+    return render(request, "about.html")
