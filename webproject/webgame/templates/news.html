@@ -58,21 +58,30 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <a href="#home" class="navbar-link" data-nav-link>home</a>
+            <a href="{% url 'home' %}" class="navbar-link" data-nav-link>home</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{% url 'news' %}" class="navbar-link" data-nav-link>news</a>
           </li>
 
           <li class="navbar-item">
-            <a href="#news" class="navbar-link" data-nav-link>news</a>
+            <a href="{% url 'game' %}" class="navbar-link" data-nav-link>game</a>
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link" data-nav-link>contact</a>
+            <a href="{% url 'chat' %}" class="navbar-link" data-nav-link>chat</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{% url 'about' %}" class="navbar-link" data-nav-link>about us</a>
           </li>
 
         </ul>
       </nav>
 
-      <a href="#" class="btn" data-btn>Login</a>
+      <a href="{% url 'LoginView' %}" class="btn" data-btn>Login</a>
+      <a href="{% url 'RegisterUserView' %}" class="btn" data-btn>Sign</a> 
 
       <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
         <span class="line line-1"></span>
@@ -158,7 +167,7 @@
                     Financial experts support or help you to to find out which way you can raise your funds more...
                   </p>
 
-                  <a href="#" class="link has-before">Read More</a>
+                  <a href="{% url 'n1' %}" class="link has-before">Read More</a>
 
                 </div>
 
@@ -169,7 +178,7 @@
               <div class="news-card">
 
                 <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                  <img src="{% static 'wepgame/assets/images/news-2.jpg' %}" width="600" height="400" loading="lazy"
+                  <img src="{% static 'webgame/assets/images/news-2.jpg' %}" width="600" height="400" loading="lazy"
                     alt="How To Start Initiating An Startup In Few Days." class="img-cover">
                 </figure>
 
@@ -201,7 +210,7 @@
                     Financial experts support or help you to to find out which way you can raise your funds more...
                   </p>
 
-                  <a href="#" class="link has-before">Read More</a>
+                  <a href="{% url 'n2' %}" class="link has-before">Read More</a>
 
                 </div>
 
@@ -244,7 +253,7 @@
                     Financial experts support or help you to to find out which way you can raise your funds more...
                   </p>
 
-                  <a href="#" class="link has-before">Read More</a>
+                  <a href="{% url 'n3' %}" class="link has-before">Read More</a>
 
                 </div>
 
@@ -291,7 +300,7 @@
                     Financial experts support or help you to to find out which way you can raise your funds more...
                   </p>
 
-                  <a href="#" class="link has-before">Read More</a>
+                  <a href="{% url 'n4' %}" class="link has-before">Read More</a>
 
                 </div>
 
@@ -334,7 +343,7 @@
                     Financial experts support or help you to to find out which way you can raise your funds more...
                   </p>
 
-                  <a href="#" class="link has-before">Read More</a>
+                  <a href="{% url 'n5' %}" class="link has-before">Read More</a>
 
                 </div>
 
@@ -377,7 +386,7 @@
                     Financial experts support or help you to to find out which way you can raise your funds more...
                   </p>
 
-                  <a href="#" class="link has-before">Read More</a>
+                  <a href="{% url 'n6' %}" class="link has-before">Read More</a>
 
                 </div>
 
@@ -386,7 +395,7 @@
 
           </ul>
           
-          <ul class="news-list2">
+          <ul class="news-list">
 
             <li data-reveal="bottom">
               <div class="news-card">
@@ -424,7 +433,7 @@
                     Financial experts support or help you to to find out which way you can raise your funds more...
                   </p>
 
-                  <a href="#" class="link has-before">Read More</a>
+                  <a href="{% url 'n7' %}" class="link has-before">Read More</a>
 
                 </div>
 
@@ -467,7 +476,7 @@
                     Financial experts support or help you to to find out which way you can raise your funds more...
                   </p>
 
-                  <a href="#" class="link has-before">Read More</a>
+                  <a href="{% url 'n8' %}" class="link has-before">Read More</a>
 
                 </div>
 
@@ -510,7 +519,7 @@
                     Financial experts support or help you to to find out which way you can raise your funds more...
                   </p>
 
-                  <a href="#" class="link has-before">Read More</a>
+                  <a href="{% url 'n9' %}" class="link has-before">Read More</a>
 
                 </div>
 
@@ -518,7 +527,7 @@
             </li>
 
           </ul>
-
+          
         </div>
       </section>
 

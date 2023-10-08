@@ -61,12 +61,68 @@ def LogoutView(request):
 
 def news(request):
     return render(request, "news.html")
-
-def history(request):
-    return render(request, "history.html")
-
+def game(request):
+    return render(request, "game.html")
 def chat(request):
     return render(request, "chat.html")
-
 def about(request):
     return render(request, "about.html")
+def n1(request):
+    return render(request, "n1.html")
+def n2(request):
+    return render(request, "n2.html")
+def n3(request):
+    return render(request, "n3.html")
+def n4(request):
+    return render(request, "n4.html")
+def n5(request):
+    return render(request, "n5.html")
+def n6(request):
+    return render(request, "n6.html")
+def n7(request):
+    return render(request, "n7.html")
+def n8(request):
+    return render(request, "n8.html")
+def n9(request):
+    return render(request, "n9.html")
+
+def g1(request):
+    return render(request, "g1.html")
+def g2(request):
+    return render(request, "g2.html")
+def g3(request):
+    return render(request, "g3.html")
+def g4(request):
+    return render(request, "g4.html")
+def g5(request):
+    return render(request, "g5.html")
+def g6(request):
+    return render(request, "g6.html")
+def g7(request):
+    return render(request, "g7.html")
+def g8(request):
+    return render(request, "g8.html")
+def g9(request):
+    return render(request, "g9.html")
+def g10(request):
+    return render(request, "g10.html")
+def g11(request):
+    return render(request, "g11.html")
+def g12(request):
+    return render(request, "g12.html")
+def g13(request):
+    return render(request, "g13.html")
+def g14(request):
+    return render(request, "g14.html")
+def g15(request):
+    return render(request, "g15.html")
+def g16(request):
+    return render(request, "g16.html")
+def g17(request):
+    return render(request, "g17.html")
+def g18(request):
+    return render(request, "g18.html")
+def g19(request):
+    return render(request, "g19.html")
+def g20(request):
+    return render(request, "g20.html")
