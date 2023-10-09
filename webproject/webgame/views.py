@@ -17,9 +17,7 @@ def register(request):
         member = Member()
         member.firstname = details['first_name'].value()
         member.lastname = details['last_name'].value()
-        member.password = details['password'].value()
-        for obj in Member.objects.all():
-            print(obj)               
+        member.password = details['password'].value()               
         member.save()
         return redirect("/admin") 
     else:
