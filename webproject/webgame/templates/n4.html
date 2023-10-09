@@ -80,7 +80,7 @@
         </ul>
       </nav>
 
-      <a href="{% url 'LoginView' %}" class="btn" data-btn>Login</a>
+      <a href="{% url 'login' %}" class="btn" data-btn>Login</a>
       <a href="{% url 'RegisterUserView' %}" class="btn" data-btn>Sign</a> 
 
       <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
@@ -96,38 +96,14 @@
     <article>
 
       <!-- 
-        - #HERO
-      -->
-
-      <div class="hero has-before" id="home">
-        <div class="container">
-
-          <p class="section-subtitle">Enjoy The</p>
-
-          <h1 class="h1 title hero-title">Website for real gamers!</h1>
-
-          <a href="#" class="btn" data-btn>Join Discord</a>
-
-          <div class="hero-banner">
-            <img src="{% static 'webgame/assets/images/hero.png' %}" width="850" height="414" alt="hero banner" class="w-100">
-
-            <img src="{%static 'webgame/assets/images/hero-banner-bg.png' %}" alt="" class="hero-banner-bg">
-          </div>
-
-        </div>
-      </div>
-
-      <!-- 
         - #NEWS
       -->
 
       <section class="section news" aria-label="our latest news" id="news">
         <div class="container">
 
-          <p class="section-subtitle" data-reveal="bottom">What's On Our Mind</p>
-
           <h2 class="h2 section-title" data-reveal="bottom">
-            News And <span class="span">Headlines</span>
+            4.	MythForce
           </h2>
           <ul class="news-list2">
 
@@ -135,41 +111,38 @@
               <div class="news-card">
 
                 <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                  <img src="{% static 'webgame/assets/images/news-1.jpg' %}" width="600" height="400" loading="lazy"
+                  <img src="{% static 'webgame/assets/images/n_4.jpg' %}" width="600" height="400" loading="lazy"
                     alt="Innovative Business All Over The World." class="img-cover">
                 </figure>
 
                 <div class="card-content">
 
-                  <a href="#" class="card-tag">Business</a>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                      <time class="card-meta-text" datetime="2022-01-01">Sep 08 2023 </time>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-
-                      <p class="card-meta-text">TEERAPHAT B.</p>
-                    </li>
-
-                  </ul>
-
-                  <h3 class="h3">
-                    <a href="#" class="card-title">Innovative Business All Over The World.</a>
-                  </h3>
+                  <a href="#" class="card-tag">news</a>
 
                   <p class="card-text">
-                    Financial experts support or help you to to find out which way you can raise your funds more...
+                    เกมผจญภัย Roguelike ที่มาพร้อมกับเกมเพลย์แบบออนไลน์ Co-op 4 ผู้เล่น ให้ทุกคนได้เดินทางสู่ดันเจี้ยนสุดอันตราย
+                    ที่เต็มไปด้วยกับดักและศัตรู รวมไปถึงสภาพแวดล้อมแบบ Procedural Generated ที่ไม่อาจคาดเดาได้ว่าข้างหน้าจะมีอะไร
+                    รออยู่ ให้เราได้รับอารมณ์การเป็นอัศวินในนิทานสมัยก่อน พร้อมนำเสนอกราฟิกแบบการ์ตูนเช้ายุค 80 - 90 ผสมผสานสามมิติ 
+                    หากใครชอบแนวสกายริมผสมไดโบลไม่ควรพลาด
                   </p>
 
-                  <a href="#" class="link has-before">Read More</a>
-
                 </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/n_4_1.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    
+                  </p>
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/n_4_2.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
 
               </div>
             </li>
