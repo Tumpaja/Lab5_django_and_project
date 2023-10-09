@@ -80,7 +80,7 @@
         </ul>
       </nav>
 
-      <a href="{% url 'LoginView' %}" class="btn" data-btn>Login</a>
+      <a href="{% url 'login' %}" class="btn" data-btn>Login</a>
       <a href="{% url 'RegisterUserView' %}" class="btn" data-btn>Sign</a> 
 
       <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
@@ -118,16 +118,14 @@
       </div>
 
       <!-- 
-        - #NEWS
+        - #จัดอันดับเกม
       -->
 
       <section class="section news" aria-label="our latest news" id="news">
         <div class="container">
 
-          <p class="section-subtitle" data-reveal="bottom">What's On Our Mind</p>
-
           <h2 class="h2 section-title" data-reveal="bottom">
-            News And <span class="span">Headlines</span>
+            จัดอันดับเกมที่น่าสนใจ <span class="span">เดือนตุลาคม</span>
           </h2>
           <ul class="news-list">
 
@@ -135,39 +133,38 @@
               <div class="news-card">
 
                 <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                  <img src="{% static 'webgame/assets/images/news-1.jpg' %}" width="600" height="400" loading="lazy"
+                  <img src="{% static 'webgame/assets/images/r_1.jpg' %}" width="600" height="400" loading="lazy"
                     alt="Innovative Business All Over The World." class="img-cover">
                 </figure>
 
                 <div class="card-content">
 
-                  <a href="#" class="card-tag">Business</a>
+                  <a href="#" class="card-tag">อันดับที่ 1</a>
 
                   <ul class="card-meta-list">
 
                     <li class="card-meta-item">
                       <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
 
-                      <time class="card-meta-text" datetime="2022-01-01">Sep 08 2023 </time>
+                      <time class="card-meta-text" datetime="2022-01-01">Oct 09 2023 </time>
                     </li>
 
                     <li class="card-meta-item">
                       <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
 
-                      <p class="card-meta-text">TEERAPHAT B.</p>
+                      <p class="card-meta-text">Wanchat</p>
                     </li>
 
                   </ul>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Innovative Business All Over The World.</a>
+                    1.	Starfield
                   </h3>
 
                   <p class="card-text">
-                    Financial experts support or help you to to find out which way you can raise your funds more...
+                    Starfield เป็นเกมเน้นประสบการณ์ Open World RPG ในยุคที่มนุษย์มียานอวกาศให้ขับเดินทางไปดาวต่างๆ 
+                    ได้แล้ว เกมจะเน้นให้ผู้เล่นมาเจอเควสสุดน่าติดตาม 
                   </p>
-
-                  <a href="#" class="link has-before">Read More</a>
 
                 </div>
 
@@ -178,39 +175,38 @@
               <div class="news-card">
 
                 <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                  <img src="{% static 'webgame/assets/images/news-2.jpg' %}" width="600" height="400" loading="lazy"
+                  <img src="{% static 'webgame/assets/images/r_2.jpg' %}" width="600" height="400" loading="lazy"
                     alt="How To Start Initiating An Startup In Few Days." class="img-cover">
                 </figure>
 
                 <div class="card-content">
 
-                  <a href="#" class="card-tag">Startup</a>
+                  <a href="#" class="card-tag">อันดับที่ 2</a>
 
                   <ul class="card-meta-list">
 
                     <li class="card-meta-item">
                       <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
 
-                      <time class="card-meta-text" datetime="2022-01-01">Sep 08 2023 </time>
+                      <time class="card-meta-text" datetime="2022-01-01">Oct 09 2023 </time>
                     </li>
 
                     <li class="card-meta-item">
                       <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
 
-                      <p class="card-meta-text">TEERAPHAT B.</p>
+                      <p class="card-meta-text">Wanchat</p>
                     </li>
 
                   </ul>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">How To Start Initiating An Startup In Few Days.</a>
+                    2.	Fae Farm
                   </h3>
 
                   <p class="card-text">
-                    Financial experts support or help you to to find out which way you can raise your funds more...
+                    เกมแนว Farm Sim RPG ที่มาพร้อมระบบการจำลองชีวิตสุดน่ารักในโลกที่เต็มไปด้วยความมหัศจรรย์ 
+                    ผู้เล่นจะได้สร้างชีวิตชาวไร่ เป็นนักรบ หรือคราฟต์สิ่งของต่างๆ 
                   </p>
-
-                  <a href="#" class="link has-before">Read More</a>
 
                 </div>
 
@@ -221,39 +217,38 @@
               <div class="news-card">
 
                 <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                  <img src="{% static 'webgame/assets/images/news-3.jpg' %}" width="600" height="400" loading="lazy"
+                  <img src="{% static 'webgame/assets/images/r_3.jpg' %}" width="600" height="400" loading="lazy"
                     alt="Financial Experts Support Help You To Find Out." class="img-cover">
                 </figure>
 
                 <div class="card-content">
 
-                  <a href="#" class="card-tag">Finance</a>
+                  <a href="#" class="card-tag">อันดับที่ 3</a>
 
                   <ul class="card-meta-list">
 
                     <li class="card-meta-item">
                       <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
 
-                      <time class="card-meta-text" datetime="2022-01-01">Sep 08 2023 </time>
+                      <time class="card-meta-text" datetime="2022-01-01">Oct 09 2023 </time>
                     </li>
 
                     <li class="card-meta-item">
                       <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
 
-                      <p class="card-meta-text">TEERAPHAT B.</p>
+                      <p class="card-meta-text">Wanchat</p>
                     </li>
 
                   </ul>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Financial Experts Support Help You To Find Out.</a>
+                    3.	Synced
                   </h3>
 
                   <p class="card-text">
-                    Financial experts support or help you to to find out which way you can raise your funds more...
+                    เกมแนวชูตติ้ง Roguelite PvPvE ในโลกอนาคตอันก้าวหน้าแต่ถึงคราวล่มสลายจากเทคโนโลยี 
+                    ผู้เล่นจะได้จัดทีมกันและต่อสู้กับศัตรูซอมบี้ไซบอร์กร่วมกับ Nano 
                   </p>
-
-                  <a href="#" class="link has-before">Read More</a>
 
                 </div>
 
@@ -268,39 +263,39 @@
               <div class="news-card">
 
                 <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                  <img src="{% static 'webgame/assets/images/news-1.jpg' %}" width="600" height="400" loading="lazy"
+                  <img src="{% static 'webgame/assets/images/r_4.jpg' %}" width="600" height="400" loading="lazy"
                     alt="Innovative Business All Over The World." class="img-cover">
                 </figure>
 
                 <div class="card-content">
 
-                  <a href="#" class="card-tag">Business</a>
+                  <a href="#" class="card-tag">อันดับที่ 4</a>
 
                   <ul class="card-meta-list">
 
                     <li class="card-meta-item">
                       <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
 
-                      <time class="card-meta-text" datetime="2022-01-01">Sep 08 2023 </time>
+                      <time class="card-meta-text" datetime="2022-01-01">Oct 09 2023 </time>
                     </li>
 
                     <li class="card-meta-item">
                       <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
 
-                      <p class="card-meta-text">TEERAPHAT B.</p>
+                      <p class="card-meta-text">Wanchat</p>
                     </li>
 
                   </ul>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Innovative Business All Over The World.</a>
+                    4.	MythForce
                   </h3>
 
                   <p class="card-text">
-                    Financial experts support or help you to to find out which way you can raise your funds more...
+                    เกมผจญภัย Roguelike ที่มาพร้อมกับเกมเพลย์แบบออนไลน์ Co-op 4 ผู้เล่น 
+                    ให้ทุกคนได้เดินทางสู่ดันเจี้ยนสุดอันตรายที่เต็มไปด้วยกับดักและศัตรู รวมไปถึงสภาพแวดล้อมแบบ 
+                    Procedural Generated 
                   </p>
-
-                  <a href="#" class="link has-before">Read More</a>
 
                 </div>
 
@@ -311,39 +306,39 @@
               <div class="news-card">
 
                 <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                  <img src="{% static 'webgame/assets/images/news-2.jpg' %}" width="600" height="400" loading="lazy"
+                  <img src="{% static 'webgame/assets/images/r_5.jpg' %}" width="600" height="400" loading="lazy"
                     alt="How To Start Initiating An Startup In Few Days." class="img-cover">
                 </figure>
 
                 <div class="card-content">
 
-                  <a href="#" class="card-tag">Startup</a>
+                  <a href="#" class="card-tag">อันดับที่ 5</a>
 
                   <ul class="card-meta-list">
 
                     <li class="card-meta-item">
                       <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
 
-                      <time class="card-meta-text" datetime="2022-01-01">Sep 08 2023 </time>
+                      <time class="card-meta-text" datetime="2022-01-01">Oct 09 2023 </time>
                     </li>
 
                     <li class="card-meta-item">
                       <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
 
-                      <p class="card-meta-text">TEERAPHAT B.</p>
+                      <p class="card-meta-text">Wanchat</p>
                     </li>
 
                   </ul>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">How To Start Initiating An Startup In Few Days.</a>
+                    5.	Super Bomberman R 2
                   </h3>
 
                   <p class="card-text">
-                    Financial experts support or help you to to find out which way you can raise your funds more...
+                    เกมวางระเบิดที่มาพร้อมกับประสบการณ์ใหม่ๆ มากมายไม่ว่าจะเป็นโหมด Castle 
+                    ที่ให้ผู้เล่นจัดทีมรวมกันป้องกันประสาทแบบ PvP 
+                    หรือจะเป็นโหมดสร้างฉากเองที่จะมีพื้นที่หรืออุปสรรคแปลกๆ ให้เลือกใช้ 
                   </p>
-
-                  <a href="#" class="link has-before">Read More</a>
 
                 </div>
 
@@ -354,39 +349,38 @@
               <div class="news-card">
 
                 <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                  <img src="{% static 'webgame/assets/images/news-3.jpg' %}" width="600" height="400" loading="lazy"
+                  <img src="{% static 'webgame/assets/images/r_6.jpg' %}" width="600" height="400" loading="lazy"
                     alt="Financial Experts Support Help You To Find Out." class="img-cover">
                 </figure>
 
                 <div class="card-content">
 
-                  <a href="#" class="card-tag">Finance</a>
+                  <a href="#" class="card-tag">อันดับที่ 6</a>
 
                   <ul class="card-meta-list">
 
                     <li class="card-meta-item">
                       <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
 
-                      <time class="card-meta-text" datetime="2022-01-01">Sep 08 2023 </time>
+                      <time class="card-meta-text" datetime="2022-01-01">Oct 09 2023 </time>
                     </li>
 
                     <li class="card-meta-item">
                       <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
 
-                      <p class="card-meta-text">TEERAPHAT B.</p>
+                      <p class="card-meta-text">Wanchat</p>
                     </li>
 
                   </ul>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Financial Experts Support Help You To Find Out.</a>
+                    6.	EA SPORTS FC™ 24
                   </h3>
 
                   <p class="card-text">
-                    Financial experts support or help you to to find out which way you can raise your funds more...
+                    โดยการมาถึงของเกมภาคนี้ก็คือการสานต่อผลงานเดิมในชื่อใหม่นั่นเอง ซึ่งจะถือเป็นก้าวถัดไปของเกมฟุตบอลในเครือ EA ด้วย 
+                    ผู้เล่นจะได้พบกับนักเตะกว่า 19,000 ชีวิตจาก 700 ทีม 
                   </p>
-
-                  <a href="#" class="link has-before">Read More</a>
 
                 </div>
 
@@ -401,39 +395,38 @@
               <div class="news-card">
 
                 <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                  <img src="{% static 'webgame/assets/images/news-1.jpg' %}" width="600" height="400" loading="lazy"
+                  <img src="{% static 'webgame/assets/images/r_7.jpg' %}" width="600" height="400" loading="lazy"
                     alt="Innovative Business All Over The World." class="img-cover">
                 </figure>
 
                 <div class="card-content">
 
-                  <a href="#" class="card-tag">Business</a>
+                  <a href="#" class="card-tag">อันดับที่ 7</a>
 
                   <ul class="card-meta-list">
 
                     <li class="card-meta-item">
                       <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
 
-                      <time class="card-meta-text" datetime="2022-01-01">Sep 08 2023 </time>
+                      <time class="card-meta-text" datetime="2022-01-01">Oct 09 2023 </time>
                     </li>
 
                     <li class="card-meta-item">
                       <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
 
-                      <p class="card-meta-text">TEERAPHAT B.</p>
+                      <p class="card-meta-text">Wanchat</p>
                     </li>
 
                   </ul>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Innovative Business All Over The World.</a>
+                    7.	The Crew: Motorfest
                   </h3>
 
                   <p class="card-text">
-                    Financial experts support or help you to to find out which way you can raise your funds more...
+                    เกมแนวรถแข่งรูปแบบอาร์เคดภาคใหม่ที่ยกระดับโลกโอเพนเวิลด์ให้กว้างใหญ่และเต็มไปด้วยรายละเอียดมากขึ้น 
+                    ผู้เล่นจะได้เดินทางสู่ดินแดน O'ahu ในฮาวาย ท่องไปบนถนนสายความเร็ว
                   </p>
-
-                  <a href="#" class="link has-before">Read More</a>
 
                 </div>
 
@@ -444,39 +437,38 @@
               <div class="news-card">
 
                 <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                  <img src="{% static 'webgame/assets/images/news-2.jpg' %}" width="600" height="400" loading="lazy"
+                  <img src="{% static 'webgame/assets/images/r_8.jpg' %}" width="600" height="400" loading="lazy"
                     alt="How To Start Initiating An Startup In Few Days." class="img-cover">
                 </figure>
 
                 <div class="card-content">
 
-                  <a href="#" class="card-tag">Startup</a>
+                  <a href="#" class="card-tag">อันดับที่ 8</a>
 
                   <ul class="card-meta-list">
 
                     <li class="card-meta-item">
                       <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
 
-                      <time class="card-meta-text" datetime="2022-01-01">Sep 08 2023 </time>
+                      <time class="card-meta-text" datetime="2022-01-01">Oct 09 2023 </time>
                     </li>
 
                     <li class="card-meta-item">
                       <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
 
-                      <p class="card-meta-text">TEERAPHAT B.</p>
+                      <p class="card-meta-text">Wanchat</p>
                     </li>
 
                   </ul>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">How To Start Initiating An Startup In Few Days.</a>
+                    8.	Lies of P
                   </h3>
 
                   <p class="card-text">
-                    Financial experts support or help you to to find out which way you can raise your funds more...
+                    เกมแนวแอ็กชันสวมบทบาทพร้อมเกมเพลย์ Souls-like ที่ท้าทายความสามารถ 
+                    พร้อมธีมของเรื่องราวได้รับแรงบันดาลใจมาจากนิทานเรื่อง 'พิน็อกคิโอ' แต่ดัดแปลงให้มีความสยองขวัญแบบหลอนๆ 
                   </p>
-
-                  <a href="#" class="link has-before">Read More</a>
 
                 </div>
 
@@ -487,39 +479,84 @@
               <div class="news-card">
 
                 <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                  <img src="{% static 'webgame/assets/images/news-3.jpg' %}" width="600" height="400" loading="lazy"
+                  <img src="{% static 'webgame/assets/images/r_9.jpg' %}" width="600" height="400" loading="lazy"
                     alt="Financial Experts Support Help You To Find Out." class="img-cover">
                 </figure>
 
                 <div class="card-content">
 
-                  <a href="#" class="card-tag">Finance</a>
+                  <a href="#" class="card-tag">อันดับที่ 9</a>
 
                   <ul class="card-meta-list">
 
                     <li class="card-meta-item">
                       <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
 
-                      <time class="card-meta-text" datetime="2022-01-01">Sep 08 2023 </time>
+                      <time class="card-meta-text" datetime="2022-01-01">Oct 09 2023 </time>
                     </li>
 
                     <li class="card-meta-item">
                       <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
 
-                      <p class="card-meta-text">TEERAPHAT B.</p>
+                      <p class="card-meta-text">Wanchat</p>
                     </li>
 
                   </ul>
 
                   <h3 class="h3">
-                    <a href="#" class="card-title">Financial Experts Support Help You To Find Out.</a>
+                    9.	Mortal Kombat 1
                   </h3>
 
                   <p class="card-text">
-                    Financial experts support or help you to to find out which way you can raise your funds more...
+                    เกมต่อสู้ภาคใหม่ล่าสุดจาก NetherRelam Studios โดยมีเนื้อหาอยู่ในไทม์ไลน์ใหม่ที่ถูกสร้างขึ้นมาโดย 
+                    Liu Kang หลังจากเนื้อหาเกมภาค XI ซึ่งเจ้าตัวต้องการสร้างประวัติศาสตร์ใหม่ที่มีแต่ความสงบสุข 
                   </p>
 
-                  <a href="#" class="link has-before">Read More</a>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+          
+          <ul class="news-list">
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/r_10.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-tag">อันดับที่ 10</a>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2022-01-01">Oct 09 2023 </time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text">Wanchat</p>
+                    </li>
+
+                  </ul>
+
+                  <h3 class="h3">
+                    10.	Party Animals
+                  </h3>
+
+                  <p class="card-text">
+                    สามปีเต็มๆ ที่เกมเมอร์สายฮารอคอยกับเกมปาร์ตี้หัวร้อน รับบทเป็นสัตว์ตัวจิ๋ว 
+                    ตบตีกับเพื่อนด้วยอาวุธต่างๆ เช่นไม้เบสบอล อมยิ้ม หรือจะจับสัตว์มาต่อยกันก็ได้ 
+                  </p>
 
                 </div>
 

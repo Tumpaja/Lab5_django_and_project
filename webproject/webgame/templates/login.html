@@ -13,19 +13,19 @@
     {% load crispy_forms_tags %}
     
     <body>
-    {% block content %}
+  
 
     <div class="container">
         <!-- formสำหรับregisterซึ่งเราเอามาจากviews.py -->
-        <form method="POST">
+        <form action =""method="POST">
             {% csrf_token %}
-            {{form|crispy}}
+            {{form.as_p}}
 
             <button class="btn btn-success" type="submit">Login</button><br>
             <a href="/registeration" target="blank"><strong>register here</strong></a>!
         </form>
     </div>
     
-    {% endblock %}
+ 
     </body>
 </html>

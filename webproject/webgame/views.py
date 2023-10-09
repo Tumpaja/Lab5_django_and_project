@@ -5,9 +5,20 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import authenticate
 from django.contrib.auth import login
 from django.contrib import messages
+from .forms import loginform
+from .models import Choice
 # Create your views here.
 def home(request):
     return render(request, "home.html")
+
+def login(request):
+    if request.method == 'POST':
+        details = loginform(request.POST)
+        print(details['first_name'].value())
+    context={}
+    context['form'] = loginform()
+    return render(request, "login.html",context=context)
+
 #ตั้งชื่อfunctionได้ตามสะดวก
 def RegisterUserView(request):
     if request.method == "POST":
@@ -85,6 +96,8 @@ def n8(request):
     return render(request, "n8.html")
 def n9(request):
     return render(request, "n9.html")
+def n10(request):
+    return render(request, "n10.html")
 
 def g1(request):
     return render(request, "g1.html")

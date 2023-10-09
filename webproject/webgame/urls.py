@@ -2,16 +2,19 @@ from django.contrib import admin
 from django.conf.urls import url
   
 # importing views from views..py
-from .views import (home, RegisterUserView, LoginView, LogoutView, news, game, chat, about, 
-                    n1, n2, n3, n4, n5, n6, n7, n8, n9, g1, g2, g3, g4, g5, g6, g7, g8, g9, g10,
+from .views import (home, login, RegisterUserView, LoginView, LogoutView, news, game, chat, about, 
+                    n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, g1, g2, g3, g4, g5, g6, g7, g8, g9, g10,
                     g11, g12, g13, g14, g15, g16, g17, g18, g19, g20,
 )
 urlpatterns = [
     url(r'^admin$', admin.site.urls),
     url(r'^$', home, name='home'),
+    url(r'^login$', login, name='login'),
+    
     url(r'^Register$', RegisterUserView, name='RegisterUserView'),
     url(r'^Login$', LoginView, name='LoginView'),
     url(r'^Logout$', LogoutView, name='LogoutView'),
+    
     url(r'^news$', news, name='news'),
     url(r'^game$', game, name='game'),
     url(r'^chat$', chat, name='chat'),
@@ -25,6 +28,7 @@ urlpatterns = [
     url(r'^news/news7$', n7, name='n7'),
     url(r'^news/news8$', n8, name='n8'),
     url(r'^news/news9$', n9, name='n9'),
+    url(r'^news/news10$', n10, name='n10'),
     url(r'^game/game1$', g1, name='g1'),
     url(r'^game/game2$', g2, name='g2'),
     url(r'^game/game3$', g3, name='g3'),
