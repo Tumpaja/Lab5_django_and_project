@@ -5,19 +5,27 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth import authenticate
 from django.contrib.auth import login
 from django.contrib import messages
-from .forms import loginform
-from .models import Choice
+from .forms import registerform
+from .models import  Member
 # Create your views here.
 def home(request):
     return render(request, "home.html")
 
-def login(request):
+def register(request):
     if request.method == 'POST':
-        details = loginform(request.POST)
-        print(details['first_name'].value())
-    context={}
-    context['form'] = loginform()
-    return render(request, "login.html",context=context)
+        details = registerform(request.POST)
+        member = Member()
+        member.firstname = details['first_name'].value()
+        member.lastname = details['last_name'].value()
+        member.password = details['password'].value()
+        for obj in Member.objects.all():
+            print(obj)               
+        member.save()
+        return redirect("/admin") 
+    else:
+        context={}
+        context['form'] = registerform()
+    return render(request, "register.html",context=context)
 
 #ตั้งชื่อfunctionได้ตามสะดวก
 def RegisterUserView(request):

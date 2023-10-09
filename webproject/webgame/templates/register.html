@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -10,22 +11,21 @@
                 crossorigin="anonymous"></script>
     </head>
     {% load crispy_forms_tags %}
+    
     <body>
-    {% block content %}
+  
 
     <div class="container">
         <!-- formสำหรับregisterซึ่งเราเอามาจากviews.py -->
-        <form method="POST">
+        <form action =""method="POST">
             {% csrf_token %}
-            {{form|crispy}}
+            {{form.as_p}}
 
-            <button class="btn btn-success" type="submit">Sign Up</button>
-
+            <button class="btn btn-success" type="submit">register</button><br>
+            <a href="/registeration" target="blank"><strong>login here</strong></a>!
         </form>
-
-        If you already have an account <a href="/login" target="blank"><strong>login</strong></a> instead.
     </div>
     
-    {% endblock %}
+ 
     </body>
 </html>
