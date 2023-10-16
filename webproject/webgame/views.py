@@ -1,11 +1,7 @@
 from telnetlib import LOGOUT
 from django.shortcuts import render, redirect
-from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth.forms import AuthenticationForm
-from django.contrib.auth import authenticate
-from django.contrib.auth import login
 from django.contrib import messages
-from .forms import registerform
+from .forms import registerform, loginform
 from .models import  Member
 # Create your views here.
 def home(request):
@@ -18,7 +14,7 @@ def register(request):
         member.firstname = details['first_name'].value()
         member.lastname = details['last_name'].value()
         member.password = details['password'].value()
-                       
+
         member.save()
         return redirect("/admin") 
     else:
@@ -30,30 +26,31 @@ def register(request):
 
 def LoginView(request):
     if request.method == 'POST':
-        form = AuthenticationForm(request=request, data=request.POST)
-        if form.is_valid():
-            username = form.cleaned_data.get('username')
-            password = form.cleaned_data.get('password')
-            user = authenticate(username=username, password=password)
-            #เช็คความถูกต้อง
-            if user is not None: 
-                login(request, user)
-                messages.info(request, f"You are now logged in as {username}")
-                return redirect('/admin')#loginเสร็จแล้วไปที่หน้า /admin แก้เป็นหน้าอื่นได้เช่น /home
-            else:
-                messages.error(request, "Invalid username or password.")
-        else:
-            messages.error(request, "Invalid username or password.")
-    form = AuthenticationForm()
-    return render(request = request,
-                    template_name = "login.html",
-                    context={"form":form}) 
+        member = Member()
+        user_firstname = member.objects.get(member.firstname)
+        user_lastname = member.objects.get(member.lastname)
+        user_password = member.objects.get(member.password)
+        if user_firstname:
+            if user_password:
+                messages.info(request, "")
+                request.session['fname'] = user_firstname.firstname
+                request.session['lname'] = user_lastname.lastname
+                return render(request, "login.html")
+            if user_password is not None:
+                messages.info(request, "รหัสผ่านไม่ถูกต้อง") 
+        if user_firstname is not None:
+            messages.info(request, "ชื่อไม่ถูกต้อง") 
+    else:
+        context={}
+        context['form'] = loginform()
+    return render(request, "login.html",context=context)
 
 def LogoutView(request):
-    LOGOUT(request)
+    del request.session['fname']
+    del request.session['fname']
     #แจ้งว่าlogoutแล้ว แก้ messageได้
     messages.info(request, "Logged out successfully!")
-    return redirect("/admin") #logoutแล้วไปหน้าที่เรากำหนด แก้ได้
+    return redirect("/home") #logoutแล้วไปหน้าที่เรากำหนด แก้ได้
 
 def news(request):
     return render(request, "news.html")
