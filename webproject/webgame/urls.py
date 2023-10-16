@@ -3,7 +3,7 @@ from django.urls import path,include,re_path
 from django.urls import re_path as url
   
 # importing views from views..py
-from .views import (home, register, RegisterUserView, LoginView, LogoutView, news, game, chat, about, 
+from .views import (home, register, LoginView, LogoutView, news, game, chat, about, 
                     n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, g1, g2, g3, g4, g5, g6, g7, g8, g9, g10,
                     g11, g12, g13, g14, g15, g16, g17, g18, g19, g20,
 )
@@ -12,7 +12,6 @@ urlpatterns = [
     url(r'^$', home, name='home'),
     url(r'^register$', register, name='register'),
     
-    url(r'^Register$', RegisterUserView, name='RegisterUserView'),
     url(r'^Login$', LoginView, name='LoginView'),
     url(r'^Logout$', LogoutView, name='LogoutView'),
     

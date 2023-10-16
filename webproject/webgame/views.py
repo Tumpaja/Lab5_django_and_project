@@ -17,7 +17,8 @@ def register(request):
         member = Member()
         member.firstname = details['first_name'].value()
         member.lastname = details['last_name'].value()
-        member.password = details['password'].value()               
+        member.password = details['password'].value()
+                       
         member.save()
         return redirect("/admin") 
     else:
@@ -26,28 +27,6 @@ def register(request):
     return render(request, "register.html",context=context)
 
 #ตั้งชื่อfunctionได้ตามสะดวก
-def RegisterUserView(request):
-    if request.method == "POST":
-        form = UserCreationForm(request.POST)
-        if form.is_valid():
-            user = form.save()
-            #เมื่อสมัครเสร็จแล้วจะให้เด้งไปหน้าไหน
-            return redirect("/admin")
-
-        #เพื่อแจ้งเตือน errorต่างๆ
-        else:
-            for msg in form.error_messages:
-                print(form.error_messages[msg])
-
-            return render(request = request,
-                          template_name = "register.html",
-                          context={"form":form}) #นำ form ตรงนี้ไปใช้ใน register.htmlเพื่อrender
-
-    #เนื่อจากข้างบนเป็น if-elseเลยต้องมีเผื่อไว้
-    form = UserCreationForm
-    return render(request = request,
-                  template_name = "register.html",
-                  context={"form":form})
 
 def LoginView(request):
     if request.method == 'POST':
