@@ -7,6 +7,9 @@ from .models import  Member
 def home(request):
     return render(request, "home.html")
 
+def home2(request):
+    return render(request, "home2.html")
+
 def register(request):
     if request.method == 'POST':
         details = registerform(request.POST)
@@ -26,31 +29,36 @@ def register(request):
 
 def LoginView(request):
     if request.method == 'POST':
-        member = Member()
-        user_firstname = member.objects.get(member.firstname)
-        user_lastname = member.objects.get(member.lastname)
-        user_password = member.objects.get(member.password)
-        if user_firstname:
-            if user_password:
-                messages.info(request, "")
-                request.session['fname'] = user_firstname.firstname
-                request.session['lname'] = user_lastname.lastname
-                return render(request, "login.html")
-            if user_password is not None:
-                messages.info(request, "รหัสผ่านไม่ถูกต้อง") 
-        if user_firstname is not None:
-            messages.info(request, "ชื่อไม่ถูกต้อง") 
+        # รับข้อมูลจากฟอร์มใน request.POST
+            members = Member.objects.all()
+            for member in members:
+                user_firstname = member.firstname
+                user_lastname = member.lastname
+                user_password = member.password
+            # ตรวจสอบชื่อและรหัสผ่าน
+            if user_firstname and user_password:
+                # ทำสิ่งที่คุณต้องการหากเข้าสู่ระบบเรียบร้อย
+                request.session['fname'] = user_firstname
+                request.session['lname'] = user_lastname
+                return render(request,"home2.html",)  # แสดงหน้าสำเร็จหรือใด ๆ
+
+            if not user_firstname:
+                messages.info(request, "ชื่อไม่ถูกต้อง")
+            if not user_password:
+                messages.info(request, "รหัสผ่านไม่ถูกต้อง")
+
     else:
-        context={}
-        context['form'] = loginform()
-    return render(request, "login.html",context=context)
+        form = loginform()  # สร้างฟอร์มใหม่
+        context = {'form': form}
+    return render(request, "login.html", context)
+
 
 def LogoutView(request):
     del request.session['fname']
-    del request.session['fname']
+    del request.session['lname']
     #แจ้งว่าlogoutแล้ว แก้ messageได้
     messages.info(request, "Logged out successfully!")
-    return redirect("/home") #logoutแล้วไปหน้าที่เรากำหนด แก้ได้
+    return render(request,"home.html") #logoutแล้วไปหน้าที่เรากำหนด แก้ได้
 
 def news(request):
     return render(request, "news.html")
