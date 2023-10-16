@@ -1,5 +1,6 @@
 from django.contrib import admin
-from django.conf.urls import url
+from django.urls import path,include,re_path
+from django.urls import re_path as url
   
 # importing views from views..py
 from .views import (home, register, RegisterUserView, LoginView, LogoutView, news, game, chat, about, 
