@@ -1,0 +1,27 @@
+body {
+    font-family: 'Krub', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    background-image: url("../images/body-bg.jpg");
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 40px 300px 50px 80px;
+    max-width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed; /* or absolute */  
+    top: 35%;  
+    left: 35%;  
+}
+
+.login-container2 {
+    background-color: #fff;
+    padding: 40px 300px 50px 80px;
+    max-width: 300px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed; /* or absolute */  
+    top: 10%;  
+    left: 35%;  
+}
