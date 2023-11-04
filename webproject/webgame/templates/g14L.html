@@ -1,0 +1,446 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>TPBBOY for gamer</title>
+  <meta name="title" content="Unigine - Epic Games Made For True Gamers!">
+  <meta name="description" content="This is an esports and gaming html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="{% static 'webgame/assets/images/logo2.svg' %}" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{% static 'webgame/assets/css/style.css' %}">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="{% static 'webgame/assets/images/hero-banner.png' %}">
+  <link rel="preload" as="image" href="{% static 'webgame/assets/images/hero-banner-bg.png' %}">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header active" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="{% static 'webgame/assets/images/logo.svg' %}" width="110" height="53" alt="unigine home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="{% url 'home2' %}" class="navbar-link" data-nav-link>home</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{% url 'news2' %}" class="navbar-link" data-nav-link>news</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{% url 'game2' %}" class="navbar-link" data-nav-link>game</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{% url 'chat' %}" class="navbar-link" data-nav-link>chat</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{% url 'about2' %}" class="navbar-link" data-nav-link>about us</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="" class="btn" data-btn>{{username}}</a>
+      <a href="{% url 'LogoutView' %}" class="btn" data-btn>Logout</a> 
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #game
+      -->
+
+      <section class="section news" aria-label="our latest news" id="news">
+        <div class="container">
+
+          <h2 class="h2 section-title" data-reveal="bottom">
+            The Texas  <span class="span">Chainsaw Massacre  </span>
+          </h2>
+          <ul class="news-list2">
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+
+                <div class="card-content">
+                  <p class="card-text">
+                    
+                  </p>
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_14_1.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-tag">game</a>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2022-01-01">Oct 09 2023 </time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text">TEERAPHAT B.</p>
+                    </li>
+
+                  </ul>
+
+                  <p class="card-text">
+                  </p>
+
+                  <h3 class="h3">
+                    The Texas Chainsaw Massacre เปิดตำนาน "สิงหาสับ" ในฉบับวิดีโอเกม
+                  </h3>
+
+                  <p class="card-text">
+                    สิงหาสับ ชื่อนี้แฟน ๆ เกมหลายคนอาจจะไม่รู้จัก แต่ถ้าเป็นคอภาพยนตร์ นี่คือสุดยอดภาพยนตร์สยองขวัญตลอดกาลที่เข้าฉายมาตั้งแต่ปี 1974 แล้ว และในปี 2023 นี้ ตำนานฆาตกรสิงหาสับ กลับมาอีกครั้งในเวอร์ชั่นเกม Multiplayer แต่เกมนี้จะมีอะไรน่าสนใจบ้าง เราจะพาไปดู
+                  </p>
+                  
+                  <p class="card-text">
+                  </p>
+                  
+                  <h3 class="h3">
+                    สิงหาสับ ตำนานหนังไล่เชือดตั้งแต่ปี 1974
+                  </h3>
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_14_2.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    The Texas Chainsaw Massacre เป็นหนังสยองขวัญแนวฆาตกรไล่เชือดที่ต้นฉบับภาคแรกเลย ออกฉายเมื่อปี 1974 หนังเป็นผลงานกำกับของ Tobe Hooper ว่าด้วยเรื่องราวของกลุ่มเพื่อนสนิท 5 คนที่ออกเดินทางไปเที่ยวยังชนบทของรัฐเทกซัส เพื่อเยี่ยมหลุมฝังศพของคุณปู่ ในขณะที่ระหว่างทางพวกเขาได้เจอบ้านร้าง ที่พาให้ไปเจอกับฆาตกรลึกลับที่มาพร้อมเลื่อยยนต์ไฟฟ้าขนาดใหญ่
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    ตำนานสิงหาสับ ถือเป็นหนึ่งในหนังสยองขวัญที่กลายเป็นแรงบันดาลใจให้กับหนังเรื่องอื่น ๆ แถมมันยังมีภาคต่อ ภาคแยก ภาครีบูตตามมาอีกมากมาย โดยภาคล่าสุดที่เพิ่งเข้าฉายไปก็คือภาคกึ่งรีบูตที่ออกฉายไปในปี 2022 ที่ผ่านมา แต่ก็แทบไม่มีภาคไหน สู้ 2 ภาคแรกได้ เพราะเป็นการสร้างโดย Tobe Hooper เอง และเพราะแบบนี้ เกมในภาคใหม่นี้จึงเลือกใช้เรื่องราวจากเวอร์ชั่นนี้
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  
+                  
+                  <h3 class="h3">
+                    จากผู้สร้างเกมสไตล์ครอบครัว สู่เกมครอบครัว(?)กินคน
+                  </h3>
+
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_14_3.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    The Texas Chainsaw Massacre ในเวอร์ชั่นเกมปี 2023 นี้ จะเป็นเกมสยองขวัญแบบเอาชีวิตรอด โดยใช้มุมมองบุคคลที่ 3 โดยผู้สร้างเกมนี้ไม่ใช่ใครอื่น แต่เป็น Sumo Digital ที่อยู่เบื้องหลังเกมดัง ๆ มามากมาย แต่ผลงานเกมที่ผ่านมา ส่วนมากจะเป็นเกมสไตล์ Family Play หรือเกมแนวครอบครัวมากกว่า คราวนี้พวกเขาเลยฉีกแนวตัวเองด้วยการหยิบเอาตำนานสิงหาสับมาทำเป็นเกม
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    และในเกมเวอร์ชั่นนี้ ยังตัดสินใจเลือกที่จะเคารพต้นฉบับหนังคลาสสิคในเวอร์ชั่นปี 1974 ด้วย โดยจะใช้รูปแบบการนำเสนอ ฉากหลัง ตัวละคร สถานที่ และเหตุการณ์ต่าง ๆ จากเวอร์ชั่นปี 1974 แทน เพราะแม้จะเก่าที่สุด แต่มันก็ยอดเยี่ยมที่สุดแล้ว สำหรับตำนานสิงหาสับ
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+
+                  <p class="card-text">
+                    แต่อย่างไรก็ตาม เกมนี้จะใช้ระบบเกมการเล่นแบบ Multiplayer มากกว่า นั่นทำให้การเล่าเรื่องบางอย่างอาจจะทำได้ยากหรือต้องตัดทิ้งไปเลย โดยจะให้อารมณ์เดียวกันกับเกมอย่าง Dead by Daylight ที่ไม่ได้เน้นไปที่การเล่าเรื่อง แต่จะเน้นไปที่ฉากและตัวละครจากโลกภาพยนตร์มากกว่า อย่างเช่นเกมนี้แน่นอนว่าเราจะได้เป็นสุดยอดฆาตกรใจโหดที่ใช้เลื่อยยนต์ไล่หั่นผู้เล่นอื่น ๆ ในกรณีที่คุณเป็นผู้เล่นฝั่ง Killer
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <h3 class="h3">
+                    สงครามขนาดย่อมในบ้านตระกูลนรก
+                  </h3>
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_14_4.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    ใครที่เคยเล่น Dead by Daylight อาจไม่ต้องอธิบายอะไรมาก เพราะเกมสยองขวัญประเภทนี้ได้รับความนิยมมากอยู่แล้ว กับการปะทะกันของเหล่าฆาตกรกับผู้รอดชีวิต ใน The Texas Chainsaw Massacre ก็จะแบ่งตัวละครออกเป็นสองฝั่งเช่นกัน แต่ฝั่งฆาตกรจะประกอบไปด้วยหลาย ๆ ตัวละคร ไม่ได้มาเพียงฆาตกรหน้ากากหนังมนุษย์เท่านั้น
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    ฆาตกรแต่ละตัวจะเป็นคนในตระกูลกินคน ผู้รอดชีวิตมีหน้าที่ในการหาทางออก เอาตัวรอดจากบ้านนรกแห่งนี้ไปให้ได้ ส่วนฆาตกร มีหน้าที่ในการวางกับดัก ฟังเสียง และไล่โจมตีผู้รอดชีวิตให้หมด ในเกมนี้ฆาตกรไม่สามารถตายได้ แต่จะถูกหยุดได้โดยผู้รอดชีวิต  
+                  </p>
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_14_5.jpg' %}" width="600" height="400" loading="lazy"
+                  alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    ทางออกจะเปิดเมื่อผู้เล่นทุกคนค่อย ๆ สิบเสาะหาหลักฐาน รนร่องรอยต่าง ๆ ที่มีความเป็นไปได้ในการหลบหนี แต่ก็ต้องระวังกับดักต่าง ๆ ที่ฆาตกรวางไว้ ในระดับแรก ๆ อาจจะระวังเป็นเรื่องเสียง ระดับที่สองอาจจะระวังกับดักประเภทหยุดการเคลื่อนไหวทั้งหลาย เช่น กับดักหมี และเมื่อทำภารกิจไปสักพัก ก็จะปรากฏทางออกให้หนีไปได้
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    Letherface หรือฆาตกรหน้ากากหนังมนุษย์ถือเป็นไฮไลท์ เพราะเขาเป็นตัวละครที่สามารถฆ่าโหดผู้รอดชีวิตได้ การเดินของเขาแม้จะเชื่องช้า แต่เลื่อยไฟฟ้าใช้พังอุปกรณ์ประกอบฉากได้ และถึงแม้เสียงของเลื่อยไฟฟ้าจะดังจนทะลุไปจนถึงหูของผู้รอดชีวิตได้ แต่ถ้าใครเล่นอย่างชาญฉลาด ก็สามารถปิดการใช้งานเลื่อยไฟฟ้าเพื่อหลอกผู้รอดชีวิตได้เช่นกัน
+                  </p>
+                  <h3 class="h3">
+                    อีกหนึ่งเกมสู้ฆาตกรที่น่าเล่น
+                  </h3>
+                  
+                </div>
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_14_6.jpg' %}" width="600" height="400" loading="lazy"
+                  alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <p class="card-text">
+                    นี่เป็นแค่น้ำจิ้ม รายละเอียดเกมเพลย์แบบเต็ม ๆ ยังคงต้องรอติดตามกันต่อไป ตอนนี้เรารู้แค่ว่า เรากำลังจะได้เกม Multiplayer ฆาตกรโหดเพิ่มมาอีกเกมแล้ว ซึ่งก็ถือว่าน่าจับตามอง เพราะตอนนี้คนที่ยึดบัลลังก์เกมแนวนี้ไว้ก็ยังคงเป็น Dead by Daylight หากมีคู่แข่งมาเพิ่มอีกเกมก็น่าจะทำให้วงการเกมแนวนี้สนุกมากขึ้น
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    The Texas Chainsaw Massacre วางจำหน่าย 18 สิงหาคม 2023 นี้ บน PlayStation 5
+                  </p>
+                  
+                  
+                </div>
+                
+              </div>
+            </li>
+          </ul>
+          
+        </div>
+      </section>
+      
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="{% static 'webgame/assets/images/logo.svg' %}" width="150" height="73" loading="lazy" alt="Unigine logo">
+          </a>
+
+          <p class="footer-text">
+            Our success in creating business solutions is due in large part to our talented and highly committed team.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Usefull Links</p>
+
+          <ul>
+            <li>
+              <a href="#" class="footer-link">Help Center</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Contact Us</p>
+
+          <div class="contact-item">
+            <span class="span">Location:</span>
+
+            <address class="contact-link">
+              6 Ratchamankha Nai Road, Phra Pathom Chedi Subdistrict Mueang Nakhon Pathom District, Nakhon Pathom 73000
+            </address>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Join Us:</span>
+
+            <a href="mailto:Info@unigine.com" class="contact-link">TcpBoy.com</a>
+          </div>
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Newsletter Signup</p>
+
+          <form action="./index.html" method="get" class="footer-form">
+            <input type="email" name="email_address" required placeholder="Your Email" autocomplete="off"
+              class="input-field">
+
+            <button type="submit" class="btn" data-btn>Subscribe Now</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 Website for educational purposes only.
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+  <div class="cursor" data-cursor></div>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="{% static 'webgame/assets/js/script.js' %}"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

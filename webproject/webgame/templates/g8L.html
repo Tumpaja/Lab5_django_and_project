@@ -1,0 +1,406 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>TPBBOY for gamer</title>
+  <meta name="title" content="Unigine - Epic Games Made For True Gamers!">
+  <meta name="description" content="This is an esports and gaming html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="{% static 'webgame/assets/images/logo2.svg' %}" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{% static 'webgame/assets/css/style.css' %}">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="{% static 'webgame/assets/images/hero-banner.png' %}">
+  <link rel="preload" as="image" href="{% static 'webgame/assets/images/hero-banner-bg.png' %}">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header active" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="{% static 'webgame/assets/images/logo.svg' %}" width="110" height="53" alt="unigine home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="{% url 'home2' %}" class="navbar-link" data-nav-link>home</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{% url 'news2' %}" class="navbar-link" data-nav-link>news</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{% url 'game2' %}" class="navbar-link" data-nav-link>game</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{% url 'chat' %}" class="navbar-link" data-nav-link>chat</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{% url 'about2' %}" class="navbar-link" data-nav-link>about us</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="" class="btn" data-btn>{{username}}</a>
+      <a href="{% url 'LogoutView' %}" class="btn" data-btn>Logout</a>  
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #game
+      -->
+
+      <section class="section news" aria-label="our latest news" id="news">
+        <div class="container">
+
+          <h2 class="h2 section-title" data-reveal="bottom">
+            Mortal   <span class="span">Kombat 1 </span>
+          </h2>
+          <ul class="news-list2">
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+
+                <div class="card-content">
+                  <p class="card-text">
+                    
+                  </p>
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_8_1.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-tag">game</a>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2022-01-01">Oct 09 2023 </time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text">TEERAPHAT B.</p>
+                    </li>
+
+                  </ul>
+
+                  <p class="card-text">
+                  </p>
+
+                  <h3 class="h3">
+                    “Mortal Kombat 1” การคืนสู่สามัญอีกครั้งของเกมต่อสู้สุดโหดในตำนาน!
+                  </h3>
+
+                  <p class="card-text">
+                    ปี 2023 นี้ ถือเป็นปีที่ยิ่งใหญ่สำหรับคนเล่นเกมต่อสู้ เพราะเป็นปีที่เกมต่อสู้ระดับตำนานขวัญใจแฟน ๆ กำลังทยอยกลับมาเพื่อสร้างความมันอีกหลายเกม ทั้งเกมที่วางจำหน่ายไปแล้วอย่าง Street Fighter VI และที่กำลังจะวางจำหน่ายอย่าง Tekken 8 ต่างรอจ่อคิวมาให้เราตะบันจอยกันยาวตลอดปี ..และอีกเกมหนึ่งที่เป็นเกมต่อสู้ระดับโคตรตำนาน ที่แฟน ๆ รอคอยกันไม่แพ้เกมอื่น ๆ นั่นคือ “Mortal Kombat” นั่นเอง กับเกมต่อสู้ของเหล่านักสู้เหนือมนุษย์ ที่กลับมาอีกครั้งในภาคที่ 12 ของซีรีส์ แต่ไม่ได้ใช้ชื่อว่า Mortal Kombat 12 เนื่องจากภาคนี้ จะเป็นการนับหนึ่งใหม่ กลับสู่จุดเริ่มต้นอีกครั้ง ในชื่อ “Mortal Kombat 1”
+                  </p>
+                  
+                  <p class="card-text">
+                  </p>
+
+                  <p class="card-text">
+                    หลังจากเปิดตัวเกมเพลย์แรกไปอย่างยิ่งใหญ่ในงาน Summer Game Fest 2023 เมื่อวันที่ 10 มิถุนายน 2023 ที่ผ่านมา โชว์ระบบการเล่นพื้นฐาน รวมถึงข้อมูลจากการปล่อยเกมเวอร์ชัน Early Access ให้กับผู้เล่นบางราย แม้ว่าในเบื้องต้น เกมยังต้องปรับสมดุลของเกมเพลย์กันอีกนาน กว่าเกมจะวางจำหน่าย แต่ก็ถือว่าเป็นข้อมูลที่น่าสนใจครับ สำหรับคอเกมต่อสู้ ที่ยังคงอารมณ์ค้างจาก Street Fighters VI ในช่วงกลางปี แล้วต้องการเกมใหม่มาสานต่อความมันในช่วงปลายปีแบบทันที มาลองดูกันครับว่า การกลับมาของ Mortal Kombat ครั้งนี้ จะมีอะไรน่าสนใจ ที่เหมือนหรือแตกต่างไปจากที่ผ่านมาอย่างไรบ้าง?
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_8_2.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    สำหรับเนื้อเรื่องของ Mortal Kombat 1 (ขอเรียกย่อว่า MK1) นี้ เป็นเรื่องราวที่สานต่อมาจากบทสรุปของเกมภาคที่แล้วอย่าง Mortal Kombat 11 [ **SPOILER ALERT!! สำหรับคนที่ยังไม่เคยเล่น MK11 มาก่อน!** ] ที่ในตอนจบ ลูแคง (Liu Kang) ตัวเอกของเกม ได้กลายเป็นเทพเจ้าแห่งไฟ และใช้พลังจาก “ทรายแห่งกาลเวลา” สร้างจักรวาลใหม่ขึ้นมา ทำให้ MK1 จะเป็นจุดเริ่มต้นใหม่อีกครั้งของซีรีส์ ทั้งเรื่องราวและตัวละครทั้งหมด ฉะนั้น หากใครยังไม่เคยเล่น Mortal Kombat มาก่อนเลยสักภาค นี่เป็นโอกาสดีครับที่จะได้ตามเรื่องราวของเกมตั้งแต่เริ่ม แบบไม่ต้องไปศึกษาประวัติศาสตร์เกมที่มีมา 30 ปีให้ต้องปวดหัว เพราะแม้แต่แฟนเดนตาย MK ก็ไม่รู้จริง ๆ ว่าเรื่องราวใน MK1 นี้จะเดินไปในทิศทางไหนต่อ
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    แต่พูดถึงเกมต่อสู้ แน่นอนว่าที่สำคัญที่สุดต้องเป็น “ระบบการต่อสู้” ของเกม ในแต่ละภาคของ Mortal Kombat จะพยายามนำเสนอระบบแปลกใหม่ มาช่วยเสริมความสนุกในการต่อสู้ให้กับผู้เล่นอยู่ตลอด อย่างเช่นใน “Mortal Kombat X” ที่มีระบบ Variations ให้ผู้เล่นได้เลือกสไตล์การต่อสู้ตัวละคร ที่ถูกจัดมาเป็น Preset 3 แบบ ให้ผู้เล่นเลือกใช้ได้ หรือใน Mortal Kombat 11 ที่มีระบบ Kustom Variations ให้เราเลือกจัด Preset ด้วยตัวเอง พร้อมกับการใช้ Gears หรือการติดตั้งอาวุธ หรือเครื่องแต่งกาย เพื่อเพิ่มบัฟเฉพาะตัวให้กับตัวละครได้ เป็นต้น ..ซึ่งใน MK1 ก็เช่นกัน โดยระบบที่ในเกมภาคล่าสุด ได้ชูขึ้นมาเป็นจุดเด่นของเกมภาคนี้คือ ระบบ “Kameo Fighter” นั่นเอง
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  
+
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_8_3.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    Kameo Fighter คืออะไร? ในทางเทคนิค Kameo Fighter ก็ไม่ใช่ระบบที่ใหม่เสียทีเดียวครับ แต่เป็นการนำระบบเก่ามานำเสนอในรูปแบบใหม่มากกว่า โดย Kameo Fighter เป็นระบบการเลือกใช้ “ตัวละครอีกตัว” ให้มาเป็นตัวที่ร่วมสู้เคียงข้างเรา ซึ่งถือเป็นระบบที่มาแทนที่ Kustom Variations ของภาคก่อนหน้า เพราะในขณะที่ MK11 เราสามารถจัด Preset ท่าต่อสู้ให้กับตัวละครได้อย่างละเอียด ใน MK1 นี้ ระบบนี้จะถูกเปลี่ยนให้เป็นการจับคู่กับตัวละครอีกตัว เพื่อสร้างเป็น Variations สไตล์ Tag-Team ขึ้นมา โดย Kameo จะไม่ได้เป็นแค่ตัวละคร Assists ที่ออกมา Counter หรือ Combo Breaker เท่านั้น แต่จะเป็นหนึ่งใน Moveset ที่เราสามารถใช้ร่วมกันตัวที่เราเลือกเป็นตัวหลักได้ตลอดเวลา โดยไม่มีการ Cool Down เพื่อผสมจุดเด่นของทั้ง 2 ตัวเข้าด้วยกัน เช่น หากเราเลือก สกอร์เปียน (Scorpion) เป็นตัวหลัก และเลือก ซับซีโร่ (Sub-Zero) เป็น Kameo ก็จะกลายเป็นการใช้ท่าคอมโบที่เน้นความเร็วของสกอร์เปียน เสริมด้วยท่าที่เน้นการหยุดการเคลื่อนไหวศัตรูสไตล์ซับซีโร่ นั่นเอง ถือเป็นระบบการผสม Moveset ที่สร้างสรรค์และเข้าใจง่ายมาก เป็นการย่อยความยุ่งเหยิงในการปรับแต่งตัวละคร จาก MK11 ให้เหลือเพียงแค่การจับคู่ตัวละคร 2 ตัวเท่านั้น
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_8_4.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    นอกจากนี้ ระบบอื่น ๆ ที่เคยมีในภาคก่อนหน้า ก็ยังอยู่ครบ เช่น ระบบท่าไม้ตาย หรือ Fatal Blow จากในภาคที่แล้ว ก็ยังอยู่เหมือนเดิม แถมยังมีสีสันมากกว่าเดิม ด้วยการใช้ Fatal Blow ด้วยระบบของ Kameo Fighter ทำให้เราสามารถเห็นตัวละคร 2 ตัวร่วมกันออกท่าเท่ ๆ ได้ตลอดทั้งเกม ไม่ว่าเป็น คอมโบ, Fatal Blow และแน่นอน รวมถึง “Fatality” ท่าปลิดชีพสุดโหดเลือดสาดไม่บันยะบันยัง อันเป็นเอกลักษณ์ของ Mortal Kombat ที่ยังคงรับประกันความโหดสะใจ ไม่มีกั๊ก ทั้งเลือดและตับไตไส้พุง!
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_8_5.jpg' %}" width="600" height="400" loading="lazy"
+                  alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    ถือว่าเป็นอีกเกมที่น่าจับตามองอย่างมากครับ ทั้งสำหรับแฟน ๆ ของ Mortal Kombat และคอเกมต่อสู้ ที่จะได้มามันกับการต่อสู้สุดโหดเลือดสาดในสไตล์ของ MK กันอีกครั้งในช่วงปลายปีนี้ Mortal Kombat 1 มีกำหนดวางจำหน่ายเกมในวันที่ 19 กันยายน 2023 นี้! โดยผู้ที่ Pre-Order เกม จะได้รับสิทธิพิเศษ สามารถเล่นเป็นตัวละคร “แชงซุง (Shang Tsung)” อีกหนึ่งตัวร้ายผู้โด่งดังของซีรีส์ ก่อนใครด้วย (เป็นสิทธิ์ Pre-Order สำหรับเกมทุกเวอร์ชัน)
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  
+                  
+                </div>
+                
+              </div>
+            </li>
+          </ul>
+          
+        </div>
+      </section>
+      
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="{% static 'webgame/assets/images/logo.svg' %}" width="150" height="73" loading="lazy" alt="Unigine logo">
+          </a>
+
+          <p class="footer-text">
+            Our success in creating business solutions is due in large part to our talented and highly committed team.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Usefull Links</p>
+
+          <ul>
+            <li>
+              <a href="#" class="footer-link">Help Center</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Contact Us</p>
+
+          <div class="contact-item">
+            <span class="span">Location:</span>
+
+            <address class="contact-link">
+              6 Ratchamankha Nai Road, Phra Pathom Chedi Subdistrict Mueang Nakhon Pathom District, Nakhon Pathom 73000
+            </address>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Join Us:</span>
+
+            <a href="mailto:Info@unigine.com" class="contact-link">TcpBoy.com</a>
+          </div>
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Newsletter Signup</p>
+
+          <form action="./index.html" method="get" class="footer-form">
+            <input type="email" name="email_address" required placeholder="Your Email" autocomplete="off"
+              class="input-field">
+
+            <button type="submit" class="btn" data-btn>Subscribe Now</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 Website for educational purposes only.
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+  <div class="cursor" data-cursor></div>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="{% static 'webgame/assets/js/script.js' %}"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

@@ -4,8 +4,12 @@ from django.urls import re_path as url
   
 # importing views from views..py
 from .views import (home,home2, register, LoginView, LogoutView, news, game, chat, about, news2, game2, about2, 
-                    n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n1L, n2L, n3L, n4L, n5L, n6L, n7L, n8L, n9L, n10L, g1, g2, g3, g4, g5, g6, g7, g8, g9, g10,
-                    g11, g12, g13, g14, g15, g16, g17, g18, g19, g20,
+                    n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, 
+                    n1L, n2L, n3L, n4L, n5L, n6L, n7L, n8L, n9L, n10L, 
+                    g1, g2, g3, g4, g5, g6, g7, g8, g9, g10,
+                    g11, g12, g13, g14, g15, g16, g17, g18, g19, g20, 
+                    g1L, g2L, g3L, g4L, g5L, g6L, g7L, g8L, g9L, g10L,
+                    g11L, g12L, g13L, g14L, g15L, g16L, g17L, g18L, g19L, g20L,
 )
 urlpatterns = [
     url(r'^admin$', admin.site.urls),
@@ -67,4 +71,25 @@ urlpatterns = [
     url(r'^game/game18$', g18, name='g18'),
     url(r'^game/game19$', g19, name='g19'),
     url(r'^game/game20$', g20, name='g20'),
+
+    url(r'^game/game1/user$', g1L, name='g1L'),
+    url(r'^game/game2/user$', g2L, name='g2L'),
+    url(r'^game/game3/user$', g3L, name='g3L'),
+    url(r'^game/game4/user$', g4L, name='g4L'),
+    url(r'^game/game5/user$', g5L, name='g5L'),
+    url(r'^game/game6/user$', g6L, name='g6L'),
+    url(r'^game/game7/user$', g7L, name='g7L'),
+    url(r'^game/game8/user$', g8L, name='g8L'),
+    url(r'^game/game9/user$', g9L, name='g9L'),
+    url(r'^game/game10/user$', g10L, name='g10L'),
+    url(r'^game/game11/user$', g11L, name='g11L'),
+    url(r'^game/game12/user$', g12L, name='g12L'),
+    url(r'^game/game13/user$', g13L, name='g13L'),
+    url(r'^game/game14/user$', g14L, name='g14L'),
+    url(r'^game/game15/user$', g15L, name='g15L'),
+    url(r'^game/game16/user$', g16L, name='g16L'),
+    url(r'^game/game17/user$', g17L, name='g17L'),
+    url(r'^game/game18/user$', g18L, name='g18L'),
+    url(r'^game/game19/user$', g19L, name='g19L'),
+    url(r'^game/game20/user$', g20L, name='g20L'),
 ]

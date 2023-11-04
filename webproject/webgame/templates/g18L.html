@@ -1,0 +1,455 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>TPBBOY for gamer</title>
+  <meta name="title" content="Unigine - Epic Games Made For True Gamers!">
+  <meta name="description" content="This is an esports and gaming html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="{% static 'webgame/assets/images/logo2.svg' %}" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{% static 'webgame/assets/css/style.css' %}">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="{% static 'webgame/assets/images/hero-banner.png' %}">
+  <link rel="preload" as="image" href="{% static 'webgame/assets/images/hero-banner-bg.png' %}">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header active" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="{% static 'webgame/assets/images/logo.svg' %}" width="110" height="53" alt="unigine home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="{% url 'home2' %}" class="navbar-link" data-nav-link>home</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{% url 'news2' %}" class="navbar-link" data-nav-link>news</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{% url 'game2' %}" class="navbar-link" data-nav-link>game</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{% url 'chat' %}" class="navbar-link" data-nav-link>chat</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{% url 'about2' %}" class="navbar-link" data-nav-link>about us</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="" class="btn" data-btn>{{username}}</a>
+      <a href="{% url 'LogoutView' %}" class="btn" data-btn>Logout</a> 
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #game
+      -->
+
+      <section class="section news" aria-label="our latest news" id="news">
+        <div class="container">
+
+          <h2 class="h2 section-title" data-reveal="bottom">
+            Minecraft   <span class="span">Legends </span>
+          </h2>
+          <ul class="news-list2">
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+
+                <div class="card-content">
+                  <p class="card-text">
+                    
+                  </p>
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_18_1.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-tag">game</a>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2022-01-01">Oct 09 2023 </time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text">TEERAPHAT B.</p>
+                    </li>
+
+                  </ul>
+
+                  <p class="card-text">
+                  </p>
+
+                  <h3 class="h3">
+                    Minecraft Legends เปิดตำนานแผ่นดินไมน์คราฟต์ สุดยอดเกมสำหรับครอบครัว
+                  </h3>
+
+                  <p class="card-text">
+                    ถ้าจะกล่าวถึงเกมในยุคใหม่ที่อยู่ในระดับ “สร้างปรากฏการณ์ใหม่” คงมีอยู่ไม่กี่เกม หนึ่งในนั้นก็ต้องเป็น Minecraft เกมง่าย ๆ แต่ล้ำยุคในแง่ไอเดีย จนกลายเป็นปรากฏการณ์ในทุกช่วงเวลาที่ไม่ว่าใครก็ต้องทำตาม ไม่ว่าทางใดก็ทางหนึ่ง
+                  </p>
+                  
+                  <p class="card-text">
+                  </p>
+
+                  <p class="card-text">
+                    ปัจจุบัน Minecraft กลายเป็นแฟรนไชส์ที่ขยายตัวอย่างต่อเนื่อง นอกจากเกมหลักแล้วยังมีเกมอื่น ๆ อีกมากมาย ไม่ว่าจะเป็น Minecraft Story หรือ Minecraft Dungeon แต่ละเกมก็มีเอกลักษณ์ในตัวเอง แต่ก็ยังคงอัตลักษณ์ในความเป็น Minecraft ไว้อย่างเต็มเปี่ยมเช่นกัน
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+
+                  <p class="card-text">
+                    และล่าสุดกับ Minecraft Legends ผลงานสปินออฟล่าสุดจากซีรีส์นี้ ที่ยังคงมีเอกลักษณ์คงเดิมไว้ทั้งหมด ตัวเกมจะน่าสนใจขนาดไหน ไปอ่านกันได้ในพรีวิวจากเรา Happyconsole
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <h3 class="h3">
+                    เจาะเนื้อหาไมน์คราฟต์ที่ไม่เคยเล่า
+                  </h3>
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_18_2.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    เนื้อหาของ Minecraft Legends เป็นการหยิบตำนานของโลก overworld มาขยายให้มีที่มาที่ไปมากขึ้น จากเดิมที่ดินแดนแห่งนี้แทบจะไม่มีเรื่องราวใด ๆ มาซัพพอร์ตเลย โดยจะเล่าถึงตำนานของฮีโร่แห่ง Overworld ที่รวมตัวกันต่อต้านกองทัพเหล่า Piglin ที่จะยึดครองโลก
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    แน่นอนว่าเรารับบทเป็นแม่ทัพของกองทัพชาว Overworld ที่ซึ่งก็คือโลก Minecraft แบบเหลี่ยม ๆ อย่างที่เราเห็นนี่แหละ ศัตรูในภาคนี้คือชาว Piglin หรือชาวลูกหมูที่ได้รับพลังมาจากมิติ Nether ทำให้พวกมันมีพลังมหาศาล และต้องการจะกลืนกินโลกให้ได้
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    ในฐานะที่จักรวาล Minecraft ไม่ใช่เกมที่ชอบเล่าเรื่องอะไรมากมายนัก นี่น่าจะเป็นครั้งแรกที่เล่าเรื่องเกี่ยวกับโลกของ Minecraft โดยเป็นยุคของอดีตอย่างเปิดเผย ใครที่เป็นแฟนเกม Minecraft และอยากรู้ว่าโลกในเกมมันมีที่มาที่ไปอย่างไร เราอาจจะได้รู้กันในเกมนี้
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <h3 class="h3">
+                    รวมกองทัพช่วยชาวบ้าน พิชิตหมูหิว
+                  </h3>
+
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_18_3.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    ในฐานะแม่ทัพ เกมเพลย์ของ Minecraft Legends จะเป็นการออกรวบรวมกองทัพทหารกล้ามาเพื่อต่อสู้กับ Piglin โดยทหารเหล่านี้จะเป็นสัตว์เล็ก ๆ ไปจนถึงอัศวินชาวบ้านเลยก็ได้ โดยหน้าที่ของคุณคือการปกป้องหมู่บ้านใน Overworld จากการบุกรุกของกองทัพ Piglin ซึ่งผสมผสานความเป็นแอคชันเข้ากับเกมวางแผนได้อย่างลงตัว
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    ตัวละครของเราสามารถใช้สิ่งที่เรียกว่า Mob spawners ได้ โดยเจ้านี่จะเป็นตัวที่ช่วยให้คุณสามารถเรียกยูนิตต่าง ๆ ออกมาช่วยต่อสู้ได้ โดยยูนิตจะเป็นศัตรูเก่า ๆ อย่างเช่นครีพเปอร์และซอมบี้ชาวบ้าน หรือจะเป็นตัวแบดเจอร์และตัวลามะ สัตว์ที่อยู่ตามธรรมชาติ
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+
+                  <p class="card-text">
+                    ในภาคนี้ยูนิตที่เป็นไฮไลท์คงหนีไม่พ้นเหล่า “โกเล็ม” ที่เกิดขึ้นเพื่อทำลายม็อบของศัตรูโดยเฉพาะ ซึ่งโกเล็มจะมีธาตุต่าง ๆ และชนิดยูนิต ที่เฉพาะเจาะจง แต่ยูนิตจะมีวิธีเล่นที่แตกต่างกัน ฉะนั้นหากคุณเป็น Warlord ที่ทรงความสามารถ การคุมทัพสิ่งเหล่านี้น่าจะเป็นเรื่องไม่ยากมากสำหรับคุณ
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <h3 class="h3">
+                    คงสเน่ห์เดิมเอาไว้อย่างเต็มเปี่ยม
+                  </h3>
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_18_4.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    แน่นอนว่าระบบคราฟต์ยังคงเป็นสิ่งที่ Minecraft Legends เน้นย้ำเป็นเอกลักษณ์สำคัญ ในภาคนี้เราคราฟต์อุปกรณ์ไม่ได้หลากหลายเท่ากับภาคหลัก แต่การคราฟต์จะเป็นกุญแจสำคัญในการเอาชนะกองทัพของเหล่า Piglin ในเกม
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    เนื่องจากเหล่าโกเล็มที่จะเป็นยูนิตหลักของเราในเกมนี้ ใช้งานได้ผ่านฟังก์ชันการคราฟต์ โดยคุณจะได้เรียนรู้ตั้งแต่การรวบรวมไม้ และหิน ทำการสร้าง Mob spawners และเรียกโกเล็มประเภทต่าง ๆ ขึ้นมาเพื่อต่อสู้ ก่อนจะเรียกเหล่ายูนิตเทพ ๆ ออกมาได้ในภายหลัง
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+
+                  <p class="card-text">
+                    หลังจากสร้างยูนิตเพื่อการโจมตีแล้ว เราจะได้สร้างแนวป้องกันด้วย โดยหมู่บ้านที่ถูกบุกโดยเหล่า Piglin ไม่สามารถป้องกันตัวเองได้ คุณจะต้องสร้างแนวป้องกันด้วย เกมจะให้คุณวางดีไซน์เองโดยใช้ความคิดสร้างสรรค์ แต่จะต้องใช้งานได้จริงด้วย
+                  </p> 
+
+                  <h3 class="h3">
+                    เล่นได้ไม่รู้จบ
+                  </h3>
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_18_5.jpg' %}" width="600" height="400" loading="lazy"
+                  alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    Minecraft Legends ประกอบไปด้วยโหมดการเล่นแบบคนเดียวที่จะสุ่ม World ให้คุณได้สนุกตลอดเวลา สามารถปรับแต่งได้อย่างอิสระจนเกิดการเล่นหลาย ๆ ครั้งที่แตกต่างกันอย่างสิ้นเชิง อีกทั้งยังสามารถเล่นได้พร้อมกันถึง 4 คนในโหมด Multiplayer
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    โดยรวม Minecraft Legends เป็นเกมวางแผนในสปินออฟ Minecraft ที่น่าสนใจมาก ๆ อีกหนึ่งเกม ด้วยฟีเจอร์ใหม่ ๆ ที่น่าสนุก และการเล่นแบบต่อเนื่องไม่มีวันจบคล้ายเกมต้นฉบับ อีกทั้งยังลงทุกแพลตฟอร์มแม้กระทั่ง Nintendo Switch
+                  </p>
+                  
+                </div>
+                
+              </div>
+            </li>
+          </ul>
+          
+        </div>
+      </section>
+      
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="{% static 'webgame/assets/images/logo.svg' %}" width="150" height="73" loading="lazy" alt="Unigine logo">
+          </a>
+
+          <p class="footer-text">
+            Our success in creating business solutions is due in large part to our talented and highly committed team.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Usefull Links</p>
+
+          <ul>
+            <li>
+              <a href="#" class="footer-link">Help Center</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Contact Us</p>
+
+          <div class="contact-item">
+            <span class="span">Location:</span>
+
+            <address class="contact-link">
+              6 Ratchamankha Nai Road, Phra Pathom Chedi Subdistrict Mueang Nakhon Pathom District, Nakhon Pathom 73000
+            </address>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Join Us:</span>
+
+            <a href="mailto:Info@unigine.com" class="contact-link">TcpBoy.com</a>
+          </div>
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Newsletter Signup</p>
+
+          <form action="./index.html" method="get" class="footer-form">
+            <input type="email" name="email_address" required placeholder="Your Email" autocomplete="off"
+              class="input-field">
+
+            <button type="submit" class="btn" data-btn>Subscribe Now</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 Website for educational purposes only.
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+  <div class="cursor" data-cursor></div>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="{% static 'webgame/assets/js/script.js' %}"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

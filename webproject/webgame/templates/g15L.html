@@ -1,0 +1,502 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>TPBBOY for gamer</title>
+  <meta name="title" content="Unigine - Epic Games Made For True Gamers!">
+  <meta name="description" content="This is an esports and gaming html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="{% static 'webgame/assets/images/logo2.svg' %}" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{% static 'webgame/assets/css/style.css' %}">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="{% static 'webgame/assets/images/hero-banner.png' %}">
+  <link rel="preload" as="image" href="{% static 'webgame/assets/images/hero-banner-bg.png' %}">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header active" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="{% static 'webgame/assets/images/logo.svg' %}" width="110" height="53" alt="unigine home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="{% url 'home2' %}" class="navbar-link" data-nav-link>home</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{% url 'news2' %}" class="navbar-link" data-nav-link>news</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{% url 'game2' %}" class="navbar-link" data-nav-link>game</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{% url 'chat' %}" class="navbar-link" data-nav-link>chat</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{% url 'about2' %}" class="navbar-link" data-nav-link>about us</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="" class="btn" data-btn>{{username}}</a>
+      <a href="{% url 'LogoutView' %}" class="btn" data-btn>Logout</a>  
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #game
+      -->
+
+      <section class="section news" aria-label="our latest news" id="news">
+        <div class="container">
+
+          <h2 class="h2 section-title" data-reveal="bottom">
+            Star Wars Jedi:   <span class="span">Survivor </span>
+          </h2>
+          <ul class="news-list2">
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+
+                <div class="card-content">
+                  <p class="card-text">
+                    
+                  </p>
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_15_1.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-tag">game</a>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2022-01-01">Oct 09 2023 </time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text">TEERAPHAT B.</p>
+                    </li>
+
+                  </ul>
+
+                  <p class="card-text">
+                  </p>
+
+                  <h3 class="h3">
+                    Star Wars Jedi: Survivor อีกหนึ่งการสานต่อที่น่ารอคอยของปี
+                  </h3>
+
+                  <p class="card-text">
+                    เป็นอีกหนึ่งซีรีส์ที่อยู่คู่ Star Wars ยุคใหม่ได้อย่างเต็มภาคภูมิ สำหรับซีรีส์ Jedi ที่เน้นไปที่เรื่องราวหลังการกวาดล้างเหล่าผู้ใช้ฟอซทั้งหลาย มีเพียงไม่กี่คนเท่านั้นที่รอดชีวิตมาได้ และนั่นรวมถึงตัวเอกในเกมนี้ด้วย
+                  </p>
+                  
+                  <p class="card-text">
+                  </p>
+
+                  <p class="card-text">
+                    ในภาคที่แล้ว เราได้สนุกกับเกมเพลย์ที่เน้นจังหวะจะโคน ท้าทายกว่าเกมสตาร์วอร์สใด ๆ ที่สร้างมา ราวกับว่าเขาต้องการขายผู้เล่นที่เป็นผู้ใหญ่โดยแท้จริง ไม่ได้ทำเกมเด็กเล่นได้ผู้ใหญ่เล่นดีเหมือนคราวก่อน ๆ
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+
+                  <p class="card-text">
+                    ล่าสุดตัวเกมประกาศภาค 2 ออกมาในชื่อ Star Wars Jedi: Survivor ซึ่งเป็นเรื่องราวต่อจากภาคแรก ใช้ตัวเอกคนเดียวกันนั่นก็คือ Cal Kestis ที่บัดนี้เรียนรู้ซึ้งถึงแก่นแท้ของการเป็นเจได ตัวเกมจะเป็นแบบไหน นี่คือสิ่งที่คุณต้องรู้ก่อนเล่น Star Wars Jedi: Survivor
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <h3 class="h3">
+                    ตามติดชีวิต “เจไดคนสุดท้าย” ต่อต้านจักรวรรดิ
+                  </h3>
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_15_2.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-text">
+                  </p>
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_15_3.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    หลังจากภาคที่แล้ว Cal Kestis ใช้ชีวิตในฐานะ “เจไดคนสุดท้าย” มาทั้งหมด 5 ปี โดยชีวิตของเขาหวาดระแวงอยู่ตลอดเวลา ว่าวันใดวันหนึ่งจะโดนจักรวรรดิส่งคนมาเก็บ ระหว่างนั้นเขามีสมัครพรรคพวกจากกลุ่มกบฏต่อต้าน ที่ใช้ชีวิตกับภารกิจเสี่ยงไปวัน ๆ โดยไม่รู้ว่าจะต้องตายตอนไหน
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    แต่ความหวังก็กลับมาอีกครั้ง เมื่อกลุ่มต่อต้านค้นพบสถานที่ใหม่ สถานที่ที่จะปลอดภัยต่อการตามล่าของจักรวรรดิ แต่ในขณะที่ความปั่นป่วนเกิดขึ้นทุกย่อมหญ้า แถมไม่มีใครลุกขึ้นยืนหยัดต่อสู้กับมัน Cal ต้องเลือกเองว่า เขาจะหนีเพื่อชีวิตที่ดีกว่า หรือจะสู้จนกว่าชีวิตของเขาจะหาไม่
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    จากภาคที่แล้ว เราได้เห็น Cal ไล่ค้นหาคำตอบ และพบมรดกที่เหลืออยู่ในฐานะเจได ผ่านทั้งความผิดหวัง และเจ็บปวด แต่ในภาคนี้ เขาจะโตเป็นผู้ใหญ่ขึ้นจากการเดินทางกว่า 5 ปีที่ผ่านมา รวมถึงจะมีผองเพื่อนใหม่หลากหลายสไตล์มาร่วมการเดินทางครั้งนี้ด้วย
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+
+                  <p class="card-text">
+                    แน่นอนว่าตัวร้ายในภาคนี้ยังคงเป็นจักรวรรดิ ที่เกี่ยวข้องกับเหตุการณ์ Order 66 เช่นเคย แต่การไล่ล่าของมันไม่ได้เข้มข้นเท่าภาคที่แล้ว ทำให้เรามีโอกาสสำรวจความเป็นไปได้ใหม่ ๆ พร้อมกับพบเจอภัยร้ายในอีกหลาย ๆ รูปแบบที่ไม่เคยเจอมาก่อนในภาคที่แล้ว
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <h3 class="h3">
+                    จากพาดาวัน สู่ปรมจารย์เจได
+                  </h3>
+
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_15_4.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-text">
+                  </p>
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_15_5.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    ระบบการต่อสู้ใน Star Wars Jedi: Survivor พัฒนาขึ้นจากภาคที่แล้วอย่างมีนัยสำคัญ หากยังจำกันได้ ในภาคแรก Cal ของเราเป็นเพียงแค่ “พาดาวัน” ที่ขาดการฝึกฝนเท่านั้น แต่จากประสบการณ์ที่ได้ รวมถึงคำแนะนำต่าง ๆ ที่เกิดขึ้นในภาคแรก บัดนี้เขากลายเป็นเจไดอย่างเต็มตัว พร้อมที่จะรบราฆ่าฟัน และใช้เทคนิคใหม่ ๆ ที่เกี่ยวข้องกับฟอร์ซได้มากมายกว่าเดิม
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    สิ่งใหม่อย่างแรกคือ Cal จะใช้อาวุธได้ทั้งหมดสามชนิด ไลท์เซเบอร์มือเดียวยังคงเป็นตัวเลือกที่แข็งแกร่งอยู่เสมอ ในขณะที่ไลท์เซเบอร์สองมือก็น่าลองเสี่ยงเพราะผลลัพธ์ที่ดี ส่วนอาวุธใหม่ในภาคนี้ “ไลเซเบอร์แบบครอสการ์ด” แบบเดียวกับที่ไคโร เรน ใช้ในเวอร์ชันภาพยนตร์ เป็นอาวุธที่ยาว และหนักกว่าอาวุธเก่า ทำให้สไตล์การเล่นแตกต่างกันอย่างชัดเจน
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+
+                  <p class="card-text">
+                    ในด้านของ Force ในภาคนี้ Cal ก็พัฒนาขึ้นเช่นกัน คุณจะได้เห็นท่าทางใหม่ ๆ ที่ใช้ในการต่อสู้ รวมถึงการแก้ปริศนาที่ซับซ้อนกว่าเดิมในแต่ละด่าน ซึ่งมันจะบังคับให้คุณคิดหาวิธีใช้พลังของคุณให้บรรเจิดที่สุดเท่าที่จะคิดได้ ซึ่งนี่เป็นคุณสมบัติหลักที่ “เจได” ควรจะมี
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <h3 class="h3">
+                    ภาคก่อนมาคนเดียว ภาคนี้พกเพื่อนมาเพียบ
+                  </h3>
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_15_6.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-text">
+                  </p>
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_15_7.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    ในภาคที่แล้ว Cal แทบจะต่อสู้ด้วยตัวคนเดียวตลอดเวลา แต่ในภาคนี้ เขาจะมีเพื่อน ๆ ช่วยเหลือด้วย โดยระบบ AI-Companion จะเป็นระบบหลักในภาคนี้ ทำให้การต่อสู้นั้นแตกต่างจากภาคที่แล้วโดยสิ้นเชิง คุณอาจชินกับการต่อสู้แบบดวลดาบอย่างเอาเป็นเอาตาย แต่เราเชื่อว่าคุณจะปรับตัวได้ถ้าได้ลองระบบช่วยเหลือของเกมภาคนี้
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    ตัวเกมยืนยันตัวละครที่จะออกมาช่วยคุณแล้วถึง 3 ตัว นั่นก็คือ Merrin, Greez และ Bode โดยตัวละครสองตัวแรกเป็นตัวละครที่กลับมาจากภาคที่แล้ว Merrin คือพันธมิตร Night Sister ที่คุณไว้วางใจได้ เธอเก่งกาจในด้านการต่อสู้ไม่ต่างจากคุณ มีเธอไว้ก็เหมือนมีเจไดสองคนอยู่บนสนามรบ ส่วน Greez แม้เราจะไม่รู้ว่าเขาอยู่หรือตายในเหตุการณ์ภาคที่แล้ว แต่ในภาคนี้เขากลับมาพร้อมแขนกลที่แทนที่แขนเดิมของเขา ทำให้เรารู้ว่าเขาก็ยังคงสบายดีอยู่ในจักรวาลนี้
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+
+                  <p class="card-text">
+                    ส่วน Bode Akuna เป็นตัวละครใหม่เอี่ยมจากภาคนี้ โดยมีบุคลิกคล้าย ๆ ตัวละครประเภท Bounty Hunter แน่นอนว่าเขาใช้ปืนทุกประเภทเป็นอาวุธหลัก และจะมาช่วยเสริมการโจมตีระยะไกลให้กับเรา เปรียบเสมือนคู่หูสุดสมดุลย์ที่รับมือได้ทั้งใกล้และไกลในคราวเดียวกัน
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+
+                  <h3 class="h3">
+                    อีกหนึ่งเกมที่คุณไม่ควรพลาด
+                  </h3>
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_15_8.jpg' %}" width="600" height="400" loading="lazy"
+                  alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-text">
+                  </p>
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_15_9.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    Star Wars Jedi: Survivor เป็นอีกหนึ่งเกมภาคต่อที่น่าสนใจมาก ๆ ในปีนี้ เพราะเปี่ยมไปด้วยเนื้อเรื่องที่เข้มข้น ระบบการเล่นที่ตื่นเต้นเร้าใจ การพัฒนาด้านกราฟิกที่ก้าวกระโดดไปไกลกว่าภาคแรก ถ้าคุณชอบเกมเล่นคนเดียว นี่คือเกมที่คุณไม่ควรพลาดอีกหนึ่งเกมในปีนี้
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  
+                  
+                </div>
+                
+              </div>
+            </li>
+          </ul>
+          
+        </div>
+      </section>
+      
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="{% static 'webgame/assets/images/logo.svg' %}" width="150" height="73" loading="lazy" alt="Unigine logo">
+          </a>
+
+          <p class="footer-text">
+            Our success in creating business solutions is due in large part to our talented and highly committed team.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Usefull Links</p>
+
+          <ul>
+            <li>
+              <a href="#" class="footer-link">Help Center</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Contact Us</p>
+
+          <div class="contact-item">
+            <span class="span">Location:</span>
+
+            <address class="contact-link">
+              6 Ratchamankha Nai Road, Phra Pathom Chedi Subdistrict Mueang Nakhon Pathom District, Nakhon Pathom 73000
+            </address>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Join Us:</span>
+
+            <a href="mailto:Info@unigine.com" class="contact-link">TcpBoy.com</a>
+          </div>
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Newsletter Signup</p>
+
+          <form action="./index.html" method="get" class="footer-form">
+            <input type="email" name="email_address" required placeholder="Your Email" autocomplete="off"
+              class="input-field">
+
+            <button type="submit" class="btn" data-btn>Subscribe Now</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 Website for educational purposes only.
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+  <div class="cursor" data-cursor></div>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="{% static 'webgame/assets/js/script.js' %}"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

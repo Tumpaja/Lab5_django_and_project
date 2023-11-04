@@ -1,0 +1,395 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>TPBBOY for gamer</title>
+  <meta name="title" content="Unigine - Epic Games Made For True Gamers!">
+  <meta name="description" content="This is an esports and gaming html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="{% static 'webgame/assets/images/logo2.svg' %}" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{% static 'webgame/assets/css/style.css' %}">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="{% static 'webgame/assets/images/hero-banner.png' %}">
+  <link rel="preload" as="image" href="{% static 'webgame/assets/images/hero-banner-bg.png' %}">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header active" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="{% static 'webgame/assets/images/logo.svg' %}" width="110" height="53" alt="unigine home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="{% url 'home2' %}" class="navbar-link" data-nav-link>home</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{% url 'news2' %}" class="navbar-link" data-nav-link>news</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{% url 'game2' %}" class="navbar-link" data-nav-link>game</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{% url 'chat' %}" class="navbar-link" data-nav-link>chat</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{% url 'about2' %}" class="navbar-link" data-nav-link>about us</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="" class="btn" data-btn>{{username}}</a>
+      <a href="{% url 'LogoutView' %}" class="btn" data-btn>Logout</a> 
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #game
+      -->
+
+      <section class="section news" aria-label="our latest news" id="news">
+        <div class="container">
+
+          <h2 class="h2 section-title" data-reveal="bottom">
+            Final Fantasy   <span class="span">XVI </span>
+          </h2>
+          <ul class="news-list2">
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+
+                <div class="card-content">
+                  <p class="card-text">
+                    
+                  </p>
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_13_1.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-tag">game</a>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2022-01-01">Oct 09 2023 </time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text">TEERAPHAT B.</p>
+                    </li>
+
+                  </ul>
+
+                  <p class="card-text">
+                  </p>
+
+                  <h3 class="h3">
+                    “Final Fantasy XVI” ตำนานบทใหม่แห่งแฟรนไชส์เกมแฟนตาซีระดับตำนาน
+                  </h3>
+
+                  <p class="card-text">
+                    สำหรับเกมเมอร์ทุกยุคทุกสมัย ไม่มีใครที่ไม่รู้จัก “ไฟนอล แฟนตาซี (Final Fantasy)” อย่างแน่นอน กับซีรีส์มหากาพย์แฟนตาซีสุดยิ่งใหญ่ของค่าย Square Enix ที่ยังคงเป็นที่รอคอยของเกมเมอร์ ที่หลงใหลในการตะลุยโลกแฟนตาซีไปกับเหล่าตัวละครเท่ ๆ และเรื่องราวที่เต็มไปด้วยความประทับใจมาหลายยุค ตั้งแต่ยุค 8 บิต มาจนถึงยุคของคอนโซล Next-Gen ในปัจจุบัน ซึ่งล่าสุด ซีรีส์ Final Fantasy ก็เดินทางมาถึงภาคที่ 16 เข้าไปแล้ว พร้อมส่งตรงบนเครื่อง Playstation 5 ในฐานะเกม Action/RPG แฟนตาซีระดับ AAA ที่มาพร้อมกับทั้งความอลังการ และการเปลี่ยนผ่านในด้านอัตลักษณ์ และการนำเสนอของซีรีส์ ที่แฟน ๆ จะต้องคาดไม่ถึง!
+                  </p>
+                  
+                  <p class="card-text">
+                  </p>
+                  
+                  
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_13_2.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    Final Fantasy XVI เกมลำดับที่ 16 ของซีรีส์ ควบคุมงานสร้างโดยโปรดิวเซอร์อย่างคุณ “โยชิดะ นาโอกิ” หรือ “โยชิ P” ผู้เป็นหนึ่งในหัวหอกสำคัญ ที่เข้ามาเปลี่ยนภาพลักษณ์ของซีรีส์นี้ ให้มีความสดใหม่ และท้าทายกระแสใหม่ ๆ มากขึ้น ตั้งแต่ Final Fantast XIV จนถึง Final Fantasy XV ซึ่งก็ได้รับการตอบรับที่ดีจากแฟน ๆ ของซีรีส์นี้เป็นอย่างดี เนื่องจากการพยายามเข้าถึงอะไรใหม่ โดยการผสมผสานรูปแบบของเมคานิคในแบบเกม Action/RPG ยุคใหม่ (ที่เน้นอิสระให้กับผู้เล่นในแบบ Open-World) กับโทนแฟนตาซีสไตล์ดั้งเดิม ตามแบบฉบับของแฟรนไชส์นี้ (ที่ว่าด้วยเรื่องของเหล่า นักรบ จอมเวท การต่อสู้เพื่อพิทักษ์อาณาจักร และเหล่ามนต์อสูรที่แฟน ๆ คุ้นเคย) จนเรียกได้ว่าเป็นอีกหนึ่งการเปิดประตูไปสู่การนำเสนอแบบใหม่ของซีรีส์ จนทำให้เกิดแฟนกลุ่มใหม่ขึ้นมามากมาย
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    ซึ่งสำหรับภาคล่าสุดของซีรีส์อย่าง Final Fantasy XVI นี้ ถือเป็นอีกหนึ่งจุดเปลี่ยนสำคัญของซีรีส์ ที่ Square Enix ภูมิใจนำเสนอ จากโลกแฟนตาซีของผู้กล้าในสไตล์คลาสสิก สู่กลิ่นอายในแบบที่ ซีเรียสขึ้น ดุดันขึ้น มืดหม่นขึ้น และรุนแรงมากขึ้น ในแนวทางของ ดาร์กแฟนตาซี (Dark Fantasy) ไม่มีอีกแล้วกับเรื่องราวของเหล่าผู้กล้าที่ร่วมปาร์ตี้กันไปปราบจอมมารเพื่อพิทักษ์คริสตัลแห่งแสง เพราะนี่คือเรื่องราวการผจญภัยสุดเข้มข้น ของเหล่านักรบที่ครอบครองพลังอำนาจอันน่าสะพรึง การต่อสู้ห้ำหั่น แย่งชิงอำนาจ ในโลกที่เต็มไปด้วยสงคราม และการทำลายล้าง!
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  
+
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_13_3.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    เรื่องราวของ Final Fantasy XVI เป็นเรื่องราวที่เกิดขึ้นในภายในดินแดน วาลิสเธีย (Valisthea) ที่เคยเป็นดินแดนที่สงบสุขและรุ่งเรือง ด้วยการปกป้องจากพลังของ “มาเธอร์คริสตัล” (Mothercrystals) ภูเขาคริสตัลเวทมนต์อันทรงพลัง ที่รวมทั้ง 6 อาณาจักรของวาลิสเธีย ให้รวมกันเป็นหนึ่ง จนกระทั่งวันหนึ่ง โรคระบาดลึกลับ ได้เข้ามาสู่ดินแดนวาลิสเธีย คร่าชีวิตผู้คนไปมากมาย จากดินแดนที่เคยรุ่งเรือง กลายเป็นดินแดนแห่งความตายและการสูญเสีย จนทำให้ความสงบสุขปรองดองที่มีมายาวนานของทั้ง 6 อาณาจักร ต้องเกิดการสั่นคลอน.. เราผู้เล่น ในฐานะตัวเอกของเกม “ไคลฟ์ รอสฟิลด์ (Clive Rosfield)” บุตรชายคนโตแห่งอาณาจักร โรซาเรีย (Rosaria) อาณาจักรหลวงของวาลิสเธีย นักรบผู้ถือครองพลังของ “อิฟริท” สัตว์อสูรแห่งเพลิง ผู้ต้องคอยปกป้องคุ้มครอง โจชัวร์ รอสฟิลด์ (Joshua Rosfield) ผู้ถือครองพลังแห่งมนต์อสูร “ฟินิกซ์” ผู้ที่จะต้องกลายเป็น หนึ่งในตัวแปรสำคัญ ของการต่อสู้ ห้ำหั่น ชิงอำนาจ และความคลั่งแค้น!
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    ฉากหลังและกลิ่นอายของ Final Fantasy XVI นั้นจะให้อารมณ์ความรู้สึกที่แตกต่างไปจาก Final Fantasy XV รวมไปถึงภาคเก่า ๆ ในอดีต โดยสิ้นเชิง จากเดิมที่ Final Fantasy มักจะเลือกนำเสนอเรื่องราว ในโลกแฟนตาซีสไตล์เทพนิยายในแบบของผู้กล้าพิทักษ์โลก Final Fantasy XVI มาพร้อมกับเรื่องราวสุดเข้มข้นและดุเดือด ไคลฟ์ ตัวเอกของเกม ไม่ใช่เด็กหนุ่มผู้กล้าหาญ แต่เขาเป็นนักรบผู้ต้องแบกรับภาระอันยิ่งใหญ่ ทั้งในฐานะผู้ถือครองพลังของมนตร์อสูรแห่งเพลิงที่น่าสะพรึง และในฐานะทายาทคนโตแห่งอาณาจักรโรซาเรีย ที่ต้องพบเจอกับการต่อสู้ระหว่างอาณาจักร โดยเหล่าผู้ถือครองพลังแห่งอสูรธาตุต่าง ๆ ซึ่งเป็นการเล่าเรื่องราวในสไตล์ Final Fantasy ในมุมที่ค่อนข้างหนักหน่วง ซึ่งเป็นรสชาติที่แตกต่างจาก FinalFantasy ในภาคก่อน ๆ เป็นอย่างมาก ถือเป็นการต่อยอดแนวทางที่ได้เริ่มลองเชิงเอาไว้ในภาคก่อนหน้า ได้อย่างน่าสนใจเลย
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_13_4.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    ในด้านเกมเพลย์ Final Fantasy XVI ก็ยังคงมาพร้อมกับรูปแบบการเล่นในสไตล์ Action/RPG รวดเร็วฉับไว แบบเดียวกับในเกม Final Fantasy ยุคหลัง ๆ ทั้ง Final Fantasy XV หรือ Final Fantasy VII Remake ที่เน้นความเป็นแอ็กชัน ให้ผู้เล่นควบคุมตัวละครเอกอย่าง ไคลฟ์ ได้อย่างอิสระ พร้อมกับระบบพื้นฐานของเกม RPG ทั้ง การติดตั้งสกิลและอาวุธ โดยมีเพื่อนร่วมปาร์ตี้เป็นตัวละคร NPC ที่สามารถใช้สกิลเฉพาะตัว ช่วยซัพพอร์ตให้กับเรา โดยสิ่งที่ Final Fantasy XVI ชูขึ้นมาเป็นจุดเด่นสำคัญในภาคนี้ ก็คือ ระบบมนตร์อสูร อันเป็นเอกลักษณ์ของซีรีส์ ที่ในภาคนี้ จะถูกเรียกว่า “ไอคอน (Eikon)” โดยตามเรื่อง ไอคอนคือพลังของเหล่าผู้ที่เป็นร่างสถิตของสัตว์อสูรมาตั้งแต่กำเนิด เรียกว่า โดมิแนนท์ (Dominant) ซึ่งไคลฟ์ก็คือโดมิแนนท์ ที่สามารถเรียกใช้สัตว์อสูรได้หลายรูปแบบ ให้มนต์อสูร กลายเป็นส่วนหนึ่งในการต่อสู้ของเราในหลากหลายสถานการณ์ ทำให้เกมเพลย์มีความมัน สะใจ ในแบบที่ Final Fantasy ไม่เคยเป็นมาก่อน
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    เรียกได้ว่า Final Fantasy XVI เป็นอีกหนึ่งก้าวที่ท้าทายของ Square Enix ต่อแฟน ๆ ซีรีส์นี้ ที่ตั้งใจจะนำเกมไปสู่ทิศทางใหม่อีกรูปแบบหนึ่ง ที่แตกต่างจากในอดีต เช่นเดียวกับในภาคที่ผ่าน ๆ มา ที่เกมมักจะนำเสนอระบบการเล่นรูปแบบใหม่ ๆ ขึ้นมาเซอร์ไพรส์แฟน ๆ เสมอ ซึ่งก็ต้องมาพิสูจน์กันด้วยตัวเอง ในวันที่ 22 มิถุนายน 2023 นี้ บนเครื่อง Playstation 5 เท่านั้น!
+                  </p>
+                  
+                </div>
+                
+                
+                  
+                </div>
+                
+              </div>
+            </li>
+          </ul>
+          
+        </div>
+      </section>
+      
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="{% static 'webgame/assets/images/logo.svg' %}" width="150" height="73" loading="lazy" alt="Unigine logo">
+          </a>
+
+          <p class="footer-text">
+            Our success in creating business solutions is due in large part to our talented and highly committed team.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Usefull Links</p>
+
+          <ul>
+            <li>
+              <a href="#" class="footer-link">Help Center</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Contact Us</p>
+
+          <div class="contact-item">
+            <span class="span">Location:</span>
+
+            <address class="contact-link">
+              6 Ratchamankha Nai Road, Phra Pathom Chedi Subdistrict Mueang Nakhon Pathom District, Nakhon Pathom 73000
+            </address>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Join Us:</span>
+
+            <a href="mailto:Info@unigine.com" class="contact-link">TcpBoy.com</a>
+          </div>
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Newsletter Signup</p>
+
+          <form action="./index.html" method="get" class="footer-form">
+            <input type="email" name="email_address" required placeholder="Your Email" autocomplete="off"
+              class="input-field">
+
+            <button type="submit" class="btn" data-btn>Subscribe Now</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 Website for educational purposes only.
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+  <div class="cursor" data-cursor></div>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="{% static 'webgame/assets/js/script.js' %}"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

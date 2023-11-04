@@ -1,0 +1,493 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>TPBBOY for gamer</title>
+  <meta name="title" content="Unigine - Epic Games Made For True Gamers!">
+  <meta name="description" content="This is an esports and gaming html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="{% static 'webgame/assets/images/logo2.svg' %}" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{% static 'webgame/assets/css/style.css' %}">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="{% static 'webgame/assets/images/hero-banner.png' %}">
+  <link rel="preload" as="image" href="{% static 'webgame/assets/images/hero-banner-bg.png' %}">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header active" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="{% static 'webgame/assets/images/logo.svg' %}" width="110" height="53" alt="unigine home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="{% url 'home2' %}" class="navbar-link" data-nav-link>home</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{% url 'news2' %}" class="navbar-link" data-nav-link>news</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{% url 'game2' %}" class="navbar-link" data-nav-link>game</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{% url 'chat' %}" class="navbar-link" data-nav-link>chat</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{% url 'about2' %}" class="navbar-link" data-nav-link>about us</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="" class="btn" data-btn>{{username}}</a>
+      <a href="{% url 'LogoutView' %}" class="btn" data-btn>Logout</a> 
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #game
+      -->
+
+      <section class="section news" aria-label="our latest news" id="news">
+        <div class="container">
+
+          <h2 class="h2 section-title" data-reveal="bottom">
+            The Legend of Zelda  <span class="span">: Tears of the Kingdom </span>
+          </h2>
+          <ul class="news-list2">
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+
+                <div class="card-content">
+                  <p class="card-text">
+                    
+                  </p>
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_19_1.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-tag">game</a>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2022-01-01">Oct 09 2023 </time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text">TEERAPHAT B.</p>
+                    </li>
+
+                  </ul>
+
+                  <p class="card-text">
+                  </p>
+
+                  <h3 class="h3">
+                    The Legend of Zelda: Tears of the Kingdom ภาคต่อของตำนานที่คุณไม่ควรพลาด
+                  </h3>
+
+                  <p class="card-text">
+                    นับเป็นหลายปีที่ทุกคนต่างตั้งหน้ารอคอยจริง ๆ สำหรับภาคต่อของ The Legend of Zelda: Breath of the Wild ซึ่งถือเป็นสุดยอดเกมเซลด้าในรอบหลายปี แม้ภาคก่อน ๆ หน้าของรุ่นพี่จะทำออกมาได้ดีจนกลายเป็นตำนานแทบทุกภาค แต่ภาคนี้ต่างออกไป จนกลายเป็นเกมที่ชาว Nintendo ไม่ว่ายังไงก็ต้องพูดถึง ต้องยกย่องมันให้ได้
+                  </p>
+                  
+                  <p class="card-text">
+                  </p>
+
+                  <p class="card-text">
+                    ที่เป็นแบบนั้นเพราะ นี่เป็น Zelda ภาคแรกที่เซ็ตบาร์ และสร้างสรรค์ความคิดใหม่ ๆ ไม่ใช่เพียงแค่ในซีรีส์ แต่ในโลกนี้ด้วย เพราะระบบต่าง ๆ ได้ถูกนำไปใช้มากมายจนกลายเป็นแนวคิดใหม่ของอุตสาหกรรมไปแล้ว พิสูจน์ให้เห็นเลยว่า ชื่อชั้นของ Breath of the Wild นั้นแตกต่างอย่างจริงจัง
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+
+                  <p class="card-text">
+                    ล่าสุด Nintendo กลับมาพร้อมภาคต่ออย่างเป็นทางการ ที่ไม่ค่อยจะพบเห็นจากเกมตระกูล Zelda เท่าไหร่นัก ในชื่อ The Legend of Zelda: Tears of the Kingdom มันจะมาสานต่อความยิ่งใหญ่จากภาคแรกหรือไม่ หรือจะขยายความยิ่งใหญ่ให้มากกว่าเดิมอีก มาอ่านกันได้ในพรีวิวตัวนี้
+                  </p>
+                  
+                  <h3 class="h3">
+                    มุ่งสู่บทสรุปแห่งดินแดน Hyrule
+                  </h3>
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_19_2.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_19_3.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    หลังจากผ่านความหนักหน่วงมาถึงสองภาค ตั้งแต่ Hyrule Warriors: Age of Calamity ไปจนถึง The Legend of Zelda: Breath of the Wild ภาคล่าสุดเปรียบเสมือนการจบเรื่องราวไตรภาคของจักรวาลแห่งนี้
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    ย้อนไปในภาค Age of Calamity เมื่อหนึ่งร้อยปีก่อน Breath of the Wild พระเอกของเกม Link และเจ้าหญิง Zelda ออกเดินทางตามหาผู้พิทักษ์ใหม่ ๆ เพื่อฝึกฝนรับมือกับตัวร้ายอย่าง Ganon ที่เตรียมจะกลับมาบุกอาณาจักร Hyrule ในฐานะภัยที่ร้ายกาจที่สุดเท่าที่เคยมีมา
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    แต่ด้วยความยิ่งใหญ่ของ Ganon เขาสังหารผู้พิทักษ์ได้ทั้งหมด อีกทั้งยังทำให้ Link ได้รับบาดเจ็บสาหัส ต้องพาเจ้าหญิง Zelda ไปไว้ในห้องฟื้นฟู พร้อมเสียสละครั้งสุดท้าย กางผนึกตัวเองไว้กับ Ganon เพื่อรอวันที่เขาพร้อมจะกลับมาอีกครั้ง
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+
+                  <p class="card-text">
+                    ใน Breath of the Wild ลิงค์ตื่นขึ้นจากการหลับไหลกว่าร้อยปีในสภาพความจำเสื่อม เขาต้องค้นหาความจริงที่อยู่ภายใต้โลกที่แทบจะล่มสลายไปด้วยฝีมือของกองทัพ Ganon ในส่วนนี้ Link ได้รับการช่วยเหลือจากวิญญาณของผู้พิทักษ์ทั้ง 4 ที่เขาเคยฝึก รวมถึงกษัตริย์องค์เก่า พ่อของเจ้าหญิง Zelda ในการฟื้นความทรงจำ รวมถึงพัฒนาตัวเองให้เหมาะสม พร้อมกับการปราบ Ganon
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+
+                  <p class="card-text">
+                    ในที่สุดทั้งสองก็ได้ปะทะกันอีกครั้ง ด้วยความช่วยเหลือจากทุกฝ่าย Link สามารถจัดการ Ganon ได้ รวมถึงช่วยเจ้าหญิง Zelda ได้สำเร็จ ก่อนทั้งสองจะกลับมารวมตัวกันอีกครั้งในตอนจบ
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+
+                  <p class="card-text">
+                    แม้ว่าเรื่องราวทั้งหมดจะจบลงแล้ว แต่ยังมีภัยร้ายที่ยังไม่จบสิ้นรอทั้งสองอยู่ และมันจะถูกเปิดเผยใน Tears of the Kingdom
+                  </p>
+                  
+                  <h3 class="h3">
+                    จากพื้นดิน สู่พื้นที่ฟากฟ้า
+                  </h3>
+
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_19_4.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_19_5.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    ระบบการเล่นของ Breath of the Wild นับว่าเป็นมาตรฐานของวงการไปแล้ว Tears of the Kingdom จึงถูกคาดหวังว่ามันจะเป็น “ยิ่งกว่า” อย่างที่ภาคเก่าเคยสร้างไว้ และจากการเปิดเผยเกมเพลย์ล่าสุด มีความเป็นไปได้ว่าภาคนี้จะกลายเป็น ขั้นกว่า สำหรับวงการอีกครั้งสำหรับซีรีส์นี้
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    เริ่มจากสิ่งที่เป็นไฮไลท์สำหรับภาคนี้อย่าง “พื้นที่บนฟ้า” ที่ภาคก่อนไม่เคยขึ้นไปแตะ ในภาคนี้จะมีแพลตฟอร์มบางอย่างเกิดขึ้นบนฟ้า เป็นพื้นดินที่ลอยได้ และมีศัตรูใหม่ ๆ มากมายให้คุณไปต่อสู้ และนั่นรวมถึงอาวุธใหม่ ๆ หรือเทคนิคใหม่ ๆ ที่คุณสามารถใช้งานได้
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+
+                  <p class="card-text">
+                    เทคนิคใหม่ ๆ ในภาคนี้โชว์ออกมาแล้วด้วยกันถึง 4 แบบด้วยกัน ได้แก่
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+
+                  <p class="card-text">
+                    Recall เทคนิคนี้เป็นการย้อนเวลาวัตถุให้เคลื่อนไหวกลับทิศทางเดิมที่เคยจากมา ในวิดีโอเกมเพลย์จะโชว์ให้เห็นว่า เราสามารถใช้เทคนิคนี้กับหินที่ตกลงมาจากพื้นที่ลอยฟ้า เพื่อพาเราขึ้นไปบนนั้นได้ แน่นอนว่ามันใช้กับวัตถุอื่น ๆ ได้อีก ขึ้นอยู่กับว่าเราจะฉลาดในการใช้งานมันขนาดไหน
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+
+                  <p class="card-text">
+                    Fuse เทคนิคนี้จะเป็นการผสมผสานอาวุธสองชนิด หรืออาวุธกับวัตถุอื่น ๆ เข้าด้วยกัน เพื่อเพิ่มพลัง ระยะ หรือความทนทาน จากวิดีโอเราจะเห็นรูปแบบการใช้ Fuse ทั้งหมดสองแบบ แบบแรกจะเป็นการรวมกิ่งไม้เข้ากับก้อนหินขนาดใหญ่ ทำให้ได้กระบองลูกหินที่ทรงพลัง กับอย่างที่สองคือการรวมคราดกับกิ่งไม้ ทำให้กลายเป็นหอกคราดที่ใช้โจมตีระยะไกลได้ ทักษะนี้ยังใช้กับลูกธนูก็ได้เช่นกัน ทำให้เราได้ธนูชนิดพิเศษใช้ด้วย
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <h3 class="h3">
+                    Next-Gen อย่างแท้จริงกับเวอร์ชั่น Remake ที่จะทำให้เกมการเล่นระทึกยิ่งขึ้น
+                  </h3>
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_19_6.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_19_7.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    Ultrahand ทักษะนี้จะเป็นการติดตั้ง หรือผสมผสานของหลายอย่างในโลกเข้าด้วยกัน ในวิดีโอเราจะเห็นการใช้ Ultrahand ในการติดตั้งไม้สามชิ้นเข้าด้วยกัน และลากลงทะเลกลายเป็นแพ หลังจากนั้นจะติดตั้งใบพัดลงไปสองด้านจนกลายเป็นเรือกล ตรงนี้ผู้พัฒนาบอกว่ามีให้เราเล่นเยอะแยะแน่นอน
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    Ascend ความสามารถสุดมีประโยชน์ ช่วยให้เราทะลุผ่านผนังที่อยู่ด้านบนได้ในทุก ๆ สถานการณ์ ช่วยให้เราออกจากที่ที่ไม่มีทางออกได้โดยง่าย หรือสามารถใช้แทนการไต่กำแพงก็ได้ ทำให้ประหยัด Stamina อย่างมาก
+                  </p>
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_19_8.jpg' %}" width="600" height="400" loading="lazy"
+                  alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_19_9.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                
+                
+              </div>
+            </li>
+          </ul>
+          
+        </div>
+      </section>
+      
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="{% static 'webgame/assets/images/logo.svg' %}" width="150" height="73" loading="lazy" alt="Unigine logo">
+          </a>
+
+          <p class="footer-text">
+            Our success in creating business solutions is due in large part to our talented and highly committed team.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Usefull Links</p>
+
+          <ul>
+            <li>
+              <a href="#" class="footer-link">Help Center</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Contact Us</p>
+
+          <div class="contact-item">
+            <span class="span">Location:</span>
+
+            <address class="contact-link">
+              6 Ratchamankha Nai Road, Phra Pathom Chedi Subdistrict Mueang Nakhon Pathom District, Nakhon Pathom 73000
+            </address>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Join Us:</span>
+
+            <a href="mailto:Info@unigine.com" class="contact-link">TcpBoy.com</a>
+          </div>
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Newsletter Signup</p>
+
+          <form action="./index.html" method="get" class="footer-form">
+            <input type="email" name="email_address" required placeholder="Your Email" autocomplete="off"
+              class="input-field">
+
+            <button type="submit" class="btn" data-btn>Subscribe Now</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 Website for educational purposes only.
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+  <div class="cursor" data-cursor></div>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="{% static 'webgame/assets/js/script.js' %}"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

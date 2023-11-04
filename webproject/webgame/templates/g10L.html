@@ -1,0 +1,425 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>TPBBOY for gamer</title>
+  <meta name="title" content="Unigine - Epic Games Made For True Gamers!">
+  <meta name="description" content="This is an esports and gaming html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="{% static 'webgame/assets/images/logo2.svg' %}" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{% static 'webgame/assets/css/style.css' %}">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="{% static 'webgame/assets/images/hero-banner.png' %}">
+  <link rel="preload" as="image" href="{% static 'webgame/assets/images/hero-banner-bg.png' %}">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header active" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="{% static 'webgame/assets/images/logo.svg' %}" width="110" height="53" alt="unigine home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="{% url 'home2' %}" class="navbar-link" data-nav-link>home</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{% url 'news2' %}" class="navbar-link" data-nav-link>news</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{% url 'game2' %}" class="navbar-link" data-nav-link>game</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{% url 'chat' %}" class="navbar-link" data-nav-link>chat</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{% url 'about2' %}" class="navbar-link" data-nav-link>about us</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="" class="btn" data-btn>{{username}}</a>
+      <a href="{% url 'LogoutView' %}" class="btn" data-btn>Logout</a> 
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #game
+      -->
+
+      <section class="section news" aria-label="our latest news" id="news">
+        <div class="container">
+
+          <h2 class="h2 section-title" data-reveal="bottom">
+            Baldur’s Gate   <span class="span">III</span>
+          </h2>
+          <ul class="news-list2">
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+
+                <div class="card-content">
+                  <p class="card-text">
+                    
+                  </p>
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_10_1.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-tag">game</a>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2022-01-01">Oct 09 2023 </time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text">TEERAPHAT B.</p>
+                    </li>
+
+                  </ul>
+
+                  <p class="card-text">
+                  </p>
+
+                  <h3 class="h3">
+                    Baldur’s Gate III การกลับมาอย่างยิ่งใหญ่ ของเกม RPG แฟนตาซีสุดเก๋า
+                  </h3>
+
+                  <p class="card-text">
+                    เมื่อพูดถึงชื่อ Baldur’s Gate เกมเมอร์สมัยนี้อาจจะไม่ค่อยคุ้นกันแล้ว แต่ถ้าเป็นเกมเมอร์ยุค 90s เชื่อว่าต้องอ๋อกันไม่มากก็น้อยแน่นอน เพราะนี่คือหนึ่งในสุดยอดเกมแฟนตาซี RPG ระดับตำนาน ผลงานชิ้นเอกของทีมพัฒนา Bioware ที่เคยประสบความสำเร็จระดับพลิกวงการมาแล้ว ในยุคนี้ชื่อ Baldur’s Gate อาจจะหายไปจากสายตาของเกมเมอร์ไปนาน เนื่องจากเกมไม่ได้มีภาคต่อออกมานานมาก
+                  </p>
+                  
+                  <p class="card-text">
+                  </p>
+                  
+                  
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_10_2.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    จนกระทั่งปี 2023 นี้ สิ่งที่แฟน ๆ รอมานานก็กำลังจะเป็นจริงแล้วครับ เพราะ “Baldur’s Gate III” กำลังจะมาให้เราเล่นกันจริง ๆ แล้ว และถือเป็นภาคต่อโดยตรงของซีรีส์หลัก ที่ห่างจากภาคที่แล้วมานานถึง 23 ปี! และก่อนที่เราจะได้กลับไปสู่ดินแดน Forgotten Realm กันอีกครั้ง Baldur’s Gate เคยสร้างปรากฏการณ์อะไรให้กับวงการเกมมาแล้วบ้าง? และแฟน ๆ จะได้พบกับอะไรในภาคที่ 3 ของซีรีส์ภาคนี้? เราลองมาย้อนรอยความสำเร็จ และมองไปสู่อนาคต ของ Baldur’s Gate III กันครับ!
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  
+
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_10_3.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <h3 class="h3">
+                    ความสำเร็จของที่พลิกวงการ และสร้างมรดกให้กับวงการเกมมาจนถึงปัจจุบัน
+                  </h3>
+
+                  <p class="card-text">
+                    Baldur’s Gate มีจุดเริ่มต้นมาจากการเป็นเกมที่ setting อยู่ในจักรวาลของเกม Dungeons & Dragons (D&D) อีกที ในแคมเปญชื่อ “Forgotten Realm” กับเรื่องราวของเหล่านักรบทั้ง 6 ผู้ออกเดินทางผจญภัย ภายในดินแดน “Faerûn” ที่เต็มไปด้วยการต่อสู้ และความขัดแย้งจากหลายฝ่าย ด้วยวิธีการนำเสนอที่แปลกใหม่ (ในยุคนั้น) ไม่ใช่เรื่องราวแนวผู้กล้าผจญภัยทั่วไป แต่เต็มไปด้วยเนื้อเรื่องสุดเข้มข้นพลิกผัน ที่เต็มตัวเลือกในการตัดสินใจที่ท้าทายศีลธรรม พร้อมกับระบบการเล่นที่มอบอิสระให้กับผู้เล่น แบบที่ไม่เคยมีเกมไหนทำมาก่อน แถมยังรองรับโหมดผู้เล่นหลายคน ให้ร่วมผจญภัยไปพร้อมกันได้
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    หลังจาก Baldur’s Gate ภาคแรก วางจำหน่ายในปี 1998 มันก็ได้สร้างปรากฏการณ์ที่สะเทือนทั้งวงการเกมในทันที ระบบการสำรวจโลก สร้างตัวละคร และการต่อสู้ ที่ยิ่งใหญ่ เต็มไปด้วยรายละเอียด กลายเป็นต้นแบบให้กับเกม RPG ในยุคต่อมา โดยเฉพาะการนำเสนอโลกของเกมที่ละเอียดลออ ระบบ “Alignment” เลือกอุปนิสัยของตัวละคร ที่มีผลกับเกมจริง ๆ จนเป็นที่ถูกใจเกมเมอร์ หลายสื่อยกให้ Baldur’s Gate กลายเป็นเกมที่คืนชีพเกมแนว RPG แฟนตาซี ต้อนรับสหัสวรรษใหม่ มีภาคเสริมตามออกมาจำนวนมาก รวมถึงภาคแยกที่เป็นเกมสไตล์แอ็กชัน Hack & Slash ในชื่อ Baldur’s Gate: Dark Alliance และภาคต่อที่ยอดเยี่ยมยิ่งกว่าภาคแรกอย่าง Baldur's Gate II: Shadows of Amn ในปี 2000 และทั้ง 2 ภาค ก็ยังคงมักจะติดอันดับหนึ่งในเกม RPG ที่ยอดเยี่ยมที่สุดตลอดกาลเสมอ เมื่อมีการจัดอันดับ โดยเว็บไซต์ต่างประเทศ
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <h3 class="h3">
+                    “Baldur’s Gate III” การกลับมาสานต่อเรื่องราวมหากาพย์แฟนตาซีอันโด่งดังอีกครั้ง
+                  </h3>
+
+                  <p class="card-text">
+                  </p>
+
+                  <p class="card-text">
+                    ปี 2019 มีข่าวที่สร้างความตื่นเต้นให้เกมเมอร์ ด้วยการคอนเฟิร์ม Baldur’s Gate ภาคที่ 3 อย่างเป็นทางการ โดยตั้งใจให้เป็นเกมชูโรงของเครื่อง Stadia แพลตฟอร์ม Cloud Gaming ของ Google ที่ตอนนี้ได้ล้มหายตายจากไปแล้ว ทำให้ Baldur’s Gate III กลายมาเป็นเกม Multi-Platform ที่ลงให้กับทั้ง PC, MacOS, PS5 และ Xbox Series X/S ด้วยความที่ทิ้งช่วงห่างจากภาคก่อนมานาน ทำให้ Baldur’s Gate มาพร้อมกับการนำเสนอใหม่ ๆ ตามสมัยนิยม ที่ยังคงเคารพในกลิ่นอายต้นฉบับเอาไว้เป็นอย่างดี ด้วยฝีมือของทีม Larian Studios เจ้าของซีรีส์เกมแฟนตาซี RPG ชื่อดังแห่งยุค 2000 อย่าง Divine Divinity ที่เคยได้รับอิทธิพลมาจาก Baldur’s Gate แบบเต็ม ๆ ที่คราวนี้พวกเขาก็ได้เป็นผู้สานต่อในการสร้าง Baldur’s Gate III ต่อจาก Bioware เรียกได้ว่าเหมาะสมเป็นอย่างยิ่ง
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_10_4.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    ในภาคนี้ ระบบหลัก ๆ ก็ยังคงเหมือนเดิม คือการสวมบทเป็นเหล่านักรบในคลาสต่าง ๆ เพื่อออกสำรวจ และผจญภัยในดินแดน Forgotten Realm ด้วยคุณภาพกราฟิกที่สวยงามอลังการ ตามสไตล์เกม Next-Gen ปัจจุบัน โดยเอนจินตัวเดียวกับที่ใช้สร้างเกม Divinity มาตลอด (จึงไม่แปลกครับที่ดูเผิน ๆ เกมจะดูเหมือน Divinity ภาคใหม่มากกว่า ไม่ว่าจะงานศิลป์หรือหน้า UI) ซึ่งก็ถือเป็นการเติมรสชาติใหม่ ๆ เข้าไปในดีไซน์ในสไตล์ Baldur’s Gate ที่น่าสนใจ และร่วมสมัย เรียกได้ว่าห่างไกลจากภาพเหลี่ยม ๆ ของเกมสองภาคแรก เมื่อ 23 ปีที่แล้วมาไกลสุด ๆ
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                 
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_10_5.jpg' %}" width="600" height="400" loading="lazy"
+                  alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    โดยสิ่งที่เปลี่ยนไปแบบชัดเจนจริง ๆ ในภาคนี้คือ “ระบบการต่อสู้” จากที่ในภาคก่อน ๆ จะยึดใช้ระบบตีศัตรูแบบ Real-Time มาตลอด คราวนี้ได้กลายมาเป็นระบบ Turned-Base แบบผลัดกันตีแทน จุดนี้อาจจะทำให้แฟน Baldur’s Gate ตั้งแต่ภาคแรก อาจจะรู้สึกเป็นแปลกใจเล็กน้อย ที่เกมเปลี่ยนระบบต่อสู้ที่เคยเป็นเอกลักษณ์ไป แต่จากคนที่ได้สัมผัสตอนเวอร์ชัน Early Access มาแล้ว หลายคนก็ให้การตอบรับไปในทางที่ดี ถือเป็นการเอาระบบคลาสสิก กับแบบตามสมัยนิยม ให้มาเจอกัน
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    การมาของ Baldur’s Gate III สำหรับแฟน ๆ ของซีรีส์นี้ นี่แทบจะเรียกได้ว่าฝันเป็นจริง แม้ว่าเกมเพลย์บางส่วน อาจจะทำให้หลายคนยังรู้สึกแหม่ง ๆ นิดหน่อย กับทิศทางของเกมที่เปลี่ยนไปจากภาคก่อน เกมจะออกมาดีจนทำให้ชื่อ Baldur’s Gate สามารถกลับมาทวงบัลลังก์เกม RPG ได้เลยหรือไม่? ไว้มาลองพิสูจน์กันด้วยตัวเอง
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+
+                  <p class="card-text">
+                    ครับ 3 สิงหาคม 2023 สำหรับ Windows กับ MacOS และ 6 สิงหาคม 2023 สำหรับ PlayStation 5  
+                  </p>
+                  
+                </div>
+                
+              </div>
+            </li>
+          </ul>
+          
+        </div>
+      </section>
+      
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="{% static 'webgame/assets/images/logo.svg' %}" width="150" height="73" loading="lazy" alt="Unigine logo">
+          </a>
+
+          <p class="footer-text">
+            Our success in creating business solutions is due in large part to our talented and highly committed team.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Usefull Links</p>
+
+          <ul>
+            <li>
+              <a href="#" class="footer-link">Help Center</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Contact Us</p>
+
+          <div class="contact-item">
+            <span class="span">Location:</span>
+
+            <address class="contact-link">
+              6 Ratchamankha Nai Road, Phra Pathom Chedi Subdistrict Mueang Nakhon Pathom District, Nakhon Pathom 73000
+            </address>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Join Us:</span>
+
+            <a href="mailto:Info@unigine.com" class="contact-link">TcpBoy.com</a>
+          </div>
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Newsletter Signup</p>
+
+          <form action="./index.html" method="get" class="footer-form">
+            <input type="email" name="email_address" required placeholder="Your Email" autocomplete="off"
+              class="input-field">
+
+            <button type="submit" class="btn" data-btn>Subscribe Now</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 Website for educational purposes only.
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+  <div class="cursor" data-cursor></div>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="{% static 'webgame/assets/js/script.js' %}"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

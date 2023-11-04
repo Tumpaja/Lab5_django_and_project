@@ -1,0 +1,419 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>TPBBOY for gamer</title>
+  <meta name="title" content="Unigine - Epic Games Made For True Gamers!">
+  <meta name="description" content="This is an esports and gaming html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="{% static 'webgame/assets/images/logo2.svg' %}" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{% static 'webgame/assets/css/style.css' %}">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="{% static 'webgame/assets/images/hero-banner.png' %}">
+  <link rel="preload" as="image" href="{% static 'webgame/assets/images/hero-banner-bg.png' %}">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header active" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="{% static 'webgame/assets/images/logo.svg' %}" width="110" height="53" alt="unigine home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="{% url 'home2' %}" class="navbar-link" data-nav-link>home</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{% url 'news2' %}" class="navbar-link" data-nav-link>news</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{% url 'game2' %}" class="navbar-link" data-nav-link>game</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{% url 'chat' %}" class="navbar-link" data-nav-link>chat</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{% url 'about2' %}" class="navbar-link" data-nav-link>about us</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="" class="btn" data-btn>{{username}}</a>
+      <a href="{% url 'LogoutView' %}" class="btn" data-btn>Logout</a> 
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #game
+      -->
+
+      <section class="section news" aria-label="our latest news" id="news">
+        <div class="container">
+
+          <h2 class="h2 section-title" data-reveal="bottom">
+            Octopath   <span class="span"> Traveler II </span>
+          </h2>
+          <ul class="news-list2">
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+
+                <div class="card-content">
+                  <p class="card-text">
+                    
+                  </p>
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_20_1.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-tag">game</a>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2022-01-01">Oct 09 2023 </time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text">TEERAPHAT B.</p>
+                    </li>
+
+                  </ul>
+
+                  <p class="card-text">
+                  </p>
+
+                  <h3 class="h3">
+                    Octopath Traveler II การเดินทางครั้งใหม่ของทีมนักผจญภัยที่รอบนี้ได้เล่นกันทุกเครื่อง
+                  </h3>
+
+                  <p class="card-text">
+                    เป็นเกมที่ภาคแรกประสบความสำเร็จกันแบบเหลือเชื่อ และกอบกู้หน้าให้กับ Square Enix ได้มากพอสมควรเลยทีเดียว จึงไม่น่าแปลกใจที่อยู่ดี ๆ เกมนี้จะงอกภาค 2 ตามออกมา แม้ว่าจะต้องทิ้งช่วงห่างจากภาคแรกไปพอสมควร เพราะนี่เป็นอีกหนึ่งเกม RPG ที่กลายเป็นที่นิยมไปทั่วโลก และมีฐานแฟนของตัวเองเติบโตขึ้นมา จากการวางบทเนื้อเรื่องที่ดี และเกมเพลย์ที่สนุก เข้าถึงได้ทุกคน เกมนั้นคือ Octopath Traveler ที่เรากำลังจะได้สัมผัสกับภาคต่อของมันกันในเดือนกุมภาพันธ์ปีหน้า กับ Octopath Traveler II
+                  </p>
+                  
+                  <p class="card-text">
+                  </p>
+                  
+                  <h3 class="h3">
+                    จากผลงานผู้สร้าง Bravely Default และการสร้างเกมแบบ HD-2D
+                  </h3>
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_20_2.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    Octopath Traveler นั้น เป็นผลงานที่นำโดย Masashi Takahashi และ Tomoya Asano พวกเขาสองคนเคยเป็นหัวหน้าทีมของการทำเกมลงให้กับเครื่อง Nintendo 3DS มาก่อน โดยมีผลงานเด่น ๆ อย่าง Bravely Default ซึ่งขณะที่มาเริ่มทำโปรเจกต์เกมนี้ก็มีคำถาม และตัวเลือกต่าง ๆ เกิดขึ้นมากมาย จบที่พวกเขาเลือกจะทำเกมที่มีการนำเสนอแบบ HD-2D ที่นำโดยตัวละครหลัก 8 ตัว แบ่งเป็นชาย 4 หญิง 4 และสามารถจัดทีม และปาร์ตี้ได้อย่างหลากหลาย
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    เกมว่าด้วยเรื่องราวของ แผ่นดิน Orsterra แผ่นดินที่เชื่อว่าโลกของพวกเขานั้นถูกสร้างขึ้นมาโดยเทพทั้ง 13 องค์ ผู้เล่นจะได้เล่นเป็นหนึ่งในแปดวีรบุรุษที่เดินทางผ่าน Orsterra จุดเด่นคือ แม้จะมีตัวละครมากถึง 8 คนด้วยกัน แต่ท้ายที่สุดแล้ว ปมปริศนา เนื้อเรื่อง ภารกิจของทั้ง 8 คนก็จะขมวดผสานเข้าด้วยกัน เป็นอีกหนึ่งเกมที่มีทั้งระบบการเล่นที่ยอดเยี่ยม และเนื้อเรื่องที่เข้มข้น
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  
+                  
+                  <h3 class="h3">
+                    เนื้อหาของภาค 2 ที่ไม่เกี่ยวเนื่องกันกับภาคแรก ไม่จำเป็นต้้องเล่นมาก่อนก็รู้เรื่อง
+                  </h3>
+
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_20_3.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    Octopath Traveler II จะยังคงได้ทีมพัฒนาชุดเดิมกลับมารับหน้าที่พัฒนา และยังคงนำเสนอเกมเพลย์การเล่นในรูปแบบของเกม Classic JRPG เหมือนเดิม รวมไปถึงจะยังคงใช้รูปแบบการเล่นแบบ 8 ตัวละคร 8 เส้นเรื่องที่จะมาเชื่อมต่อกันในตอนจบเหมือนเดิมอีกต่างหาก แต่ถือว่านี่เป็นตำนานบทใหม่เพราะคราวนี้เรื่องราวจะเกิดขึ้นในดินแดนที่ชื่อว่า Solistia ดินแดนที่ประกอบไปด้วยสองทวีปและถูกแบ่งคั่นเอาไว้ด้วยมหาสมุทร
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    ยุคสมัยภายในเกมนี้จะเป็นยุคที่เต็มไปด้วยการล่องเรือ การค้าขาย และการเดินทางทางทะเล รวมไปถึงมีเรื่องราวของเทคโนโลยีจักรกลไอน้ำเข้ามาช่วยเสริมเนื้อหา แต่ไม่ว่าอย่างไรก็ตาม ความโหดร้ายของโลกมนุษย์ก็ยังคงมีเสมอ เพราะมันก็ยังเต็มไปด้วยสงครามซ่อนเร้น ความยากจน ชนชั้นวรรณะ และอื่น ๆ อีกมากมาย
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_20_4.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    ส่วนของตัวละครในเกมภาคนี้ ก็จะแบ่งออกเป็น 8 ตัวละครเหมือนกันกับเกมภาคแรก โดยแต่ละคนก็จะมีเหตุผลในการผจญภัยของตัวเองด้วยกันทั้งสิ้น ไม่ว่าจะเป็นซามูไรหนุ่มที่สู้เพื่อบ้านเกิด นักเต้นสาวที่มีความใฝ่ฝัน โจรสาวที่ต่อสู้เพื่ออิสระในชีวิต นายพรานที่อยากโด่งดัง โดยทั้ง 8 ตัวละครนี้จะมีเส้นทางที่ไม่ซ้ำกัน มีเนื้อเรื่องที่แยกจากกัน และหากยังเต็มอิ่มไม่พอ ในภาค 2 นี้จะเพิ่มระบบ Crossed Path เอานักเดินทาง 2 คนมาร่วมทีมกัน ทำให้เกิดเป็นเนื้อเรื่องใหม่แยกย่อยไปอีก เรียกได้ว่า ใครที่อยากหาเกมเล่นยาว ๆ เสพเนื้อเรื่องแบบอิ่ม ๆ คุ้ม ๆ เกมนี้ตอบโจทย์อย่างมาก
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    เรื่องของกราฟิก จะยังคงใช้รูปแบบ HD-2D แบบเดียวกันกับภาคแรก แต่จะเป็นการอัปเกรดและปรับปรุงให้ดูดีมากยิ่งขึ้นไปอีก ไม่ว่าจะเป็นเรื่องของความสวยงาม ความละเอียด และมีการปรับปรุงรายละเอียดมุมกล้องใหม่ทั้งหมด ทำให้มีประสบการณ์การเล่นที่ยอดเยี่ยมมากขึ้นในตัวเกมภาคนี้
+                  </p>
+
+                  <h3 class="h3">
+                    ระบบการต่อสู้ที่คล้ายคลึงกับภาคแรก แต่ถูกยกระดับให้พัฒนามากขึ้นด้วยเช่นกัน
+                  </h3>
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_20_5.jpg' %}" width="600" height="400" loading="lazy"
+                  alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    สำหรับระบบการต่อสู้นั้น จะยังคงมีความใกล้เคียงกับตัวเกมภาคแรก โดยเป็นเกม JRPG อยู่ และระบบการต่อสู้จะยังคงเป็นแบบ Turn-Based Battle รวมไปถึงระบบ Break & Boost ก็จะยังมีอยู่ด้วย ในทุก ๆ การต่อสู้ ศัตรูจะมีจุดอ่อนที่ทำให้เราต่อสู้ได้ง่ายขึ้น เมื่อผสานรวมเข้ากับระบบ Break & Boost ก็อาจจะทำให้เกมการเล่นของผู้เล่นสนุก และได้เปรียบมากยิ่งขึ้น
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    โชคดีที่คราวนี้ไม่จำเป็นต้องมี Nintendo Switch ก็เล่นได้ เพราะ Octopath Traveler II จะลงให้กับทั้ง PC, Console และ Switch ภาคนี้ใครสะดวกเครื่องไหน ไปเครื่องนั้นกันได้เลย เกมจะวางจำหน่าย 24 กุมภาพันธ์ 2023 นี้
+                  </p>
+                  
+                </div>
+                
+              </div>
+            </li>
+          </ul>
+          
+        </div>
+      </section>
+      
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="{% static 'webgame/assets/images/logo.svg' %}" width="150" height="73" loading="lazy" alt="Unigine logo">
+          </a>
+
+          <p class="footer-text">
+            Our success in creating business solutions is due in large part to our talented and highly committed team.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Usefull Links</p>
+
+          <ul>
+            <li>
+              <a href="#" class="footer-link">Help Center</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Contact Us</p>
+
+          <div class="contact-item">
+            <span class="span">Location:</span>
+
+            <address class="contact-link">
+              6 Ratchamankha Nai Road, Phra Pathom Chedi Subdistrict Mueang Nakhon Pathom District, Nakhon Pathom 73000
+            </address>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Join Us:</span>
+
+            <a href="mailto:Info@unigine.com" class="contact-link">TcpBoy.com</a>
+          </div>
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Newsletter Signup</p>
+
+          <form action="./index.html" method="get" class="footer-form">
+            <input type="email" name="email_address" required placeholder="Your Email" autocomplete="off"
+              class="input-field">
+
+            <button type="submit" class="btn" data-btn>Subscribe Now</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 Website for educational purposes only.
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+  <div class="cursor" data-cursor></div>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="{% static 'webgame/assets/js/script.js' %}"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

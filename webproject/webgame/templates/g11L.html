@@ -1,0 +1,425 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>TPBBOY for gamer</title>
+  <meta name="title" content="Unigine - Epic Games Made For True Gamers!">
+  <meta name="description" content="This is an esports and gaming html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="{% static 'webgame/assets/images/logo2.svg' %}" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{% static 'webgame/assets/css/style.css' %}">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="{% static 'webgame/assets/images/hero-banner.png' %}">
+  <link rel="preload" as="image" href="{% static 'webgame/assets/images/hero-banner-bg.png' %}">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header active" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="{% static 'webgame/assets/images/logo.svg' %}" width="110" height="53" alt="unigine home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="{% url 'home2' %}" class="navbar-link" data-nav-link>home</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{% url 'news2' %}" class="navbar-link" data-nav-link>news</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{% url 'game2' %}" class="navbar-link" data-nav-link>game</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{% url 'chat' %}" class="navbar-link" data-nav-link>chat</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{% url 'about2' %}" class="navbar-link" data-nav-link>about us</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="" class="btn" data-btn>{{username}}</a>
+      <a href="{% url 'LogoutView' %}" class="btn" data-btn>Logout</a> 
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #game
+      -->
+
+      <section class="section news" aria-label="our latest news" id="news">
+        <div class="container">
+
+          <h2 class="h2 section-title" data-reveal="bottom">
+            STORY OF SEASONS:   <span class="span">A Wonderful Life </span>
+          </h2>
+          <ul class="news-list2">
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+
+                <div class="card-content">
+                  <p class="card-text">
+                    
+                  </p>
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_11_1.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-tag">game</a>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2022-01-01">Oct 09 2023 </time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text">TEERAPHAT B.</p>
+                    </li>
+
+                  </ul>
+
+                  <p class="card-text">
+                  </p>
+
+                  <h3 class="h3">
+                    STORY OF SEASONS: A Wonderful Life ชีวิตมหัศจรรย์ของชาวไร่ หัวใจเกษตร
+                  </h3>
+
+                  <p class="card-text">
+                    STORY OF SEASONS พูดชื่อนี้ไปหลายคนอาจจะงง แต่ถ้าบอกว่า Harvest Moon คงจะร้องอ๋อกันเป็นแถบ ๆ เพราะถึงแม้ปัจจุบันจะแยกออกเป็นคนละเกม แต่ผู้ให้กำเนิดนั้นทุกคนย่อมรู้กันดีอยู่แล้ว และจากความสำเร็จของแฟรนไชส์ STORY OF SEASONS ไม่ว่าจะเป็น Friends of Mineral Town หรือ Pioneer of Olive Town จึงไม่ต้องแปลกใจที่เรากำลังจะได้เห็นเกมฉบับ Remake ตามออกมาอีกรอบ และคราวนี้คือภาค A Wonderful Life
+                  </p>
+                  
+                  <p class="card-text">
+                  </p>
+                  
+                  <h3 class="h3">
+                    อีกหนึ่งภาคสุดประทับใจแฟนเกม
+                  </h3>
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_11_2.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    A Wonderful Life คือเรื่องราวการเริ่มต้นชีวิตใหม่ของคุณ (ผู้เล่น) ใน Forgotten Valley ชุมชนอันเงียบสงบที่พ่อของคุณและ Takakura เพื่อนสนิท เคยมีความฝันอยากจะทำเกษตรกรรม มีฟาร์มเป็นของตัวเอง และแน่นอนว่าเป็นผู้เล่นนี่แหละ ที่จะมาสานฝันพ่อให้เป็นจริงด้วยการเริ่มต้นชีวิตใหม่ในหุบเขาและหมู่บ้านแห่งนี้
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    ตัวเกมเวอร์ชั่น 2023 นี้ คือเวอร์ชั่น Remake จากปี 2003 ซึ่งก็ 20 ปีผ่านมาแล้ว โดยภาคนี้ถือเป็นอีกภาคที่ประสบความสำเร็จมาก ตัวเกมเวอร์ชั่นแรก ลงให้กับเครื่อง GameCube และตอนนั้นสื่อหลายสำนักก็ให้คะแนนในระดับยอดเยี่ยม แต่ตอนนั้นด้วยความที่เกมมันก็ออกมาหลายภาคแล้ว จึงโดนบ่นว่าตัวเกมซ้ำซากไปบ้าง แต่ใด ๆ ก็ตาม ภาคนี้ถือเป็นอีกภาคที่ได้รับคะแนนความนิยม และคำชื่นชมจากแฟน ๆ พอสมควร
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    ตัวเกมประกาศเปิดตัวครั้งแรกในงาน Nintendo Direct โดยยืนยันว่าคราวนี้ผู้เล่นทุกคนสามารถเล่นได้ผ่านทุกเครื่อง ไม่ว่าจะเป็น PlayStation 5, Xbox Series X|S และ PC ผ่าน Steam
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <h3 class="h3">
+                    กลับมาเวอร์ชั่นใหม่ มีอะไรบ้าง
+                  </h3>
+
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_11_3.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    ในเวอร์ชั่น Remake นี้ มีการนำเสนอกิจกรรมใหม่ ๆ มากมาย และเทศกาลรวมไปถึงฟีเจอร์เก่า ๆ จะได้รับการปรับปรุงใหม่ สูตรอาหารใหม่ ๆ จะถูกเพิ่มเข้ามา และระบบพืชผลที่อุดมสมบูรณ์และปรับปรุงให้ดีขึ้น และกิจกรรมใหม่ ๆ เช่นการถ่ายภาพครอบครัวด้วยฟีเจอร์กล้องถ่ายรูปแบบใหม่ ด้วยการแต่งตัวด้วยชุดโปรดของคุณ รวมไปถึงชวนเพื่อนบ้าน และ NPC ที่คุณมีความสัมพันธ์ด้วย มาร่วมใช้ชีวิตด้วยกันได้ เรียกว่าได้เป็นการ Remake แบบเต็มรูปแบบ 
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    ภาคนี้จะมีเหตุการณ์และอีเวนท์ใหม่ ๆ มากกว่า 70 เหตุการณ์ด้วยกัน นอกจากนั้นเรายังสามารถเลือกเพศหลักของตัวละครกันได้ทั้งชายและหญิง และแต่งงานมีครอบครัวกับคนที่เราเลือกได้เลย ต่อมาที่สัตว์เลี้ยงจะมีทั้งหมด 9 ชนิดให้ได้เลือกเลี้ยง และใน Forgotten Valley จะไม่ได้มีแค่เรา แต่มีชาวบ้านและ NPC คนอื่น ๆ ที่อาศัยอยู่ด้วยกันเป็นชุมชน แต่การเริ่มต้นทำความรู้จักกับพวกเขา จะเกิดเป็นเหตุการณ์และกิจกรรมแบบใหม่ทั้งหมด
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_11_4.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    ระบบสร้างบ้านและที่พักอาศัย จะเป็นแบบผสมผสานของเก่ากับของใหม่ และสิ่งอำนวยความสะดวกและอุปกรณ์เครื่องมือต่าง ๆ ของเราจะสามารถอัปเกรดได้ทำให้ใช้ชีวิตได้ง่ายขึ้น และด้วยความที่เราสามารถเลือกเป็นตัวละครหญิงหรือชายได้ หรือจะเป็น Non-Binary ก็ได้ ตามโลกสมัยใหม่ เราสามารถจีบ มีความสัมพันธ์ ไปจนถึงขั้นแต่งงานกับใครก็ได้โดยไม่ต้องคำนึงถึงเพศ
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    หลังจากทำภารกิจประจำวันในการดูแลฟาร์มและพื้นที่ของคุณแล้ว คราวนี้คุณก็เลือกได้เลยว่าวันนั้นจะทำอะไรต่อ จะผ่อนคลายด้วนการไปนั่งตกปลา หรือล่าสมบัติในโบราณสถานท้องถิ่น หรือจะไปไล่คุยกับเพื่อน ๆ ที่จะกลายเป็นจุดเริ่มต้นของความรักและความสัมพันธ์ในเกมได้ด้วย เรียกได้ว่า Remake ขนาดนี้ เรียกว่าเกมใหม่เลยก็ได้ ไม่เสียหาย !
+                  </p>
+
+                  <h3 class="h3">
+                    เรียกความทรงจำที่หอมหวานกลับคืน
+                  </h3>
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_11_5.jpg' %}" width="600" height="400" loading="lazy"
+                  alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    ใครที่ชื่นชอบ Harvest Moon: A Wonderful Life นี่คือการกลับมาอย่างเป็นทางการของหนึ่งในเวอร์ชันที่ดีที่สุดของ Harvest Moon บน PlayStation 2 ในชื่อใหม่ STORY OF SEASONS คุณจะได้สัมผัสความทรงจำเดิม ๆ ที่เคยเก็บไว้ในห้วงหนึ่งของความทรงจำ หากคุณเป็นผู้เล่นทีมี PS2 ความผูกพันธ์ที่หาที่สุดมิได้จะรีเทิร์นกลับมาใหม่ในเกมนี้ ไม่ว่าจะเป็นเนื้อหาสุดลึกซึ้ง เกมเพลย์เพลิดเพลิน ชาวบ้านทุก ๆ คนจาก Forgotten Valley เตรียมพร้อมจะต้อนรับชาวสวนอย่างคุณอีกครั้ง ในเร็ว ๆ นี้
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    งานนี้แฟน ๆ สายเกมปลูกผักทำฟาร์ม บอกได้คำเดียวว่า ไม่ควรพลาด จะหน้าใหม่ที่เคยเล่น หรือหน้าเก่าที่ไม่เคยเล่น ภาคนี้ก็พร้อมจะต้อนรับสู่ Forgotten Valley อันแสนอบอุ่น ก็รอเล่นกันได้เลยกับภาคนี้บน Nintendo Switch และ PlayStation 5
+                  </p>
+                  
+                </div>
+                
+              </div>
+            </li>
+          </ul>
+          
+        </div>
+      </section>
+      
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="{% static 'webgame/assets/images/logo.svg' %}" width="150" height="73" loading="lazy" alt="Unigine logo">
+          </a>
+
+          <p class="footer-text">
+            Our success in creating business solutions is due in large part to our talented and highly committed team.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Usefull Links</p>
+
+          <ul>
+            <li>
+              <a href="#" class="footer-link">Help Center</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Contact Us</p>
+
+          <div class="contact-item">
+            <span class="span">Location:</span>
+
+            <address class="contact-link">
+              6 Ratchamankha Nai Road, Phra Pathom Chedi Subdistrict Mueang Nakhon Pathom District, Nakhon Pathom 73000
+            </address>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Join Us:</span>
+
+            <a href="mailto:Info@unigine.com" class="contact-link">TcpBoy.com</a>
+          </div>
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Newsletter Signup</p>
+
+          <form action="./index.html" method="get" class="footer-form">
+            <input type="email" name="email_address" required placeholder="Your Email" autocomplete="off"
+              class="input-field">
+
+            <button type="submit" class="btn" data-btn>Subscribe Now</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 Website for educational purposes only.
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+  <div class="cursor" data-cursor></div>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="{% static 'webgame/assets/js/script.js' %}"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

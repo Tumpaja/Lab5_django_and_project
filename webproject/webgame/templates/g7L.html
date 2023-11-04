@@ -1,0 +1,459 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>TPBBOY for gamer</title>
+  <meta name="title" content="Unigine - Epic Games Made For True Gamers!">
+  <meta name="description" content="This is an esports and gaming html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="{% static 'webgame/assets/images/logo2.svg' %}" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{% static 'webgame/assets/css/style.css' %}">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="{% static 'webgame/assets/images/hero-banner.png' %}">
+  <link rel="preload" as="image" href="{% static 'webgame/assets/images/hero-banner-bg.png' %}">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header active" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="{% static 'webgame/assets/images/logo.svg' %}" width="110" height="53" alt="unigine home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="{% url 'home2' %}" class="navbar-link" data-nav-link>home</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{% url 'news2' %}" class="navbar-link" data-nav-link>news</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{% url 'game2' %}" class="navbar-link" data-nav-link>game</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{% url 'chat' %}" class="navbar-link" data-nav-link>chat</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{% url 'about2' %}" class="navbar-link" data-nav-link>about us</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="" class="btn" data-btn>{{username}}</a>
+      <a href="{% url 'LogoutView' %}" class="btn" data-btn>Logout</a> 
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #game
+      -->
+
+      <section class="section news" aria-label="our latest news" id="news">
+        <div class="container">
+
+          <h2 class="h2 section-title" data-reveal="bottom">
+            Pay Day   <span class="span">3 </span>
+          </h2>
+          <ul class="news-list2">
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+
+                <div class="card-content">
+                  <p class="card-text">
+                    
+                  </p>
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_7_1.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-tag">game</a>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2022-01-01">Oct 09 2023 </time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text">TEERAPHAT B.</p>
+                    </li>
+
+                  </ul>
+
+                  <p class="card-text">
+                  </p>
+
+                  <h3 class="h3">
+                    รีวิว Pay Day 3 รวมแก๊งปล้นยับ ในฉบับระทึกกว่าเดิม!
+                  </h3>
+
+                  <p class="card-text">
+                    ใครจะนึกว่า “การปล้นธนาคาร” จะกลายเป็นวิดีโอเกมไปได้? แต่มันเป็นไปแล้ว เพราะ Payday เป็นเกมที่เปิดประสบการณ์สิ่งที่เราทำไม่ได้จริง ๆ ในโลก อย่างการ ปล้นธนาคาร ให้กลายเป็นกิจกรรมสุดหฤหรรษ์ จนได้รับความนิยมอย่างมาก แม้ว่ามันจะดูผิดแปลก แต่มันก็วางจำหน่ายมาอย่างต่อเนื่องถึง 2 ภาคด้วยกัน
+                  </p>
+                  
+                  <p class="card-text">
+                  </p>
+
+                  <p class="card-text">
+                    วันนี้ Payday 3 ภาคที่สามของซีรีส์ได้วางจำหน่ายเป็นที่เรียบร้อยแล้ว และมันเป็นการกลับมาในรอบหลายปี ของเกมที่ได้ชื่อว่า “เล่นกับเพื่อนแล้วสนุกที่สุด” เกมหนึ่ง เราจะมาลองดูกันว่า มันจะสนุกสมคำร่ำลือไหม
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <h3 class="h3">
+                    ปล้นดุ ปล้นเดือด
+                  </h3>
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_7_2.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    ช่วงนี้เลือกรีวิวแต่เกมที่ไม่มีเนื้อเรื่อง เพราะ Payday 3 มันก็ไม่มีโหมดเนื้อเรื่องที่เล่าอย่างตรงไปตรงมาเหมือนกับภาคเก่า ๆ คุณรับบทเป็นทีมงานแก๊งหน้ากากที่จะต้องปล้นสิ่งใดสิ่งหนึ่งออกมาจากสถานที่ คุณมีอุปกรณ์ครบมือ คุณมีบรีฟจากทีมงานผู้เชี่ยวชาญ แต่สถานที่เหล่านี้ก็จะตึงมือที่สุดเท่าที่จะเป็นไปได้เหมือนกัน
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    คุณจะได้ออกปล้นในสถานที่อลังการดาวล้านดวง อย่างกับหลุดออกมาจากหนังแอคชันคลาสสิกก็ไม่ปาน ไม่ว่าจะเป็น พิพิธภัณฑ์ศิลปะ Under The Surphaze ที่เต็มไปด้วยปริศนาสุดละเอียดอ่อน ต้องใช้ความสามารถอย่างมากเพื่อถอดปริศนา และหาสมบัติที่ถูกตั้งไว้ในเขาวงกตสุดซับซ้อน หรือจะเป็น ธนาคาร Gold & Shark ธนาคารเก่าที่มีโถงเก็บเงินแบบเก่าที่ทั้งซับซ้อนท้าทาย และอื่น ๆ อีกมากมายที่รอให้คุณไปสัมผัส
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    โดยรวม เกมมีไอเดียที่ดีในการ Pitch คุณให้รู้สึกว่า คุณไม่ใช่ทีมระดับ อบต. ที่จะมานั่งระเบิดตู้ ATM หรือเอาปืนจี้ร้านทอง คุณคือหนึ่งในสมาชิกองค์กรระดับโลก ฉะนั้นต้องทำอะไรให้ยิ่งใหญ่กว่าตัวเสียหน่อย การเล่นมันจึงกดดันในทุก ๆ แง่มุม และบางครั้งคุณก็จำเป็นจะต้องรับบทเป็นตัวเอกหนังแอคชัน Go with the flow ไปกับสิ่งที่เกมมอบให้เพื่อผลลัพธ์ที่ดีที่สุด
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <h3 class="h3">
+                    คอนเทนต์ยังไม่เยอะเท่าความคาดหวัง
+                  </h3>
+
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_7_3.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    การออกแบบคลังแสงใน Payday 3 ณ ตอนนี้มีความแข็งแกร่งน้อยกว่าภาค 2 อย่างเห็นได้ชัด หากจำกันได้ ภารกิจในภาค 2 แม้จะไม่ได้ยิ่งใหญ่อลังการดาวล้านดวง แต่ยุทโธปกรณ์ด้านสงครามมีให้ใช้หลากหลายเป็นร้อยชนิด ในภาค 3 ตอนนี้มีเพียง 30 ตัวเลือกให้คุณทั้งนั้น ยังดีที่แต่ละตัวเลือกค่อนข้างครอบคลุมการทำงานทั้งหมดที่คุณต้องการ ไม่ว่าจะเป็นสายลุยหรือสายลอบเร้น คุณสามารถจัด Loadout ได้อย่างอิสระ 
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    ปืน อุปกรณ์ และคอสเมติกยังเป็นส่วนสำคัญที่ปรับแต่งได้ ในการปล้นแต่ละครั้ง คุณจะได้ค่าตอบแทนจำนวนหนึ่งมาเพื่อซื้ออาวุธ อุปกรณ์ และเสื้อผ้า ไอเท็มบางชิ้นต้องใช้ C-stacks ในการซื้อ เลเวลในเกมนี้มีแต่ไม่ได้ลึกลับซับซ้อนขนาดนั้น เป็นเพลงสถิติที่ทำให้เพื่อน ๆ ของคุณรู้ว่า คุณอยู่กับเกมมานานขนาดไหน
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    โดยรวม ในส่วนการออกแบบโปรเกสชันในมุมมองของเรา Payday 3 ทำได้ไม่ค่อยดี เพราะ Replay Value จะคลุกอยู่กับการทำภารกิจซ้ำ ๆ เพื่อโปรเกสชันที่ดำเนินไปไม่มาก บวกกับเงินที่ซื้ออะไรไม่ได้เพราะติด C-stacks ทำให้มันไม่น่าเล่นซ้ำมากนัก แต่เพราะเกมเพลย์ที่ดี ผู้เล่นบางส่วนอาจจะคิดว่าส่วนนี้แหละที่พอจะแบกเกมได้ และเราก็คิดแบบนั้นเหมือนกัน ซึ่งเดี๋ยวคุณจะได้รู้ว่าทำไม
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <h3 class="h3">
+                    แข็งแกร่งสุดคือเกมการเล่น
+                  </h3>
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_7_4.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    เกมเพลย์ของ Payday 3 คือส่วนที่แข็งแกร่งที่สุดของตัวเกม ณ ขณะนี้ เพราะในภาคนี้เราจะได้เล่นเป็นโจรที่ต้องทำงานอย่างหลากหลาย ผสมผสานทั้งการใช้กำลัง และสมองไปพร้อม ๆ กัน ภารกิจส่วนใหญ่ที่มีให้เล่นในตอนนี้จะเน้นการลอบเร้น ทำให้ต้องอาศัยการพูดคุยกันเป็นอย่างมาก
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    โดยเฉพาะ private area ที่บังคับให้คุณต้องล้วงกระเป๋า หรือทำอะไรบางอย่างจนหาทางเข้าไปให้ได้ และเมื่อเข้าไปได้แล้ว บางสถานที่บังคับให้คุณทิ้งอาวุธทั้งหมด ทำให้คุณจำเป็นต้องใช้สมองมากกว่าแรงในการหาทางเพื่อไปต่อให้ได้ในภารกิจนั้น ๆ
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+
+                  <p class="card-text">
+                    การปล้นแต่ละครั้งค่อนข้างสนุก ใช้เวลาประมาณ 15-30 นาที สถานที่ในช่วงนี้ไม่ค่อยเยอะ ทำให้คุณต้องเล่นซ้ำ ๆ ในระดับความยากที่สูงขึ้นไปเรื่อย ๆ เริ่มตั้งแต่ปกติ ยาก ยากมาก และโอเวอร์คิล ซึ่งในระดับโอเวอร์คิล การเล่นแบบลอบเร้นจำเป็นมาก และแทบจะเป็นคอร์เกมหลักที่ภาคนี้เน้นย้ำเลย
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+
+                  <p class="card-text">
+                    แต่ถึงแม้ภาคนี้จะมีเกมเพลย์ที่ดีขึ้น ระทึกขึ้น และสนุกขึ้น แต่สิ่งที่ไม่พัฒนาเลยคือ AI “หากคุณเป็นผู้เล่นคนเดียว” เราไม่แนะนำให้เล่นเกมนี้ เพราะ AI ในทีมของคุณเข้าขั้นโง่ถึงโง่มาก เพราะมันทำ Objective หลักไม่ได้แม้แต่นิดเดียว การกระทำง่าย ๆ เช่นการขโมยคีย์การ์ดก็ทำไม่ได้ ทำให้คุณต้องเล่นเพียงคนเดียวจริง ๆ หน้าที่ที่มันทำได้ดีมีอยู่อย่างเดียว คือรับกระสุนให้เรา ฉะนั้นถ้าคุณไม่มีเพื่อนเล่น แนะนำว่าให้หาให้เจอ อย่าเล่นคนเดียวเป็นอันขาด
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+
+                  <h3 class="h3">
+                    หนึ่งในเกมที่ประสิทธิภาพดีที่สุด
+                  </h3>
+
+                  <p class="card-text">
+                  </p>
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_7_5.jpg' %}" width="600" height="400" loading="lazy"
+                  alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    ประสิทธิภาพใน PS5 ของ Payday 3 ขึ้นอยู่กับว่าคุณปรับกราฟิกเท่าไหร่ เกมจะอนุญาตให้คุณปรับกราฟิกง่าย ๆ ผ่านตัว AA และ Upscaling แต่เนื่องด้วยตัวเกมไม่ได้กินกราฟิกอะไรมากอยู่แล้ว ต่อให้คุณปรับสุดยังไง เกมก็ยังรักษาเฟรมเรทได้ในระดับ 50-60 FPS คงตัวไม่มากไม่น้อยไปว่านี้
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  
+                  
+                </div>
+                
+              </div>
+            </li>
+          </ul>
+          
+        </div>
+      </section>
+      
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="{% static 'webgame/assets/images/logo.svg' %}" width="150" height="73" loading="lazy" alt="Unigine logo">
+          </a>
+
+          <p class="footer-text">
+            Our success in creating business solutions is due in large part to our talented and highly committed team.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Usefull Links</p>
+
+          <ul>
+            <li>
+              <a href="#" class="footer-link">Help Center</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Contact Us</p>
+
+          <div class="contact-item">
+            <span class="span">Location:</span>
+
+            <address class="contact-link">
+              6 Ratchamankha Nai Road, Phra Pathom Chedi Subdistrict Mueang Nakhon Pathom District, Nakhon Pathom 73000
+            </address>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Join Us:</span>
+
+            <a href="mailto:Info@unigine.com" class="contact-link">TcpBoy.com</a>
+          </div>
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Newsletter Signup</p>
+
+          <form action="./index.html" method="get" class="footer-form">
+            <input type="email" name="email_address" required placeholder="Your Email" autocomplete="off"
+              class="input-field">
+
+            <button type="submit" class="btn" data-btn>Subscribe Now</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 Website for educational purposes only.
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+  <div class="cursor" data-cursor></div>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="{% static 'webgame/assets/js/script.js' %}"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

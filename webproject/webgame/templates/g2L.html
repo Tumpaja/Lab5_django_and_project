@@ -1,0 +1,441 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>TPBBOY for gamer</title>
+  <meta name="title" content="Unigine - Epic Games Made For True Gamers!">
+  <meta name="description" content="This is an esports and gaming html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="{% static 'webgame/assets/images/logo2.svg' %}" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{% static 'webgame/assets/css/style.css' %}">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="{% static 'webgame/assets/images/hero-banner.png' %}">
+  <link rel="preload" as="image" href="{% static 'webgame/assets/images/hero-banner-bg.png' %}">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header active" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="{% static 'webgame/assets/images/logo.svg' %}" width="110" height="53" alt="unigine home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="{% url 'home2' %}" class="navbar-link" data-nav-link>home</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{% url 'news2' %}" class="navbar-link" data-nav-link>news</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{% url 'game2' %}" class="navbar-link" data-nav-link>game</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{% url 'chat' %}" class="navbar-link" data-nav-link>chat</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{% url 'about2' %}" class="navbar-link" data-nav-link>about us</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="" class="btn" data-btn>{{username}}</a>
+      <a href="{% url 'LogoutView' %}" class="btn" data-btn>Logout</a>  
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #game
+      -->
+
+      <section class="section news" aria-label="our latest news" id="news">
+        <div class="container">
+
+          <h2 class="h2 section-title" data-reveal="bottom">
+            Resident Evil 4   <span class="span">Remake </span>
+          </h2>
+          <ul class="news-list2">
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+
+                <div class="card-content">
+                  <p class="card-text">
+                    
+                  </p>
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_2_1.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-tag">game</a>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2022-01-01">Oct 09 2023 </time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text">TEERAPHAT B.</p>
+                    </li>
+
+                  </ul>
+
+                  <p class="card-text">
+                  </p>
+
+                  <h3 class="h3">
+                    Resident Evil 4 Remake การกลับมาของภาคที่แฟน ๆ ชื่นชอบที่สุดในเวอร์ชั่น Remake แบบเต็มตัว
+                  </h3>
+
+                  <p class="card-text">
+                    Resident Evil ชื่อนี้มีใครบ้างที่ไม่รู้จัก โดยเฉพาะแฟนเกม Survival Horror แม้จะออกภาคหลักมาแล้วกว่า 8 ภาค
+                    ภาคยิบย่อยอีกมากมาย แต่ใครจะปฏิเสธได้ล่ะว่า Resident Evil 4 คือภาคที่เป็นจุดเปลี่ยนของซีรีส์ ทำให้คนหันมารู้จักเกมนี้กันเยอะขึ้น
+                    เริ่มทดลองเล่นเกมนี้กันเยอะขึ้น บิดจากการเอาตัวรอด มาเป็น Action เตะต่อยกันเยอะขึ้น 
+                    แต่มันก็มีจุดลงตัวระหว่างความสยองขวัญและความแอ็คชั่นได้ดีมาก แน่นอน มันกลายเป็นภาคที่แฟน ๆ หลายคนชื่นชอบอย่างที่สุด และข่าวดีคือ
+                    ในปีหน้า 2023 นี้ เราจะได้เล่นเกมนี้กันอีกครั้ง ในเวอร์ชั่น Remake ที่มาในโทนที่หม่น ดาร์คกว่าต้นฉบับพอสมควรเลยทีเดียว
+                  </p>
+                  
+                  <p class="card-text">
+                  </p>
+                  
+                  <h3 class="h3">
+                    Resident Evil 4 ภาคที่รื้อไอเดียทำใหม่กันหลายรอบมากที่สุด
+                  </h3>
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_2_2.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    Resident Evil 4 นั้นมีจุดกำเนิดมาจากการที่ผู้พัฒนาเองก็เบื่อที่จะย่ำอยู่กับอะไรเดิม ๆ แล้ว หลังจากทำมา 3 ภาคติด 
+                    งานนี้จึงต้องการจะยกเครื่องตัวเกมให้เปลี่ยนแปลงไป ไม่ว่าจะเป็นส่วนของมุมกล้อง บทกับเนื้อเรื่องแบบใหม่ ด้วยเหตุนี้ 
+                    มุมกล้องของ Resident Evil 4 จึงเปลี่ยนไปใช้เป็นแบบมุมมองบุคคลที่ 3 ที่ได้แรงบันดาลใจมาจาก Onimusha 3: Demon Siege 
+                    ในช่วงนั้น และสามารถเล็งปืนและยิงเองได้ แถมที่สำคัญคือการเปลี่ยนประเภทศัตรูจากซอมบี้ให้กลายเป็นพวกเชื้อปรสิตอีกต่างหาก
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    หากใครตามข่าวสารของเกมนี้จะรู้ดีว่า Resident Evil 4 เป็นภาคที่มีการรื้อไอเดียทำกันใหม่หลายรอบมาก ๆ โดยหลากหลายปัจจัยปัญหา 
+                    ไม่ว่าจะเป็นตัวผู้พัฒนาเอง ไม่โอเคกับแนวทางเกม ไอเดียเกินขอบเขต หรือแม้กระทั่งปัญหาศักยภาพของเครื่องเล่นเกมในยุคนั้น 
+                    กว่าจะได้เป็นเวอร์ชั่นที่เราได้เล่นกันอยู่ทุกวันนี้ บอกเลยว่า รื้อไอเดียกันมาไม่ต่ำกว่า 3-4 รอบ
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    แต่ถึงอย่างนั้นมันก็ประสบความสำเร็จอย่างยิ่งใหญ่ มุมมองบุคคลที่ 3 หรือ Third Person ก็ถูกนำไปต่อยอดให้เกมอีกหลากหลายเกม 
+                    ไม่ว่าจะเป็น Gears of War, Dead Space, GTA และอื่น ๆ อีกมากมาย แถมมันยังถูกพอร์ตไปลงให้กับเครื่องเกมหลากหลายรุ่น 
+                    แม้กระทั่งมือถือ เรียกได้ว่าสมแล้วที่เหมาะกับการรื้อไปทำใหม่หลายรอบ
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <h3 class="h3">
+                    ปฏิบัติการช่วยเหลือลูกสาวประธานาธิบดีของ Leon S. Kennedy
+                  </h3>
+
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_2_3.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    สำหรับเรื่องราวของ Resident Evil 4 จะเล่าถึงเรื่องราวของ Leon S. Kennedy ซึ่ง Time Skip ไปกว่า 6 ปีจากเหตุการณ์ภาค 2 
+                    ทำให้เขาเป็นเจ้าหน้าที่ภาคสนามที่ฝีมือระดับยอดเยี่ยม และภารกิจครั้งนี้คือการตามหาตัว Ashley Graham ลูกสาวของประธานาธิบดีสหรัฐอเมริกาที่หายตัวไป 
+                    Leon ตามเบาะแสเธอไปจนถึงหมู่บ้านในยุโรป และเขาก็พบว่าพื้นที่แห่งนี้ มีความอันตรายซ่อนอยู่
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    สำหรับเกมต้นฉบับนั้น มันคือเกม Third Person เดินหน้ายิงเป็นเส้นตรง อาจจะมีการแว่บไปนอกเส้นทางเพื่อตามหาไอเทมบ้าง 
+                    แต่หลัก ๆ แล้วคือเกมเส้นตรง และมีคอนเทนต์จัดหนักจัดเต็ม ทั้งเนื้อเรื่องหลัก และเนื้อเรื่องรอง เป็นอีกภาคที่แฟน ๆ เล่นซ้ำกันบ่อยมาก 
+                    เพราะมันสนุกและมีจุดลงตัวที่ดีระหว่างความเป็นแอ็คชั่นและสยองขวัญนั่นเอง
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <h3 class="h3">
+                    Remake ใหม่ด้วย RE Engine ดาร์ค และสยองขวัญกว่าต้นฉบับ
+                  </h3>
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_2_4.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    สิ่งที่แตกต่างกันอย่างชัดเจน เมื่อมีการประกาศเปิดตัว Resident Evil 4 Remake สิ่งแรกที่เราได้เห็นคือ กราฟิกที่ดีขึ้นสมกับเป็นยุคสมัยแห่ง Next-Gen 
+                    เพราะการ Remake ครั้งนี้ Capcom ใช้ RE Engine เอนจิ้นยอดนิยมประจำค่ายมาสร้าง และที่เราสัมผัสได้คือ บรรยากาศ ความดาร์ค 
+                    ความหม่นของโทนเกมที่ตึงเครียดกว่าภาคต้นฉบับอย่างเห็นได้ชัด
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    ระบบการต่อสู้และ Quick Time Event ยังคงเป็นสิ่งที่มีอยู่ แต่คราวนี้ตัวละครของเราอย่าง Leon จะเก่งขึน ต้องใช้คำว่า 
+                    สมศักดิ์ศรีตัวละครเอกที่รอดตายจาก Raccoon City มากขึ้น เขาทั้งเก่ง ทั้งมีฝีมือ และปรับปรุงเกมเพลย์ให้มีความรวดเร็วมากยิ่งขึ้น 
+                    ไม่ว่าจะเป็นการควบคุม แอนิเมชั่น การยิงปืน และอื่น ๆ อีกมากมาย แน่นอนว่าทั้งพ่อค้า และอาวุธ การอัปเกรดต่างก็จะกลับมาในภาคนี้ด้วย
+                  </p>
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_2_5.jpg' %}" width="600" height="400" loading="lazy"
+                  alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    บอกได้เลยว่า แม้แฟน ๆ จะผิดหวังกับภาค 3 แต่ก็ไม่วายที่จะคาดหวังว่าภาค 4 จะกลับมายอดเยี่ยม และเป็นการ Remake 
+                    ที่สมการรอคอยแฟน ๆ กันอีกครั้ง Resident Evil 4 Remake เตรียมวางจำหน่าย 24 มีนาคม 2023 
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                
+                  
+                </div>
+                
+              </div>
+            </li>
+          </ul>
+          
+        </div>
+      </section>
+      
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="{% static 'webgame/assets/images/logo.svg' %}" width="150" height="73" loading="lazy" alt="Unigine logo">
+          </a>
+
+          <p class="footer-text">
+            Our success in creating business solutions is due in large part to our talented and highly committed team.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Usefull Links</p>
+
+          <ul>
+            <li>
+              <a href="#" class="footer-link">Help Center</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Contact Us</p>
+
+          <div class="contact-item">
+            <span class="span">Location:</span>
+
+            <address class="contact-link">
+              6 Ratchamankha Nai Road, Phra Pathom Chedi Subdistrict Mueang Nakhon Pathom District, Nakhon Pathom 73000
+            </address>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Join Us:</span>
+
+            <a href="mailto:Info@unigine.com" class="contact-link">TcpBoy.com</a>
+          </div>
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Newsletter Signup</p>
+
+          <form action="./index.html" method="get" class="footer-form">
+            <input type="email" name="email_address" required placeholder="Your Email" autocomplete="off"
+              class="input-field">
+
+            <button type="submit" class="btn" data-btn>Subscribe Now</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 Website for educational purposes only.
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+  <div class="cursor" data-cursor></div>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="{% static 'webgame/assets/js/script.js' %}"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

@@ -175,3 +175,64 @@ def g19(request):
     return render(request, "g19.html")
 def g20(request):
     return render(request, "g20.html")
+
+def g1L(request):
+    username = request.session['fname']
+    return render(request, "g1L.html",{'username': username})
+def g2L(request):
+    username = request.session['fname']
+    return render(request, "g2L.html",{'username': username})
+def g3L(request):
+    username = request.session['fname']
+    return render(request, "g3L.html",{'username': username})
+def g4L(request):
+    username = request.session['fname']
+    return render(request, "g4L.html",{'username': username})
+def g5L(request):
+    username = request.session['fname']
+    return render(request, "g5L.html",{'username': username})
+def g6L(request):
+    username = request.session['fname']
+    return render(request, "g6L.html",{'username': username})
+def g7L(request):
+    username = request.session['fname']
+    return render(request, "g7L.html",{'username': username})
+def g8L(request):
+    username = request.session['fname']
+    return render(request, "g8L.html",{'username': username})
+def g9L(request):
+    username = request.session['fname']
+    return render(request, "g9L.html",{'username': username})
+def g10L(request):
+    username = request.session['fname']
+    return render(request, "g10L.html",{'username': username})
+def g11L(request):
+    username = request.session['fname']
+    return render(request, "g11L.html",{'username': username})
+def g12L(request):
+    username = request.session['fname']
+    return render(request, "g12L.html",{'username': username})
+def g13L(request):
+    username = request.session['fname']
+    return render(request, "g13L.html",{'username': username})
+def g14L(request):
+    username = request.session['fname']
+    return render(request, "g14L.html",{'username': username})
+def g15L(request):
+    username = request.session['fname']
+    return render(request, "g15L.html",{'username': username})
+def g16L(request):
+    username = request.session['fname']
+    return render(request, "g16L.html",{'username': username})
+def g17L(request):
+    username = request.session['fname']
+    return render(request, "g17L.html",{'username': username})
+def g18L(request):
+    username = request.session['fname']
+    return render(request, "g18L.html",{'username': username})
+def g19L(request):
+    username = request.session['fname']
+    return render(request, "g19L.html",{'username': username})
+def g20L(request):
+    username = request.session['fname']
+    return render(request, "g20L.html",{'username': username})

@@ -1,0 +1,406 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>TPBBOY for gamer</title>
+  <meta name="title" content="Unigine - Epic Games Made For True Gamers!">
+  <meta name="description" content="This is an esports and gaming html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="{% static 'webgame/assets/images/logo2.svg' %}" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{% static 'webgame/assets/css/style.css' %}">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="{% static 'webgame/assets/images/hero-banner.png' %}">
+  <link rel="preload" as="image" href="{% static 'webgame/assets/images/hero-banner-bg.png' %}">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header active" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="{% static 'webgame/assets/images/logo.svg' %}" width="110" height="53" alt="unigine home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="{% url 'home2' %}" class="navbar-link" data-nav-link>home</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{% url 'news2' %}" class="navbar-link" data-nav-link>news</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{% url 'game2' %}" class="navbar-link" data-nav-link>game</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{% url 'chat' %}" class="navbar-link" data-nav-link>chat</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{% url 'about2' %}" class="navbar-link" data-nav-link>about us</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="" class="btn" data-btn>{{username}}</a>
+      <a href="{% url 'LogoutView' %}" class="btn" data-btn>Logout</a> 
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #game
+      -->
+
+      <section class="section news" aria-label="our latest news" id="news">
+        <div class="container">
+
+          <h2 class="h2 section-title" data-reveal="bottom">
+            Marvel’s   <span class="span">Spider-Man 2 </span>
+          </h2>
+          <ul class="news-list2">
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+
+                <div class="card-content">
+                  <p class="card-text">
+                    
+                  </p>
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_12_1.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-tag">game</a>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2022-01-01">Oct 09 2023 </time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text">TEERAPHAT B.</p>
+                    </li>
+
+                  </ul>
+
+                  <p class="card-text">
+                  </p>
+
+                  <h3 class="h3">
+                    “Marvel’s Spider-Man 2” ความท้าทายครั้งใหม่ของเหล่าไอ้แมงมุม!
+                  </h3>
+
+                  <p class="card-text">
+                    เกม Marvel’s Spider-Man ภาคแรก ที่ออกมาเมื่อปี 2018 นั้น ถือว่าเป็นอีกหนึ่งเกมที่สร้างความเซอร์ไพรส์ให้กับเกมเมอร์อย่างมากเลยนะครับ เพราะในที่สุด เราก็มีเกม “สไปเดอร์-แมน (Spider-Man)” ในระดับที่ยอดเยี่ยมระดับ AAA ให้แฟนสไปดี้ได้ภูมิใจกันซะที กับเกมที่โดดเด่นไปหมดทุกภาคส่วน ทั้งเกมเพลย์ที่สนุกและมีชั้นเชิง พร้อมกับเนื้อเรื่องของเกมสุดเข้มข้นน่าติดตาม และในปี 2023 นี้ หลังจากปล่อยทั้งภาคเสริม (The City That Never Sleeps, Miles Morales) และเวอร์ชั่นรีมาสเตอร์ ต่อเนื่องทุกปี ในที่สุด เราก็จะได้เล่นภาคต่อของเกมนี้กันซะที กับ “Marvel’s Spider-Man 2”
+                  </p>
+                  
+                  <p class="card-text">
+                  </p>
+                  
+                  
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_12_2.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    Marvel’s Spider-Man 2 ถือเป็นก้าวต่อไปที่สำคัญครับของจักรวาลเกมสไปเดอร์-แมน ที่พัฒนาโดย Insomniac Games นี้ เพราะจากเดิมที่เกมภาคแรกก็เป็นเกมในสเกลระดับยิ่งใหญ่อยู่แล้ว มาในภาคนี้ จะเป็นการสานต่อเรื่องที่มีความใหญ่โตมากขึ้น ทั้งเส้นเรื่องการผจญภัยอันเข้มข้น เต็มไปด้วยความขัดแย้งที่มากขึ้น และเหล่าวายร้ายหน้าใหม่มากมาย ที่จะมาสร้างความยากลำบากในการพิทักษ์นิวยอร์กของเหล่าไอ้แมงมุมยิ่งกว่าเดิม
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_12_3.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    สำหรับเรื่องราวในภาคนี้ ก็จะเป็นการสานต่อเรื่องราวต่อจากภาคแรก ที่การสูญเสียครั้งยิ่งใหญ่ของ “ปีเตอร์ พาร์คเกอร์ (Peter Parker)” หรือ “สไปเดอร์-แมน” แห่งนิวยอร์ก ทำให้เขาต้องเติบโตมากขึ้น เพื่อเผชิญหน้ากับภัยร้ายใหม่ จากวายร้ายหน้าใหม่ ๆ ที่ค่อย ๆ กรูเข้ามา นำโดย “คราเว่น เดอะ ฮันเตอร์ (Kraven The Hunter)” นักล่าตัวฉกาจจากพงไพร ที่รวมทีมเหล่าร้ายในชื่อ “เดอะ ฮันเตอร์ส (The Hunters)” และภัยร้ายจากนอกพิภพผู้น่าสะพรึงอย่าง “เวน่อม (Venom)” ที่ทุกคนล้วนมีเป้าหมายเดียวกัน คือ “ฆ่าสไปเดอร์-แมน” ..แต่ในคราวนี้ ปีเตอร์ไม่ได้ลุยแค่คนเดียว แต่ยังต้องเป็นรุ่นพี่ของเจ้าหนุ่มอย่าง “ไมล์ส โมลาเรส (Miles Morales)” ผู้ที่กลายเป็นไอ้แมงมุมอีกคน จนกลายเป็นเรื่องราวการต่อสู้ของ 2 แมงมุม และการเผชิญหน้ากับอันตรายมากกว่าเดิม!
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_12_4.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    Marvel’s Spider-Man 2 ก็ยังคงเป็นเกม Action / Adventure ผจญภัยปราบเหล่าร้ายไปทั่วทั้งนิวยอร์ก ในแบบของเกม Open-World ที่ทุกคนหลงรักจากภาคแรกไว้อย่างครบถ้วน แต่มาในสเกลที่ใหญ่ขึ้น มีอะไรให้ทำเยอะกว่าเดิมเป็นเท่าตัว โดยจุดเด่นของภาคนี้คือ เราจะมีสไปดี้ 2 คน นั่นคือ ปีเตอร์ กับ ไมลส์ ให้เราสามารถเล่นสลับกันได้ตลอดทั้งเกม ทั้งสองคนจะมีจุดเด่นในด้าน Combat ที่แตกต่างกันคนละแบบ โดยในระหว่างที่ไม่ได้อยู่ในเนื้อเรื่องหลัก เราสามารถสลับเล่นระหว่างทั้ง 2 คนได้ตลอดเวลา แม้ว่าทั้งคู่จะไม่ได้อยู่ด้วยกัน (หากเนื้อเรื่องต้องการสไปดี้ทั้ง 2 คน เกมจะพาทั้งคู่มาเจอกันตามเส้นเรื่องเอง นอกนั้นเราสามารถพาทั้งสองหนุ่มไปตรงจุดไหนยังไงได้หมดเลย)
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_12_5.jpg' %}" width="600" height="400" loading="lazy"
+                  alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    ในด้านการปรับแต่งตัวละคร ก็ยังคงยึดใช้ระบบเดิมจากภาคแรกครับ คือการอัปเกรดชุดแต่ละแบบ โดยการใช้ Skill Points ที่ได้มาจากการต่อสู้กับเหล่าร้าย ซึ่งแต่ละชุดจะมีความสามารถที่แตกต่างกัน ให้เราสามารถสลับใช้ได้ตลอดทั้งเกม โดยฟังก์ชันอีกอย่างที่ถูกเพิ่มเข้ามาภาคนี้ก็คือ Web Wing หรือปีกใยแมงมุมใต้รักแร้ของชุด (แหม่ เรียกซะไม่เท่เลย) ให้ทั้งสองสไปดี้ สามารถร่อนไปในอากาศระหว่างโหนใยได้แล้ว ซึ่งมีประโยชน์มากขึ้นในการใช้เดินทาง ให้เราสามารถ Fast Travel ในอากาศได้ผ่าน Wind Tunnels อุโมงค์ลมที่พาเราบินไปถึงจุดหมายในเวลาอันสั้น และในการต่อสู้ ให้ผู้เล่นมีจังหวะในการอัดศัตรูตามฉากได้แบบสร้างสรรค์กว่าเดิม
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    และที่ไม่พูดถึงไม่ได้เลยคือ การมาถึงของวายร้ายตัวเอ้อย่าง วีน่อม ที่ได้รับการชูโรงมาตั้งแต่ในตัวอย่างแรก และวีน่อมจะไม่ได้มีบทเพียงแค่เป็นศัตรูตัวหลักเท่านั้น แต่เจ้า ซิมเบียต (Symbiote) หรือปรสิตต่างดาวตัวนี้ ก็จะกลายมาเป็นชุดใหม่ของปีเตอร์ เป็นชุด Symbiote Spider-Man โทนสีดำสุดเท่ ที่มาพร้อมกับความสามารถใหม่ ๆ ทั้งรูปแบบการต่อสู้ที่เปลี่ยนไปจากปกติ ที่เน้นความดุดันรุนแรงสะใจ ในแบบที่หลายคนอาจจะลืมชุดสไปดี้แบบปกติไปจากหัวไปเลย และจะมีบทบาทในเส้นเรื่องหลักของปีเตอร์ด้วย (แบบเดียวกับที่เราคุ้นเคยในคอมิคต้นฉบับ)
+                  </p>
+                  
+                  <p class="card-text">
+                  </p>
+
+                  <p class="card-text">
+                    นอกจากวีน่อมแล้ว ในเกมภาคนี้ ก็ยังเต็มไปด้วยบรรดาเหล่าร้าย ที่เราในฐานะสไปดี้ จะต้องไปต่อกรด้วยทั้งหลายอยู่อีกนับสิบตัว ซึ่งในภาคนี้ก็ยังคงความโดดเด่นของเหล่าร้าย และฉาก Boss Fight ที่รับประกันความท้าทายเหมือนเดิม ด้วยบรรดาวายร้ายใหม่ ๆ ทั้ง คราเว่น เดอะ ฮันเตอร์ ศัตรูที่จะมามีบทบาทสำคัญของภาคนี้ รวมถึงตัวที่ถูกปูไว้มาตั้งแต่ภาค Miles Morales อย่างมนุษย์กิ้งก่า ลิซาร์ด (Lizard) ก็พร้อมเปิดตัวแบบเต็ม ๆ แล้วในภาคนี้ พร้อมกับเสริมทัพวายร้ายทั้งหน้าเก่าและหน้าใหม่อีกหลายตัว ที่เราจะได้พบเจอตลอดทั้งเกม
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+
+                  <p class="card-text">
+                    ใครที่กำลังรอคอยเกมนี้กันมานานแล้ว อย่าลืมวงปฏิทินกันเอาไว้ให้ดีเลยครับ เกมกำหนดวางจำหน่ายวันที่ “20 ตุลาคม 2023” นี้ บนเครื่อง Playstation 5 เท่านั้น! ท่านสามารถ Pre-Order เฉพาะตัว “Standard Edition” ณ ขณะนี้เป็นต้นไป โดยเกมจะมีทั้งหมด 3 เวอร์ชัน “Standard Edition” ราคา 2,290 บาท, “Digital Deluxe Edition” ราคา 2,590 บาท และ “Collector’s Edition” ที่มาพร้อมกับฟิกเกอร์ “2 สไปดี้ vs วีน่อม” รายละเอียดสุดงดงาม ราคา 12,990 บาท
+                  </p>
+                </div>
+                
+              </div>
+            </li>
+          </ul>
+          
+        </div>
+      </section>
+      
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="{% static 'webgame/assets/images/logo.svg' %}" width="150" height="73" loading="lazy" alt="Unigine logo">
+          </a>
+
+          <p class="footer-text">
+            Our success in creating business solutions is due in large part to our talented and highly committed team.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Usefull Links</p>
+
+          <ul>
+            <li>
+              <a href="#" class="footer-link">Help Center</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Contact Us</p>
+
+          <div class="contact-item">
+            <span class="span">Location:</span>
+
+            <address class="contact-link">
+              6 Ratchamankha Nai Road, Phra Pathom Chedi Subdistrict Mueang Nakhon Pathom District, Nakhon Pathom 73000
+            </address>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Join Us:</span>
+
+            <a href="mailto:Info@unigine.com" class="contact-link">TcpBoy.com</a>
+          </div>
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Newsletter Signup</p>
+
+          <form action="./index.html" method="get" class="footer-form">
+            <input type="email" name="email_address" required placeholder="Your Email" autocomplete="off"
+              class="input-field">
+
+            <button type="submit" class="btn" data-btn>Subscribe Now</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 Website for educational purposes only.
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+  <div class="cursor" data-cursor></div>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="{% static 'webgame/assets/js/script.js' %}"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

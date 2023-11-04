@@ -1,0 +1,425 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>TPBBOY for gamer</title>
+  <meta name="title" content="Unigine - Epic Games Made For True Gamers!">
+  <meta name="description" content="This is an esports and gaming html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="{% static 'webgame/assets/images/logo2.svg' %}" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{% static 'webgame/assets/css/style.css' %}">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="{% static 'webgame/assets/images/hero-banner.png' %}">
+  <link rel="preload" as="image" href="{% static 'webgame/assets/images/hero-banner-bg.png' %}">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header active" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="{% static 'webgame/assets/images/logo.svg' %}" width="110" height="53" alt="unigine home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="{% url 'home2' %}" class="navbar-link" data-nav-link>home</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{% url 'news2' %}" class="navbar-link" data-nav-link>news</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{% url 'game2' %}" class="navbar-link" data-nav-link>game</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{% url 'chat' %}" class="navbar-link" data-nav-link>chat</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{% url 'about2' %}" class="navbar-link" data-nav-link>about us</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="" class="btn" data-btn>{{username}}</a>
+      <a href="{% url 'LogoutView' %}" class="btn" data-btn>Logout</a> 
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #game
+      -->
+
+      <section class="section news" aria-label="our latest news" id="news">
+        <div class="container">
+
+          <h2 class="h2 section-title" data-reveal="bottom">
+            Aliens:   <span class="span">Dark Descent </span>
+          </h2>
+          <ul class="news-list2">
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+
+                <div class="card-content">
+                  <p class="card-text">
+                    
+                  </p>
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_16_1.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-tag">game</a>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2022-01-01">Oct 09 2023 </time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text">TEERAPHAT B.</p>
+                    </li>
+
+                  </ul>
+
+                  <p class="card-text">
+                  </p>
+
+                  <h3 class="h3">
+                    Aliens: Dark Descent เมื่อการต่อสู้กับเหล่าเอเลี่ยนต้องใช้สมองและการวางแผนที่แยบยล
+                  </h3>
+
+                  <p class="card-text">
+                    เอเลี่ยน สุดยอดสิ่งมีชีวิตกลายพันธุ์ที่คอภาพยนตร์และวิดีโอเกม Sci-Fi ต้องรู้จักกันดี หลังจากทำเอาแฟน ๆ กลัวหัวหดกันไปอย่างหนักใน Aliens: Isolation และพาไปยิงแหลกกันจนหูดับตับไหม้ใน Alien: Firesteam Elite ตอนนี้เอเลี่ยนกำลังจะมาอีกครั้งแต่มาในรูปแบบของเกมวางแผนกลยุทธ์สุดตึง กับ Aliens: Dark Descent มันมีอะไรน่าสนใจกันบ้างในเกมภาคนี้ มาดูกัน
+                  </p>
+                  
+                  <p class="card-text">
+                  </p>
+                  
+                  <h3 class="h3">
+                    เหตุการณ์ 19 ปี หลังหนัง Alien 3
+                  </h3>
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_16_2.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    ตามปกติแล้ว วิดีโอเกมยุคนี้ชอบมีข่าวลือข่าวหลุดนำออกมาก่อน แต่ไม่ใช่สำหรับ Aliens: Dark Descent เพราะเกมนี้เปิดตัวครั้งแรกแบบเซอร์ไพรส์กันเลยในงาน Summer Game Fest 2022 ในช่วงกลางปีที่ผ่านมา โดยตัวอย่างแรกเปิดตัวด้วยสภาพภูมิประเทศหิมะปกคลุมในสถานที่ที่ชื่อ Tantalus Base และยืนยันว่าเหตุการณ์ในเกมนี้จะเกิดขึ้นในปี 2198 หรือโลกอนาคตอีกกว่าร้อยปีข้างหน้า โดยเล่าถึงหน่วยจู่โจมที่โดนซุ่มโจมตีโดยฝูงเอเลี่ยนในเงามืด ก่อนที่ตัวเกมจะประกาศเปิดตัวอย่างเป็นทางการกับ Aliens: Dark Descent
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    ตัวเกม Aliens: Dark Descent จะมีเรื่องราวที่เกิดขึ้นหลังจาก Alien 3 เป็นเวลา 19 ปี นั่นหมายความว่าเหล่า Xenomorphs จะไม่ใช่สิ่งแปลกปลอม และทุกคนรู้จักมันกันดีอยู่แล้ว และมีการกล่าวถึง Moon Lethe ภายในเกมด้วย โดยพื้นที่นี้จะเป็นพื้นที่ใหม่และน่าจะเปิดตัวในเกมนี้เป็นที่แรก
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  
+                  
+                  <h3 class="h3">
+                    ผลงานการพัฒนาเกมจากสตูดิโอเกมฝรั่งเศส Tindalos Interactive
+                  </h3>
+
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_16_3.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    หลายคนอาจจะไม่คุ้นเคยชื่อของสตูดิโอทำเกมนี้สักเท่าไร เพราะก่อนหน้านี้ Tindalos Interactive ทำผลงานออกมาเพียงแค่ Battlefleet เกมจากจักรวาล Warhammer 40K แต่ก็ได้ Focus Home Interactive มาช่วยจัดจำหน่ายและดูแลเรื่องของทุนในการทำเกมด้วย และใน Aliens: Dark Descent เอง พวกเขาก็ยังร่วมงานกับ Focus Home อยู่เช่นเคย
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    สำหรับ Battlefleet เป็นเกมวางแผนนอกอวกาศที่มีสไตล์ค่อนข้างคล้ายคลึงกับ Aliens แต่ถือเป็นเกมสเกลใหญ่ เนื่องจากมันเป็นการพูดถึงสงครามบนอวกาศ ฉะนั้นการจู่โจมของกองยาน ย่อมใหญ่กว่าการต่อสู้กับเหล่าเอเลี่ยนบทยานลำเดียวอย่างแน่นอน
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <h3 class="h3">
+                    สัมผัสความน่ากลัวของ Alien ในแนวทางใหม่
+                  </h3>
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_16_4.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    แม้จะมีการเปิดเผย Gameplay Trailer มากันแล้ว แต่สำหรับเกมแนวนี้ การได้สัมผัสด้วยตัวเอง น่าจะทำให้เราเข้าถึงมันได้ง่ายกว่ามาก จากตัวอย่างนั้น เราจะเห็นได้ว่า ตัวเกมนำเสนอการเล่นแบบ 3D-Real Time ที่ผู้เล่นจะได้นำทีมของคุณฝ่าด่านมากมายที่เต็มไปด้วยเส้นทาง ทางลัด และอุปสรรคต่าง ๆ ที่แตกต่างกันไป
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    ตัวเกมยังมีองค์ประกอบของการวางแผนกลยุทธ์แบบเรียลไทม์ (Real Time Strategy หรือ RTS) ชนิดที่ว่าเป็นเกมระดับฮาร์ดคอร์ ยกตัวอย่างเช่น ถ้าสมาชิกในทีมพลาดท่าตายขึ้นมา ก็จะเป็นการตายแบบถาวร (Permadeath) รวมไปถึงสมาชิกในทีม ตัวละครแต่ละตัว จะมาพร้อมคลาสที่แตกต่างกัน และมีความสามารถในการต่อสู้ที่ไม่เหมือนกันด้วย ผู้เล่นสามารถปลดล็อคเลเวล สกิล ทักษะ และติดตั้งอุปกรณ์ อาวุธต่าง ๆ 
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+
+                  <p class="card-text">
+                    นอกจากพลังชีวิตแล้ว อีกค่าหนึ่งที่ผู้เล่นต้องให้ความสำคัญเลยก็คือค่าสุขภาพจิต (Mental Health) โดยมันจะเป็นอีกปัจจัยหนึ่งที่ผู้เล่นต้องบริหาร และคิดว่าเราจะดำเนินการกับภารกิจขั้นต่อไปอย่างไรดี โดยคำสั่งต่าง ๆ ของผู้เล่น จะส่งตรงถึงสมาชิกในทีมแบบเรียลไทม์ให้กับทั้งหน่วยเป็นหน่วยเดียว แทนที่จะออกคำสั่งให้กับแต่ละคน แต่มันก็ยังมีตัวเลือกในการชะลอเวลา เพื่อให้คุณมีเวลาขบคิดมากยิ่งขึ้น ก่อนจะสั่งการใด ๆ ลงไป เพราะแต่ละคำสั่งของคุณ อาจจะชี้เป็นชี้ตายสมาชิกในทีมได้ โดยเราต้องไม่ลืมว่าหากมีใครสักคนพลาดท่าตาย นั่นหมายถึงการตายแบบถาวร
+                  </p>
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_16_5.jpg' %}" width="600" height="400" loading="lazy"
+                  alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    นอกจากนั้นตัวเกมยังมีการใช้ทรัพยากรที่เราหามาได้ในการบริหารจัดการที่พักของเราอย่าง Otago ที่จะช่วยเพิ่มความสะดวกสบายในการวางแผนกับสมาชิกร่วมรบ และเราต้องวางแผนป้องกันไม่ให้พวกเอเลี่ยนหลุดออกจาก Moon Lethe ไปอีกด้วย
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    นี่อาจจะเป็นประสบการณ์เกม Aliens แบบใหม่ ที่อาจไม่ถูกใจทุกคน แต่ก็ถือว่าน่าลองมาก ๆ Aliens: Dark Descent มีกำหนดวางจำหน่าย 20 มิถุนายน 2023 นี้
+                  </p>
+                  
+                </div>
+                
+              </div>
+            </li>
+          </ul>
+          
+        </div>
+      </section>
+      
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="{% static 'webgame/assets/images/logo.svg' %}" width="150" height="73" loading="lazy" alt="Unigine logo">
+          </a>
+
+          <p class="footer-text">
+            Our success in creating business solutions is due in large part to our talented and highly committed team.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Usefull Links</p>
+
+          <ul>
+            <li>
+              <a href="#" class="footer-link">Help Center</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Contact Us</p>
+
+          <div class="contact-item">
+            <span class="span">Location:</span>
+
+            <address class="contact-link">
+              6 Ratchamankha Nai Road, Phra Pathom Chedi Subdistrict Mueang Nakhon Pathom District, Nakhon Pathom 73000
+            </address>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Join Us:</span>
+
+            <a href="mailto:Info@unigine.com" class="contact-link">TcpBoy.com</a>
+          </div>
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Newsletter Signup</p>
+
+          <form action="./index.html" method="get" class="footer-form">
+            <input type="email" name="email_address" required placeholder="Your Email" autocomplete="off"
+              class="input-field">
+
+            <button type="submit" class="btn" data-btn>Subscribe Now</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 Website for educational purposes only.
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+  <div class="cursor" data-cursor></div>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="{% static 'webgame/assets/js/script.js' %}"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

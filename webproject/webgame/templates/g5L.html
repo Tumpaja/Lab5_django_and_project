@@ -1,0 +1,450 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>TPBBOY for gamer</title>
+  <meta name="title" content="Unigine - Epic Games Made For True Gamers!">
+  <meta name="description" content="This is an esports and gaming html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="{% static 'webgame/assets/images/logo2.svg' %}" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{% static 'webgame/assets/css/style.css' %}">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="{% static 'webgame/assets/images/hero-banner.png' %}">
+  <link rel="preload" as="image" href="{% static 'webgame/assets/images/hero-banner-bg.png' %}">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header active" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="{% static 'webgame/assets/images/logo.svg' %}" width="110" height="53" alt="unigine home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="{% url 'home2' %}" class="navbar-link" data-nav-link>home</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{% url 'news2' %}" class="navbar-link" data-nav-link>news</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{% url 'game2' %}" class="navbar-link" data-nav-link>game</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{% url 'chat' %}" class="navbar-link" data-nav-link>chat</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{% url 'about2' %}" class="navbar-link" data-nav-link>about us</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="" class="btn" data-btn>{{username}}</a>
+      <a href="{% url 'LogoutView' %}" class="btn" data-btn>Logout</a>  
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #game
+      -->
+
+      <section class="section news" aria-label="our latest news" id="news">
+        <div class="container">
+
+          <h2 class="h2 section-title" data-reveal="bottom">
+            Star  <span class="span">field </span>
+          </h2>
+          <ul class="news-list2">
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+
+                <div class="card-content">
+                  <p class="card-text">
+                    
+                  </p>
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_5_1.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-tag">game</a>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2022-01-01">Oct 09 2023 </time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text">TEERAPHAT B.</p>
+                    </li>
+
+                  </ul>
+
+                  <p class="card-text">
+                  </p>
+
+                  <h3 class="h3">
+                    “Starfield” เกมสำรวจอวกาศสุดยิ่งใหญ่เกมนี้ เหมาะกับผู้เล่นแบบไหนบ้าง?
+                  </h3>
+
+                  <p class="card-text">
+                    หลังจากสร้างความไฮป์มานาน ในที่สุด “Statfield” เกม Open-World ไซไฟตะลุยอวกาศ สำรวจจักรวาล ผลงานสุดอลังการเกมใหม่ ที่ส่งตรงจาก Bethesda ผู้พัฒนาที่เกมเมอร์หลายคนให้ความไว้วางใจ ก็ได้วางจำหน่ายให้เกมเมอร์ได้เล่นกันไปแล้วนะครับ ตั้งแต่เมื่อวันที่ 6 กันยายน 2023 ที่ผ่านมา ซึ่งถ้ามองดูผลตอบรับจากเกมเมอร์ ก็นับว่า ไม่ได้มีอะไรผิดคาดไปจากที่คาดไว้ครับ สามารถสร้างความประทับใจให้เกมเมอร์หลายกลุ่มได้ในระดับที่ดี ได้รับคะแนนรีวิวจากสื่อใหญ่ ๆ ไปในเกณฑ์ที่ดีมาก ..แต่ก็แอบมีความเห็นบางส่วนเหมือนกันที่มองว่า มันเป็นเกมที่มีขนาดใหญ่โต แต่กลับไม่มีชีวิตชีวามากเท่าที่ควรจะเป็น เป็นความใหญ่โต แต่แห้งแล้งอารมณ์ไปนิด จนมันดูเหมือนเป็น Mass Effect: Andromeda ไปอีกเกม ..แต่ในภาพรวม Starfield ก็เป็นเกมที่อยู่ในขั้นที่ดี แต่อาจจะยังไม่สามารถสร้างปรากฏการณ์ฮิตถล่มทลายระดับมหาชน แบบเดียวกับที่ The Elder Scrolls หรือ Fallout เคยทำได้ (ณ ขณะนี้นะครับ ในอนาคตยังตอบไม่ได้ ต้องดูพัฒนาการของเกมกันไปอีกยาว ๆ )
+                  </p>
+                  
+                  <p class="card-text">
+                  </p>
+                  
+                
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_5_2.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    ทีนี้ พอมีเสียงตอบรับในเชิงแง่ติติงจากเกมเมอร์ พ่วงเข้ามากับเสียงชื่นชมแบบครึ่งต่อครึ่งแบบนี้ นั่นหมายความว่า เราก็อาจจะพูดได้นะครับว่า “Starfield อาจจะไม่ใช่เกมสำหรับทุกคน” มันมีกลิ่นอายแบบเฉพาะตัว ที่ค่อนข้างเลือกคนเล่น แม้ว่าระบบหลัก ๆ ของเกม มันจะชวนดึงดูดเกมเมอร์โดยทั่วไปอย่างมาก แต่อะไรหลาย ๆ อย่างของเกม ต้องยอมรับเลยครับว่า มันมีความ “เฉพาะทาง” พอสมควรจริง ๆ เลยนำมาซึ่งประเด็นที่น่าสนใจว่า ถ้าอย่างนั้น Starfield จะเหมาะกับผู้เล่นแบบไหนบ้าง? คราวนี้เราเลยขอมา แนะแนวทางกันคร่าว ๆ ครับ เพื่อให้คนที่สนใจอยากเล่น ได้ทราบกันก่อน ว่าตัวเองกำลังจะเจอเกมแนวไหน เพื่อจะได้รู้ตัวว่า ตัวเองเหมาะกับเกมนี้จริง ๆ โดยไม่ต้องรู้สึกอกหัก เมื่อได้เล่นเอง
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    1. เกมเมอร์ที่ชอบเกมแนวผจญภัยอวกาศแนวสมจริง มากกว่าเน้นไซไฟแฟนตาซี
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    Starfield มีจุดเด่นของตัวเองที่แตกต่างไปจากเกมแนวอวกาศเกมอื่น ๆ อย่างชัดเจน ก็คือ ความเป็นเกมไซไฟ ในแนวทางแบบ “Nasa-Punk” หรือแนวไซไฟที่ยึดภาพลักษณ์และเทคโนโลยี ในแนวทางที่สมจริง ยึดอยู่กับการออกแบบที่เป็นไปได้ (ชุดอวกาศหนา ๆ ใหญ่ ๆ ที่ดูคำนึงถึงฟังก์ชันการใช้งานที่ดูเป็นไปได้) ภายใต้กรอบเทคโนโลยีที่ดูมาจาก “มนุษย์” เป็นหลัก ปมเรื่องราวต่าง ๆ ก็เป็นเรื่องความขัดแย้งของมนุษย์กันเอง รวมถึงสภาพแวดล้อม รูปแบบชีวิตบนดวงดาวต่าง ๆ ก็ยึดตามความสมเหตุสมผลด้านทฤษฎี ทำให้เกมมีรสชาติที่เป็น
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+
+                  <p class="card-text">
+                    เอกลักษณ์ ถ้าใครชอบอะไรแนวนี้ หรืออยากเปลี่ยนรสชาติจากแนวไซไฟแฟนตาซีที่เคยเล่นมา Starfield มีทุกสิ่งทุกอย่างที่คุณต้องการแน่นอน
+                  </p>
+                  
+                  <p class="card-text">
+                  </p>
+                  
+                  
+
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_5_3.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    2. เกมเมอร์ที่ต้องการเกม Single Player ขนาดใหญ่ แบบเล่นคนเดียว
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    ถือเป็นเรื่องหายากในเกม Open-World สมัยนี้นะครับ คือ Starfield เป็นเกมที่เน้นโหมดเนื้อเรื่องแบบ Single Player ที่ไม่มีคอนเทนต์ผู้เล่นหลายคนเลย ไม่มีโหมด Multiplayer ไม่มีการเล่นแบบ Co-op ไม่มีการพบเจอกันของผู้เล่น ผู้เล่น Starfield จะได้อยู่ในการผจญภัยของตัวเองล้วน ๆ ด้วยแผนที่ขนาดใหญ่มาก มีดวงดาวมากมายให้เราสำรวจ แต่ละดวงจะมีสภาพแวดล้อม รูปแบบชีวิต ที่แตกต่างกันไป รวมถึงยังมี Colony หรือสถานีอวกาศอีกมากมาย ทำให้เกม Starfield เหมาะมากสำหรับคนที่อยากดื่มด่ำ ผจญภัยอยู่ในเกมของตัวเอง คุณสามารถบินไปไหนต่อไหน ทำอะไรที่ไหนก็ได้ แต่ด้วยความใหญ่ของเกม อีกมุมหนึ่ง หลายคนก็อาจจะรู้สึกว่า มันดูว่างเปล่า อ้างว้าง โล่งโถง ไปหมด แต่ถ้าใครชอบเกมที่ใหญ่จนประเมินขอบเขตไม่ได้ แถมมันยังเป็นโลกของเราแต่เพียงผู้เดียว Starfield น่าจะเป็นเกมในฝันของคุณได้เลย
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_5_4.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    3. เกมเมอร์ที่ชอบเกมที่มีรายละเอียด ในการปรับแต่งและจัดการเยอะ ๆ
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    ใครชอบความ “เยอะ” ของระบบเกม Starfield ถือว่าสมใจเลยครับ ในฐานะเกมที่มีรายละเอียดทุกอย่างสูงหมด ทุกอย่างสามารถปรับแต่งและจัดการด้านทรัพยากรได้เยอะมาก ตั้งแต่การปรับแต่งตัวละครของเรา ที่ทำได้อย่างอิสระทุกรายละเอียด, ระบบการปรับแต่งยานอวกาศที่ทำได้ราวกับต่อโมเดล ฯลฯ โดยทุก ๆ รายละเอียดจะส่งผลต่อกันและกันเป็นระบบ ยิ่งบวกเข้ากับจำนวนดวงดาวมากมายที่สามารถลงไปสำรวจและค้นพบอะไรใหม่ ๆ ได้ตลอด นี่จึงถือเป็นเกมที่มีรายละเอียดชวนให้ติดพันจริง ๆ แต่ถ้าใครไม่ชอบการต้องจัดการกับข้อมูลที่เยอะขนาดนี้ เราขอเตือนเลยครับว่า คุณอาจจะไม่สนุกกับเกมไปเลย เพราะคุณจะได้เจอรายละเอียดมากมายถาโถมเข้ามา ตั้งแต่ตอนที่เริ่มเกมเลย
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+
+                  <p class="card-text">
+                    4. เกมเมอร์ที่เป็นแฟน หรือคุ้นเคยกับเกม Open-World ในสไตล์ Bethesda เป็นอย่างดี
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+
+                  <p class="card-text">
+                    อันนี้ว่าด้วยเรื่องของ “ด้วยรักและศรัทธา” ที่มีต่อผู้พัฒนานั่นเอง ในฐานะเกมแนว Open-World ที่มาจากทีม Bethesda ทำให้เกมเมอร์หลายคน มักจะเรียก Starfield แบบขำ ๆ ว่าเป็น “Skyrim เวอร์ชั่นตะลุยอวกาศ” เพราะระบบการเล่าเรื่อง การสร้างตัวละคร การปฏิสัมพันธ์กับตัวละคร ทางเลือกในการทำเควสต์หลักและรอง ไปจนถึงระบบตัวเลือกศีลธรรม ที่ทุกอย่างจะดำเนินแบบค่อยเป็นค่อยไป ไม่เร่งเร้า เน้นให้คนเล่นซึมซับเข้าไปในโลกของเกมอย่างช้า ๆ ซึ่งมันคือเกม Open-World ในสไตล์แบบ Bethesda เด๊ะ ๆ เลยต้องยอมรับว่า เกมค่อนข้างดึงความสนใจ ของคนที่ขอบเกมของ Bethesda อยู่แล้วเป็นพิเศษ ในขณะที่เกมเมอร์ ที่ไม่เคยเล่น The Elder Scrolls หรือ Fallout มาก่อนเลย ก็อาจจะต้องใช้เวลาในการทำความเข้าใจค่อนข้างมาก ถึงจะเริ่มรู้สึกคุ้นมือ
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+
+                
+                
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_5_5.jpg' %}" width="600" height="400" loading="lazy"
+                  alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    5. เกมเมอร์ที่มีเครื่อง Xbox Series X/S ในครอบครอง
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    เหมือนจะไม่สำคัญ แต่เราหมายความว่าแบบนี้จริง ๆ คือในฐานะเกม Exclusive จาก Microsoft ที่ลงให้กับเรื่อง Xbox Series X/S และบน PC เท่านั้น ทำให้ถ้ามองในแง่ความเป็น Exclusive ประสบการณ์ของ Starfield ก็ยังนับว่าเป็นอะไรที่ไม่ควรมองข้ามไปเลยครับ ถือเป็นการโชว์ศักยภาพของเครื่อง Xbox Series X/S ไม่ใช่แค่เรื่องของกราฟิกเท่านั้น แต่ยังเป็นเรื่องของ วิสัยทัศน์ ในการสร้างเกมที่เป็น “เมกะโปรเจกต์” ของเครื่องด้วย จริงอยู่ที่ ณ ตอนนี้ มันอาจจะยังไม่ได้สมบูรณ์ไปทุกอย่าง แต่ทุกความยิ่งใหญ่ย่อมมีต้องก้าวผ่านอุปสรรค เพื่อพิสูจน์ตัวเองอยู่แล้ว (และถ้ามันประสบความสำเร็จมากขึ้นเรื่อย ๆ มันอาจถูกพอร์ตไปลงเครื่องของทางฝั่ง PlayStation ด้วยก็เป็นได้ เพราะทาง Bethesda ก็ไม่ได้ปิดกั้นว่ามันจะเป็นไปไม่ได้)
+                  </p>
+
+                  <p class="card-text">
+                    ทั้งหมดนี้คือความคิดเห็น ที่เรามาแนะแนวให้ทุกคนได้พอวิเคราะห์กันได้ว่า คุณเป็นเกมเมอร์แนวไหนกันบ้าง และจะสามารถสนุกกับเกมแบบ Starfield กันได้มากน้อยแค่ไหน ซึ่งถ้าใครจะมีเหตุผลที่นอกเหนือไปจากนี้ ก็ถือเป็นวิจารณญาณส่วนตัวของแต่ละคนเลยครับ เพราะไม่แน่ เกมที่เราคิดว่า คงไม่เหมาะกับเราแน่ ๆ อาจจะเป็นเกมที่เล่นสนุกมากกว่าที่คิดก็ได้ ไม่ว่ายังไง Starfield ก็ถือเป็นเกมระดับ AAA ที่สมควรได้รับการจับตามองไปในระยะยาวครับ เพราะในแง่การสร้างจักรวาลขึ้นมา เพื่อรองรับความเป็นไปได้ในอนาคต เกมก็ยังทำได้สมราคาของ Bethesda ถ้าใครอยากจะเป็นส่วนหนึ่งของเกมเมอร์ ที่เฝ้าดูพัฒนาการของเกมนี้ ก็ลองซื้อมาพิสูจน์กันเองดูได้เลยครับ
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                </div>
+                
+              </div>
+            </li>
+          </ul>
+          
+        </div>
+      </section>
+      
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="{% static 'webgame/assets/images/logo.svg' %}" width="150" height="73" loading="lazy" alt="Unigine logo">
+          </a>
+
+          <p class="footer-text">
+            Our success in creating business solutions is due in large part to our talented and highly committed team.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Usefull Links</p>
+
+          <ul>
+            <li>
+              <a href="#" class="footer-link">Help Center</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Contact Us</p>
+
+          <div class="contact-item">
+            <span class="span">Location:</span>
+
+            <address class="contact-link">
+              6 Ratchamankha Nai Road, Phra Pathom Chedi Subdistrict Mueang Nakhon Pathom District, Nakhon Pathom 73000
+            </address>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Join Us:</span>
+
+            <a href="mailto:Info@unigine.com" class="contact-link">TcpBoy.com</a>
+          </div>
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Newsletter Signup</p>
+
+          <form action="./index.html" method="get" class="footer-form">
+            <input type="email" name="email_address" required placeholder="Your Email" autocomplete="off"
+              class="input-field">
+
+            <button type="submit" class="btn" data-btn>Subscribe Now</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 Website for educational purposes only.
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+  <div class="cursor" data-cursor></div>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="{% static 'webgame/assets/js/script.js' %}"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

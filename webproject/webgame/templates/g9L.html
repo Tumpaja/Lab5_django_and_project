@@ -1,0 +1,420 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>TPBBOY for gamer</title>
+  <meta name="title" content="Unigine - Epic Games Made For True Gamers!">
+  <meta name="description" content="This is an esports and gaming html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="{% static 'webgame/assets/images/logo2.svg' %}" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{% static 'webgame/assets/css/style.css' %}">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="{% static 'webgame/assets/images/hero-banner.png' %}">
+  <link rel="preload" as="image" href="{% static 'webgame/assets/images/hero-banner-bg.png' %}">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header active" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="{% static 'webgame/assets/images/logo.svg' %}" width="110" height="53" alt="unigine home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="{% url 'home2' %}" class="navbar-link" data-nav-link>home</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{% url 'news2' %}" class="navbar-link" data-nav-link>news</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{% url 'game2' %}" class="navbar-link" data-nav-link>game</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{% url 'chat' %}" class="navbar-link" data-nav-link>chat</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{% url 'about2' %}" class="navbar-link" data-nav-link>about us</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="" class="btn" data-btn>{{username}}</a>
+      <a href="{% url 'LogoutView' %}" class="btn" data-btn>Logout</a> 
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #game
+      -->
+
+      <section class="section news" aria-label="our latest news" id="news">
+        <div class="container">
+
+          <h2 class="h2 section-title" data-reveal="bottom">
+            EA Sports   <span class="span">FC 24 </span>
+          </h2>
+          <ul class="news-list2">
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+
+                <div class="card-content">
+                  <p class="card-text">
+                    
+                  </p>
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_9_1.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-tag">game</a>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2022-01-01">Oct 09 2023 </time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text">TEERAPHAT B.</p>
+                    </li>
+
+                  </ul>
+
+                  <p class="card-text">
+                  </p>
+
+                  <h3 class="h3">
+                    EA Sports FC 24 ฤดูกาลใหม่ของเกมฟุตบอลจาก EA ที่คอเกมฟุตบอลเฝ้ารอ
+                  </h3>
+
+                  <p class="card-text">
+                    อีกหนึ่งแนวเกมยอดนิยมอันดันต้น ๆ ที่เกมเมอร์จะต้องได้เจอกันในทุกปี ไม่เคยหายไปจากวงการเกมเลย ก็คงจะหนีไม่พ้นเกมแนว Sports หรือเกมกีฬา โดยเฉพาะเกม “ฟุตบอล” นั่นเองนะครับ กับเกมกีฬาที่ได้รับความนิยมที่สุดในโลก โดยเฉพาะแฟรนไชส์เกมฟุตบอลที่ได้รับความนิยมมายาวนานต่อเนื่องหลายภาค จาก EA Games เกมนี้ ที่คอเกมฟุตบอลคุ้นเคยกันดีอย่างซีรีส์ FIFA นั่นเอง
+                  </p>
+                  
+                  <p class="card-text">
+                  </p>
+
+                  <p class="card-text">
+                    ซีรีส์ FIFA ถือเป็นอีกเกมที่มีชื่อมายาวนานมาก เพราะได้เริ่มวางจำหน่ายภาคแรก มาตั้งแต่เมื่อปี 1993 และได้ออกเกมภาคใหม่ออกมาต่อเนื่องแบบรายปี (เนื่องจากเกมต้องอัพเดทนักเตะ สโมสร และเทรนด์วงการ ให้ใหม่ทันใจเกมเมอร์อยู่เสมอ) นับนิ้วจนถึงตอนนี้ ก็มีอายุครบ 30 ปีพอดีเลยครับ เรียกได้ว่าอยู่ยงคงกระพันคู่คอนโซลมาทุกยุคสมัย ทำให้ในปี 2023 นี้ EA ย่อมต้องกลับมาพร้อมกับเกมภาคใหม่ และยังมาพร้อมกับการพลิกโฉมครั้งใหญ่ที่สุดของซีรีส์ตั้งแต่ที่เคยมีมา ด้วยชื่อใหม่ว่า “EA Sports FC 24”
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+
+                  <p class="card-text">
+                    อย่างที่เกมเมอร์คอลูกหนังหลายคนน่าจะทราบกันแล้วครับว่า ตอนนี้ทาง EA ได้สิ้นสุดสัญญากับทางการแข่งขัน FIFA มาตั้งแต่ปี 2022 แล้ว ทำให้ FIFA 23 กลายเป็นเกมภาคสุดท้าย ที่จะใช้ชื่อว่า FIFA และในภาคล่าสุดนี้ ต้องมีการเปลี่ยนชื่อ IP ใหม่เป็น EA Sports FC ซึ่งนอกจากชื่อที่เปลี่ยนไปแล้ว การกลับมาในชื่อใหม่คราวนี้ จะมีการเปลี่ยนแปลงอะไร ให้เกมเมอร์ได้ตื่นเต้นกันบ้าง เรามาดูข้อมูลเบื้องต้นของเกมกันก่อนเลยครับ เพื่อเป็นการอุ่นเครื่องก่อนที่เกมจะวางจำหน่ายในปีนี้!
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_9_2.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <h3 class="h3">
+                    จาก “FIFA” สู่ “EA Sports FC” การเปลี่ยนแปลงครั้งใหญ่ ภายใต้จิตวิญญาณเดิม
+                  </h3>
+                  
+                  <p class="card-text">
+                    แม้จะมาในชื่อใหม่ แต่ EA Sports FC 24 ก็ยังคงมาในรูปแบบที่แฟน ๆ คุ้นเคยกันมายาวนานครับ ในฐานะเกมฟุตบอล ที่ให้เราได้เล่นเป็นเหล่านักเตะแข้งทอง จากหลากหลายสโมสรชื่อดังมากมาย ให้คุณได้เอาทีมฟุตบอลทีมโปรดของตัวเอง มาเจอกันได้ในแมทช์ในฝัน พร้อมกับระบบการจัดการสกิลนักเตะเรียกว่า “Play-Style” ให้เราสามารถจัดตำแหน่ง และสไตล์การเล่นของนักเตะ พร้อมกับโหมดการเล่นที่มีให้ครบ ทั้งโหมดหลักอย่างโหมด “Ultimate Team” ให้เราสร้างสุดยอดทีมของตัวเอง เพื่อไปท้าแข้งกับผู้เล่นคนอื่น ๆ ภายใต้ชุมชนออนไลน์ขนาดใหญ่ชื่อ “FC FUTURE” และยังสามารถเล่นกันแบบ Cross-Play ข้ามคอนโซลกันได้เป็นอย่างดี
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  
+
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_9_3.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    โดยสิ่งที่จะเป็นจุดเด่นสำคัญในภาคนี้เลยก็คือ เทคโนโลยี “HyperMotion V” ระบบจับการเคลื่อนไหว และการแสดงสีหน้าของนักเตะโดยละเอียด เพื่อนำมาใช้ในเกมได้อย่างสมจริง ทำให้นักเตะแต่ละคนในเกมจะมีภาษากายแบบเดียวกับตัวจริงแบบไม่มีผิดเพี้ยน พร้อมกับกราฟิกที่สวยสมจริงสุด ๆ จากขุมพลังการเรนเดอร์ด้วยเอนจิน Frostbite ของ EA เอง เรียกได้ว่าเติมเต็มอารมณ์ภายในสนามบอล ให้กับผู้เล่นได้ดีสุด ๆ
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_9_4.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <h3 class="h3">
+                    รวมเหล่านักเตะมากมายอย่างจุใจ เพื่อสร้างแมทช์ในฝันของคุณ
+                  </h3>
+
+                  <p class="card-text">
+                    แม้ว่าสัญญาในการใช้ชื่อ FIFA ของ EA จะสิ้นสุดลง แต่ไม่ได้หมายความว่า เกมจะเล็กลงเลยครับ ตรงกันข้าม EA Sports FC 24 ภาคนี้ มาพร้อมกับสเกลของเกมที่ใหญ่ขึ้นกว่าภาคก่อน ๆ แบบเท่าตัว! เนื่องจากด้วยความสัมพันธ์อันดีมายาวนานตลอด 30 ปี ที่ EA มีต่อเหล่าสโมสรฟุตบอลมากมาย ทำให้ EA ยังคงถือสิทธิ์ License Agreement ในการใช้ภาพลักษณ์ของสโมสร และทีมฟุตบอลไว้แบบคับคั่ง
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    โดยได้ยืนยันแล้วว่า เกม EA Sports FC 24 ถือสิทธิ์สโมสรฟุตบอลระดับโลกไว้อยู่มากกว่า 30+ สโมสร จำนวนทีมฟุตบอลมากกว่า 700+ ทีม, หน้าตาของเหล่านักเตะมากมายกว่า 19,000+ คน ครอบคลุมนักเตะทั้งทีมชายและหญิง พร้อมกับได้สิทธิ์ในการใช้ดีไซน์ของสนามแข่งกว่า 100+ แห่ง เรียกได้ว่าไม่น้อยหน้า FIFA ภาคก่อน ๆ เลยแม้แต่น้อย ซึ่งดูได้จากหน้าปกของเกมเลยครับ ที่พยายามจะนำเสนอความหลากหลายของบรรดานักเตะ จากแต่ละทีมและแต่ละยุคไว้อย่างแน่นเนือง เราจะเห็นได้ทั้งนักเตะหน้าใหม่ ๆ ที่มาแรงในยุคนี้ รวมถึงนักเตะระดับตำนานจากยุคก่อน ๆ อีกหลายคน ที่ผู้เล่นสามารถเลือกลงมาเล่นในทีมเดียวกันได้ ถือเป็นการครอสโอเวอร์นักเตะที่ใหญ่มาก เป็นการถือ License ในแบบที่ยากมากที่เกมฟุตบอลอื่น ๆ จะตามทัน (อย่างน้อยก็ใน 5-10 ปีนี้)
+                  </p>
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_9_5.jpg' %}" width="600" height="400" loading="lazy"
+                  alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <h3 class="h3">
+                    Welcome to the Club!
+                  </h3>
+
+                  <p class="card-text">
+                    เชื่อว่าแฟนเกมบอลน่าจะต้องตื่นเต้นกันจนแทบรอไม่ไหวแล้วนะครับ สำหรับการเผยโฉมอย่างเป็นทางการของ EA Sports FC 24 เกมนี้ จากรายละเอียดของเกม ที่โชว์ความยิ่งใหญ่อลังการ ทั้งจำนวนนักเตะและสโมสร ระบบการเล่น และขนาดของเกมที่ตอบสนองทุกความต้องการของแฟนบอล และเป็นการเปิดยุคสมัยใหม่แห่งเกมฟุตบอลจาก EA ไปพร้อมกัน ซึ่งก็ต้องมาพิสูจน์กันด้วยตัวเองครับ 29 กันยายน 2023 นี้ ทุกแพลตฟอร์มทั้ง PS4, PS5, Xbox One, Xbox Series X/S, Nintendo Switch และ Windows ใครเล่นเครื่องไหน เตรียมตัวกันไว้ให้ดี ๆ ครับ!
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  
+                  
+                </div>
+                
+              </div>
+            </li>
+          </ul>
+          
+        </div>
+      </section>
+      
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="{% static 'webgame/assets/images/logo.svg' %}" width="150" height="73" loading="lazy" alt="Unigine logo">
+          </a>
+
+          <p class="footer-text">
+            Our success in creating business solutions is due in large part to our talented and highly committed team.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Usefull Links</p>
+
+          <ul>
+            <li>
+              <a href="#" class="footer-link">Help Center</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Contact Us</p>
+
+          <div class="contact-item">
+            <span class="span">Location:</span>
+
+            <address class="contact-link">
+              6 Ratchamankha Nai Road, Phra Pathom Chedi Subdistrict Mueang Nakhon Pathom District, Nakhon Pathom 73000
+            </address>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Join Us:</span>
+
+            <a href="mailto:Info@unigine.com" class="contact-link">TcpBoy.com</a>
+          </div>
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Newsletter Signup</p>
+
+          <form action="./index.html" method="get" class="footer-form">
+            <input type="email" name="email_address" required placeholder="Your Email" autocomplete="off"
+              class="input-field">
+
+            <button type="submit" class="btn" data-btn>Subscribe Now</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 Website for educational purposes only.
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+  <div class="cursor" data-cursor></div>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="{% static 'webgame/assets/js/script.js' %}"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

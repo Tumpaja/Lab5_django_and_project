@@ -1,0 +1,434 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>TPBBOY for gamer</title>
+  <meta name="title" content="Unigine - Epic Games Made For True Gamers!">
+  <meta name="description" content="This is an esports and gaming html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="{% static 'webgame/assets/images/logo2.svg' %}" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{% static 'webgame/assets/css/style.css' %}">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="{% static 'webgame/assets/images/hero-banner.png' %}">
+  <link rel="preload" as="image" href="{% static 'webgame/assets/images/hero-banner-bg.png' %}">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header active" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="{% static 'webgame/assets/images/logo.svg' %}" width="110" height="53" alt="unigine home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="{% url 'home2' %}" class="navbar-link" data-nav-link>home</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{% url 'news2' %}" class="navbar-link" data-nav-link>news</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{% url 'game2' %}" class="navbar-link" data-nav-link>game</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{% url 'chat' %}" class="navbar-link" data-nav-link>chat</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{% url 'about2' %}" class="navbar-link" data-nav-link>about us</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="" class="btn" data-btn>{{username}}</a>
+      <a href="{% url 'LogoutView' %}" class="btn" data-btn>Logout</a> 
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+
+      <!-- 
+        - #game
+      -->
+
+      <section class="section news" aria-label="our latest news" id="news">
+        <div class="container">
+
+          <h2 class="h2 section-title" data-reveal="bottom">
+            Rune Factory   <span class="span">3 </span>
+          </h2>
+          <ul class="news-list2">
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+
+                <div class="card-content">
+                  <p class="card-text">
+                    
+                  </p>
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_17_1.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-tag">game</a>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="card-meta-text" datetime="2022-01-01">Oct 09 2023 </time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                      <p class="card-meta-text">TEERAPHAT B.</p>
+                    </li>
+
+                  </ul>
+
+                  <p class="card-text">
+                  </p>
+
+                  <h3 class="h3">
+                    Rune Factory 3 Special การกลับมาของเกมแอ็คชั่นเกษตรกรรมในรูปแบบปรับปรุงใหม่
+                  </h3>
+
+                  <p class="card-text">
+                    ถือว่าเป็นยุคที่หลายค่ายเกม นำเอาเกมเก่า ผลงานดังของตัวเองกลับมาทำใหม่ ปัดฝุ่นใหม่กันอย่างหลากหลาย และ Marvelous กับ XSEED เองก็เอากับเขาด้วย โดยคราวนี้เป็นการหยิบเอาซีรีส์เกมปลูกผักทำฟาร์ม แต่ก็ใส่ความเป็น Action RPG ลงไปด้วย กับซีรีส์ Rune Factory ที่หยิบเอาหนึ่งในภาคที่แฟน ๆ ชื่นชอบอย่างภาค 3 กลับมาปรับปรุงใหม่กันอีกครั้งใน Rune Factory 3 Special แต่จะเป็นยังไง และมีอะไรน่าสนใจกันบ้าง ลองมาดูกัน
+                  </p>
+                  
+                  <p class="card-text">
+                  </p>
+                  
+                  <h3 class="h3">
+                    เรื่องราวของเกษตรกรครึ่งมนุษย์ครึ่งปีศาจที่ต้องปลูกผักและต่อสู้ไปในเวลาเดียวกัน
+                  </h3>
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_17_2.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    เรื่องราวของ Rune Factory 3 จะว่าด้วยเรื่องราวของ Micah ที่ได้รับการไหว้วานให้ดูแลฟาร์มรอบต้นไม้ใหญ่อย่าง Sharance Tree อย่างไม่ทราบสาเหตุ และต้นไม้นี้ ไม่ได้มอบผลผลิตใด ๆ มากว่า 50 ปีแล้ว ทำให้แผ่นดินเริ่มเสื่อมสลายและขาดทรัพยากรอย่างหนัก จึงเป็นหน้าที่ของเราในการจัดการเรื่องราวนี้ และคลี่คลายสถานการณ์ให้กลับมาเป็นดังเดิม
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    Rune Factory 3 เป็นเกมที่เคยลงให้กับเครื่อง Nintendo DS มาตั้งแต่ปี 2009 และประสบความสำเร็จในระดับหนึ่ง เพราะเป็นการสานต่อและผสมผสานเกมแนว Action RPG เข้ากับการปลูกผักทำฟาร์มได้อย่างลงตัว และในเวอร์ชั่นนี้นอกจากจะมีการอัปเกรดปรับปรุงประสิทธิภาพแล้ว ยังเพิ่มแพลตฟอร์มลงให้อีก 1 เครื่องนั่นคือ PC นั่นเอง
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  
+                  
+                  <h3 class="h3">
+                    เกมที่ได้รับการขนานนามว่า Harvest Moon ฉบับแอ็คชั่น
+                  </h3>
+
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_17_3.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    สำหรับคนที่ไม่รู้จัก Rune Factory เป็นเหมือนการหยิบเอา Harvest Moon มาสานต่อ เพิ่มความเป็นเกม Action RPG เข้าไป โดยใน Rune Factory 3 นี้ก็จะมีจุดเริ่มต้นคล้าย ๆ กัน เราจะเริ่มต้นจากการปลูกผักทำฟาร์ม เพื่อนำผลผลิตไปขายหาเงิน และยังมีกิจกรรมเสริมอื่น ๆ เช่นการตกปลา การอาหาร และไฮไลท์สำคัญของ Rune Factory โดยเฉพาะภาคนี้คือการมีดันเจี้ยนและพื้นที่การต่อสู้ให้ออกสำรวจ แถมตัวเอกยังมีพลังพิเศษในการใช้พลังของสัตว์ประหลาดได้อีกต่างหาก
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  
+                  
+                  
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_17_4.jpg' %}" width="600" height="400" loading="lazy"
+                    alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    ใน Rune Factory 3 ฉบับ Original นั้น มีการนำเสนอระบบ A.I. แบบใหม่ ที่มาพร้อมทิศทางแบบไดนามิก ตลอดจนคำสั่งการต่อสู้แบบใหม่ที่เอาไว้ใช้โต้ตอบสถานการณ์ต่าง ๆ กับเหล่า NPC และมีการเปลี่ยนแปลงอื่น ๆ มากมาย เชน ผู้เล่นสามารถแปลงร่างเป็น Wooly สีทองได้ เพิ่มพื้นที่ปลูกผักทำฟาร์มใต้ดิน และต้นไม้พิเศษจะมีฟีเจอร์ของมันมากขึ้น รวมไปถึงชาวบ้านจะสามารถเข้าร่วมทีม มาช่วยเราต่อได้อีกต่างหาก นอกจากนั้นยังมีโหมด Multiplayer ที่สามารถเล่นด้วยกันได้มากถึง 3 คน โดยจะช่วยกันทำฟาร์ม หรือลงดันเจี้ยนต่อสู้ร่วมกันได้
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    ในเวอร์ชั่น Special ที่เปรียบเสมือนกับการ Remaster นี้ จะมีกาเรพิ่มฟีเจอร์ใหม่ ๆ เข้าไปเพิ่มเติมด้วย ยกตัวอย่างเช่นโหมด Newlywed ที่เป็นโหมดการผจญภัยแบบแยกเดี่ยว Standalone ที่ปลดล็อคหลังจากเราเลือกสาวที่จะแต่งงานด้วยแล้ว โดยเจ้าโหมด Newlywed นั้น จะเป็นความยากในระดับ Hell ที่จะท้าทายผู้เล่นทั้งใหม่และเก่าที่เคยเล่นมาก่อนด้วย ทำให้งานนี้ทีมพัฒนามั่นใจว่า ไม่ว่าคุณจะเพิ่งเคยมาเล่นภาคนี้เป็นครั้งแรก หรือเกมเมอร์รุ่นเก่าที่เคยเล่นภาคอื่น ๆ มาก่อน มันจะเป็นประสบการณ์สัมผัสกับเนื้อเรื่องที่น่าจดจำของ Rune Factory 3 โดยมันจะเป็นการผจญภัยที่ครอบคลุมทั้งสองโลก มนุษย์ และสัตว์ประหลาด
+                  </p>
+
+                  <h3 class="h3">
+                    ปรับปรุงกราฟิก พร้อมชมความน่ารักของสาว ๆ ทั้ง 11 คน
+                  </h3>
+                  
+                </div>
+                
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_17_5.jpg' %}" width="600" height="400" loading="lazy"
+                  alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+                
+                <div class="card-content">
+                  <p class="card-text">
+                    นอกเหนือจากนั้นในส่วนของภาพกราฟิก จะมีการปรับปรุงโมเดลตัวละคร 3 มิติที่ออกแบบใหม่ ทำให้การแสดงผลและภาพดูสวยงามสมกับยุคสมัยและเครื่องที่ลงมากขึ้น เพราะคราวนี้เครื่องคอนโซลต่าง ๆ มีประสิทธิภาพพอในการรันภาพสวย ๆ ได้แล้ว แต่ก็ไม่ได้อลังการงานสร้างมาก เพราะนี่คือการ Remaster แต่อย่างน้อยมันก็ยังดูดีกว่าเวอร์ชั่นต้นฉบับบน Nintendo DS
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    แน่นอนว่าเรามีพูดถึงการแต่งงานเพื่อปลดล็อคโหมด Newlywed กันไปแล้ว ในเกมภาคนี้เราจะพบกับสาวโสดสุดน่ารักทั้ง 11 คน ให้ผู้เล่นได้เลือกจีบ เลือกสร้างปฏิสัมพันธ์ด้วย และเริ่มต้นจากเริ่มคบ ไปจนถึงแต่งงาน กินอยู่ร่วมกันไปเลย
+                  </p>
+                  
+                </div>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="{% static 'webgame/assets/images/g_17_6.jpg' %}" width="600" height="400" loading="lazy"
+                  alt="Innovative Business All Over The World." class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-text">
+                    ในขณะที่ระบบการต่อสู้ก็ไม่น้อยหน้า โดยในภาคนี้เราจะมีอาวุธให้ใช้มากมายหลายแบบ ทั้งดาบ หอก ค้อน หรือแม้แต่เวทมนนตร์ ที่จะช่วยให้คุณสามารถต่อสู้ และจัดการกับเหล่าศัตรูอันทรงพลังได้ บอกเลยว่าใครชอบเกมปลูกผักทำฟาร์ม แต่ไม่ชอบการทำฟาร์มอย่างเดียว ชอบสู้ ชอบเอาชนะศัตรู และเติบโต เก่งขึ้นเรื่อย ๆ ยังไงก็ไม่ควรพลาดทั้งสิ้น สำหรับ Rune Factory 3 Special
+                  </p>
+
+                  <p class="card-text">
+                  </p>
+                  
+                  <p class="card-text">
+                    Rune Factory 3 Special หรือฉบับ Remaster ของตัวเกม เตรียมวางจำหน่าย 5 กันยายน 2023 นี้บน Nintendo Switch
+                  </p>
+                  
+                </div>
+                
+              </div>
+            </li>
+          </ul>
+          
+        </div>
+      </section>
+      
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="{% static 'webgame/assets/images/logo.svg' %}" width="150" height="73" loading="lazy" alt="Unigine logo">
+          </a>
+
+          <p class="footer-text">
+            Our success in creating business solutions is due in large part to our talented and highly committed team.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Usefull Links</p>
+
+          <ul>
+            <li>
+              <a href="#" class="footer-link">Help Center</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Contact Us</p>
+
+          <div class="contact-item">
+            <span class="span">Location:</span>
+
+            <address class="contact-link">
+              6 Ratchamankha Nai Road, Phra Pathom Chedi Subdistrict Mueang Nakhon Pathom District, Nakhon Pathom 73000
+            </address>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Join Us:</span>
+
+            <a href="mailto:Info@unigine.com" class="contact-link">TcpBoy.com</a>
+          </div>
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Newsletter Signup</p>
+
+          <form action="./index.html" method="get" class="footer-form">
+            <input type="email" name="email_address" required placeholder="Your Email" autocomplete="off"
+              class="input-field">
+
+            <button type="submit" class="btn" data-btn>Subscribe Now</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 Website for educational purposes only.
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+  <div class="cursor" data-cursor></div>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="{% static 'webgame/assets/js/script.js' %}"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
