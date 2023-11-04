@@ -37,9 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'daphne',
     'django.contrib.staticfiles',
     'webgame.apps.webgameConfig',
     'crispy_forms',
+    'channels',
 ]
 
 MIDDLEWARE = [
@@ -72,7 +74,7 @@ TEMPLATES = [
 TEMPLATE_DIRS = (
    os.path.join(os.path.dirname(__file__),'../templates'),
 )
-WSGI_APPLICATION = 'webproject.wsgi.application'
+ASGI_APPLICATION = 'webproject.asgi.application'
 
 
 # Database
@@ -132,3 +134,9 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+CHANNEL_LAYERS = {
+    "default": {
+        "BACKEND": "channels.layers.InMemoryChannelLayer"
+    }
+}

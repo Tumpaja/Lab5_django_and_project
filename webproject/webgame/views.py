@@ -11,6 +11,10 @@ def home2(request):
     username = request.session['fname']
     return render(request, "home2.html",{'username': username})
 
+def chat(request):
+    username = request.session['fname']
+    return render(request, "chat.html",{'username': username})
+
 def register(request):
     if request.method == 'POST':
         details = registerform(request.POST)
@@ -66,8 +70,6 @@ def news(request):
     return render(request, "news.html")
 def game(request):
     return render(request, "game.html")
-def chat(request):
-    return render(request, "chat.html")
 def about(request):
     return render(request, "about.html")
 
@@ -77,9 +79,6 @@ def news2(request):
 def game2(request):
     username = request.session['fname']
     return render(request, "game2.html",{'username': username})
-def chat2(request):
-    username = request.session['fname']
-    return render(request, "chat2.html",{'username': username})
 def about2(request):
     username = request.session['fname']
     return render(request, "about2.html",{'username': username})

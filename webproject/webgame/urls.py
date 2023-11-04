@@ -3,7 +3,7 @@ from django.urls import path,include,re_path
 from django.urls import re_path as url
   
 # importing views from views..py
-from .views import (home,home2, register, LoginView, LogoutView, news, game, chat, about, news2, game2, chat2, about2, 
+from .views import (home,home2, register, LoginView, LogoutView, news, game, chat, about, news2, game2, about2, 
                     n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n1L, n2L, n3L, n4L, n5L, n6L, n7L, n8L, n9L, n10L, g1, g2, g3, g4, g5, g6, g7, g8, g9, g10,
                     g11, g12, g13, g14, g15, g16, g17, g18, g19, g20,
 )
@@ -23,7 +23,6 @@ urlpatterns = [
     
     url(r'^news/user$', news2, name='news2'),
     url(r'^game/user$', game2, name='game2'),
-    url(r'^chat/user$', chat2, name='chat2'),
     url(r'^aboutus/user$', about2, name='about2'),
     
     url(r'^news/news1$', n1, name='n1'),

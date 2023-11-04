@@ -1,0 +1,293 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>TPBBOY for gamer</title>
+  <meta name="title" content="Unigine - Epic Games Made For True Gamers!">
+  <meta name="description" content="This is an esports and gaming html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="{% static 'webgame/assets/images/logo2.svg' %}" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{% static 'webgame/assets/css/style.css' %}">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="{% static 'webgame/assets/images/hero-banner.png' %}">
+  <link rel="preload" as="image" href="{% static 'webgame/assets/images/hero-banner-bg.png' %}">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header active" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="{% static 'webgame/assets/images/logo.svg' %}" width="110" height="53" alt="unigine home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="{% url 'home2' %}" class="navbar-link" data-nav-link>home</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{% url 'news2' %}" class="navbar-link" data-nav-link>news</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{% url 'game2' %}" class="navbar-link" data-nav-link>game</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="{% url 'chat' %}" class="navbar-link" data-nav-link>chat</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="{% url 'about2' %}" class="navbar-link" data-nav-link>about us</a>
+          </li>
+
+        </ul>
+      </nav>
+      <a href="" class="btn" data-btn>{{username}}</a>
+      <a href="{% url 'LogoutView' %}" class="btn" data-btn>Logout</a>
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+    </div>
+  </header>
+  <main>
+    <article>
+        <div class="hero has-before" id="home">
+            <div class="container">
+                
+                <div
+                    class="chat__item__container"
+                    id="id_chat_item_container"
+                    style="font-size: 20px"
+                >
+                    <br />
+                    <input type="text" id="id_message_send_input" />
+                    <a type="submit" id="id_message_send_button" class="btn" data-btn>Send massage</a> 
+                    <br />
+                    <br />
+                </div>
+                <script>
+                    const chatSocket = new WebSocket("ws://" + window.location.host + "/");
+                    chatSocket.onopen = function (e) {
+                        console.log("The connection was setup successfully !");
+                    };
+                    chatSocket.onclose = function (e) {
+                        console.log("Something unexpected happened !");
+                    };
+                    document.querySelector("#id_message_send_input").focus();
+                    document.querySelector("#id_message_send_input").onkeyup = function (e) {
+                        if (e.keyCode == 13) {
+                        document.querySelector("#id_message_send_button").click();
+                        }
+                    };
+                    document.querySelector("#id_message_send_button").onclick = function (e) {
+                        var messageInput = document.querySelector(
+                        "#id_message_send_input"
+                        ).value;
+                        chatSocket.send(JSON.stringify({ message: messageInput, username : "{{username}}"}));
+                    };
+                    chatSocket.onmessage = function (e) {
+                        const data = JSON.parse(e.data);
+                        var div = document.createElement("div");
+                        div.innerHTML = data.username + " : " + data.message;
+                        document.querySelector("#id_message_send_input").value = "";
+                        document.querySelector("#id_chat_item_container").appendChild(div);
+                    };
+                </script>
+
+        
+            </div>
+        </div>
+
+    </article>
+</main>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="{% static 'webgame/assets/images/logo.svg' %}" width="150" height="73" loading="lazy" alt="Unigine logo">
+          </a>
+
+          <p class="footer-text">
+            Our success in creating business solutions is due in large part to our talented and highly committed team.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Usefull Links</p>
+
+          <ul>
+            <li>
+              <a href="#" class="footer-link">Help Center</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Contact Us</p>
+
+          <div class="contact-item">
+            <span class="span">Location:</span>
+
+            <address class="contact-link">
+              6 Ratchamankha Nai Road, Phra Pathom Chedi Subdistrict Mueang Nakhon Pathom District, Nakhon Pathom 73000
+            </address>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Join Us:</span>
+
+            <a href="mailto:Info@unigine.com" class="contact-link">TcpBoy.com</a>
+          </div>
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Newsletter Signup</p>
+
+          <form action="./index.html" method="get" class="footer-form">
+            <input type="email" name="email_address" required placeholder="Your Email" autocomplete="off"
+              class="input-field">
+
+            <button type="submit" class="btn" data-btn>Subscribe Now</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 Website for educational purposes only.
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - #CUSTOM CURSOR
+  -->
+
+  <div class="cursor" data-cursor></div>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="{% static 'webgame/assets/js/script.js' %}"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
