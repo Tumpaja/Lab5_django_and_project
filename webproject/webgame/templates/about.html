@@ -70,7 +70,7 @@
           </li>
 
           <li class="navbar-item">
-            <a href="{% url 'chat' %}" class="navbar-link" data-nav-link>chat</a>
+            <a href="{% url 'LoginView' %}" class="navbar-link" data-nav-link>chat</a>
           </li>
           
           <li class="navbar-item">
@@ -80,7 +80,7 @@
         </ul>
       </nav>
 
-      <a href="" class="btn" data-btn>Login</a>
+      <a href="{% url 'LoginView' %}" class="btn" data-btn>Login</a>
       <a href="{% url 'register' %}" class="btn" data-btn>register</a> 
 
       <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>

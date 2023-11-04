@@ -58,15 +58,15 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <a href="{% url 'home' %}" class="navbar-link" data-nav-link>home</a>
+            <a href="{% url 'home2' %}" class="navbar-link" data-nav-link>home</a>
           </li>
           
           <li class="navbar-item">
-            <a href="{% url 'news' %}" class="navbar-link" data-nav-link>news</a>
+            <a href="{% url 'news2' %}" class="navbar-link" data-nav-link>news</a>
           </li>
 
           <li class="navbar-item">
-            <a href="{% url 'game' %}" class="navbar-link" data-nav-link>game</a>
+            <a href="{% url 'game2' %}" class="navbar-link" data-nav-link>game</a>
           </li>
 
           <li class="navbar-item">
@@ -74,14 +74,14 @@
           </li>
           
           <li class="navbar-item">
-            <a href="{% url 'about' %}" class="navbar-link" data-nav-link>about us</a>
+            <a href="{% url 'about2' %}" class="navbar-link" data-nav-link>about us</a>
           </li>
 
         </ul>
       </nav>
 
-      <a href="{% url 'LoginView' %}" class="btn" data-btn>Login</a>
-      <a href="{% url 'register' %}"" class="btn" data-btn>register</a> 
+      <a href="" class="btn" data-btn>{{username}}</a>
+      <a href="{% url 'LogoutView' %}" class="btn" data-btn>Logout</a>
 
       <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
         <span class="line line-1"></span>
@@ -96,60 +96,39 @@
     <article>
 
       <!-- 
-        - #NEWS
+        - #HERO
       -->
 
-      <section class="section news" aria-label="our latest news" id="news">
+      <div class="hero has-before" id="home">
         <div class="container">
 
-          <h2 class="h2 section-title" data-reveal="bottom">
-            2.	Fae Farm
-          </h2>
-          <ul class="news-list2">
-
-            <li data-reveal="bottom">
-              <div class="news-card">
-
-                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                  <img src="{% static 'webgame/assets/images/n_2_1.jpg' %}" width="600" height="400" loading="lazy"
-                    alt="Innovative Business All Over The World." class="img-cover">
-                </figure>
-
-                <div class="card-content">
-
-                  <a href="#" class="card-tag">news</a>
-
-                  <p class="card-text">
-                    เกมแนว Farm Sim RPG ที่มาพร้อมระบบการจำลองชีวิตสุดน่ารักในโลกที่เต็มไปด้วยความมหัศจรรย์ ผู้เล่นจะได้สร้างชีวิตชาวไร่ 
-                    เป็นนักรบ หรือคราฟต์สิ่งของต่างๆ เช่นเดียวกับสร้างบ้านบนฝันในเกาะ Azoria เรียนรู้เวทมนตร์คาถาใหม่ๆ และเดินทางในมิติสุดพิศวง
-                    ร่วมกับเพื่อนๆ ในรูปแบบมัลติเพลเยอร์ หรือสานสัมพันธ์เพื่อนบ้าน นอกจากนี้เรายังมีอิสระในการสร้างตัวละครด้วยการออกแบบเครื่องแต่งกาย
-                    ที่เป็นสไตล์ของตัวเอง รองรับการเล่นแบบ Online Cross-platform
-                  </p>
-
-                </div>
-                
-                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                  <img src="{% static 'webgame/assets/images/n_2_2.jpg' %}" width="600" height="400" loading="lazy"
-                    alt="Innovative Business All Over The World." class="img-cover">
-                </figure>
-                
-                <div class="card-content">
-                  <p class="card-text">
-                    
-                  </p>
-                </div>
-                
-                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                  <img src="{% static 'webgame/assets/images/n_2_3.jpg' %}" width="600" height="400" loading="lazy"
-                    alt="Innovative Business All Over The World." class="img-cover">
-                </figure>
-
-              </div>
-            </li>
-          </ul>
+          <h1 class="h1 title hero-title">เกี่ยวกับทีมงานของเรา</h1>
+          <p>เราคือทีมงานที่มีความหลงในเรื่องของเกมและทรัพยากรสำหรับเกมมากมาย ที่นี่คือสมาชิกทีมของเรา:</p>
+          <div style="text-align: center;">
+            <img src="{% static 'webgame/assets/images/about_1.jpg' %}"  width="100" height="100" alt="" >
+          </div>
+          <p>ธีรภัทร์ บุญรัตน์ประพันธ์ (Teeraphat Bunratpraphan)</p>
+          <p>รหัสนักศึกษา: 630910171</p>
+          <p>บทบาท: จัดทำเว็บไซต์และผู้เรียบเรียงเนื้อหาการจัดอันดับเกม</p>
+          <p>ข้อมูลเพิ่มเติม: ธีรภัทร์เป็นคนที่หลงใหลในเกม RPG และมีประสบการณ์ในการเล่นเกมมากมาย เขามีความสามารถในการวิเคราะห์เกมอย่างละเอียดและนำเสนอข้อมูลในลักษณะที่เข้าใจง่าย</p>
           
+          <div style="text-align: center;">
+            <img src="{% static 'webgame/assets/images/about_2.jpg' %}" width="100" height="100" alt="">
+          </div>
+          <p>ธณภัทร เพชรคอน (Thanapat Phet-korn)</p>
+          <p>รหัสนักศึกษา: 630910591</p>
+          <p>บทบาท: จัดทำเว็บไซต์และผู้จัดทำเนื้อหาเกม</p>
+          <p>ข้อมูลเพิ่มเติม: ข้อมูลเพิ่มเติม: ธณภัทรชอบเล่นเกมแอ็คชันและแข่งขัน มีความชำนาญในการให้คะแนนและอธิบายความสนุกของเกมอย่างมีประสิทธิภาพ</p>
+          
+          <div style="text-align: center;">
+            <img src="{% static 'webgame/assets/images/about_3.jpg' %}"  width="100" height="100" alt="">
+          </div>
+          <p>วันฉัตร เบญจรงค์ทอง (Wanchat Benjarongthong)</p>
+          <p>รหัสนักศึกษา: 630910600</p>
+          <p>บทบาท: จัดทำเว็บไซต์และผู้จัดการเนื้อหาการจัดอันดับเกม</p>
+          <p>ข้อมูลเพิ่มเติม: วันฉัตรมีความชื่นชอบในเกมยิงปืนและมีความคิดสร้างสรรค์ในการสร้างเนื้อหาเกี่ยวกับเกม</p>
         </div>
-      </section>
+      </div>
 
     </article>
   </main>

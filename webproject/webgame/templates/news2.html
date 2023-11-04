@@ -58,30 +58,30 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <a href="{% url 'home' %}" class="navbar-link" data-nav-link>home</a>
+            <a href="{% url 'home2' %}" class="navbar-link" data-nav-link>home</a>
           </li>
           
           <li class="navbar-item">
-            <a href="{% url 'news' %}" class="navbar-link" data-nav-link>news</a>
+            <a href="{% url 'news2' %}" class="navbar-link" data-nav-link>news</a>
           </li>
 
           <li class="navbar-item">
-            <a href="{% url 'game' %}" class="navbar-link" data-nav-link>game</a>
+            <a href="{% url 'game2' %}" class="navbar-link" data-nav-link>game</a>
           </li>
 
           <li class="navbar-item">
-            <a href="{% url 'LoginView' %}" class="navbar-link" data-nav-link>chat</a>
+            <a href="{% url 'chat' %}" class="navbar-link" data-nav-link>chat</a>
           </li>
           
           <li class="navbar-item">
-            <a href="{% url 'about' %}" class="navbar-link" data-nav-link>about us</a>
+            <a href="{% url 'about2' %}" class="navbar-link" data-nav-link>about us</a>
           </li>
 
         </ul>
       </nav>
 
-      <a href="{% url 'LoginView' %}" class="btn" data-btn>Login</a>
-      <a href="{% url 'register' %}"" class="btn" data-btn>register</a> 
+      <a href="" class="btn" data-btn>{{username}}</a>
+      <a href="{% url 'LogoutView' %}" class="btn" data-btn>Logout</a> 
 
       <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
         <span class="line line-1"></span>
@@ -143,7 +143,7 @@
                     ได้แล้ว เกมจะเน้นให้ผู้เล่นมาเจอเควสสุดน่าติดตาม 
                   </p>
                   
-                  <a href="{% url 'n1' %}" class="link has-before">Read More</a>
+                  <a href="{% url 'n1L' %}" class="link has-before">Read More</a>
                 </div>
 
               </div>
@@ -185,7 +185,7 @@
                     เกมแนว Farm Sim RPG ที่มาพร้อมระบบการจำลองชีวิตสุดน่ารักในโลกที่เต็มไปด้วยความมหัศจรรย์ 
                     ผู้เล่นจะได้สร้างชีวิตชาวไร่ เป็นนักรบ หรือคราฟต์สิ่งของต่างๆ 
                   </p>
-                  <a href="{% url 'n2' %}" class="link has-before">Read More</a>
+                  <a href="{% url 'n2L' %}" class="link has-before">Read More</a>
                 </div>
 
               </div>
@@ -227,7 +227,7 @@
                     เกมแนวชูตติ้ง Roguelite PvPvE ในโลกอนาคตอันก้าวหน้าแต่ถึงคราวล่มสลายจากเทคโนโลยี 
                     ผู้เล่นจะได้จัดทีมกันและต่อสู้กับศัตรูซอมบี้ไซบอร์กร่วมกับ Nano 
                   </p>
-                  <a href="{% url 'n3' %}" class="link has-before">Read More</a>
+                  <a href="{% url 'n3L' %}" class="link has-before">Read More</a>
                 </div>
 
               </div>
@@ -274,7 +274,7 @@
                     ให้ทุกคนได้เดินทางสู่ดันเจี้ยนสุดอันตรายที่เต็มไปด้วยกับดักและศัตรู รวมไปถึงสภาพแวดล้อมแบบ 
                     Procedural Generated 
                   </p>
-                  <a href="{% url 'n4' %}" class="link has-before">Read More</a>
+                  <a href="{% url 'n4L' %}" class="link has-before">Read More</a>
                 </div>
 
               </div>
@@ -317,7 +317,7 @@
                     ที่ให้ผู้เล่นจัดทีมรวมกันป้องกันประสาทแบบ PvP 
                     หรือจะเป็นโหมดสร้างฉากเองที่จะมีพื้นที่หรืออุปสรรคแปลกๆ ให้เลือกใช้ 
                   </p>
-                  <a href="{% url 'n5' %}" class="link has-before">Read More</a>
+                  <a href="{% url 'n5L' %}" class="link has-before">Read More</a>
                 </div>
 
               </div>
@@ -359,7 +359,7 @@
                     โดยการมาถึงของเกมภาคนี้ก็คือการสานต่อผลงานเดิมในชื่อใหม่นั่นเอง ซึ่งจะถือเป็นก้าวถัดไปของเกมฟุตบอลในเครือ EA ด้วย 
                     ผู้เล่นจะได้พบกับนักเตะกว่า 19,000 ชีวิตจาก 700 ทีม 
                   </p>
-                  <a href="{% url 'n6' %}" class="link has-before">Read More</a>
+                  <a href="{% url 'n6L' %}" class="link has-before">Read More</a>
                 </div>
 
               </div>
@@ -405,7 +405,7 @@
                     เกมแนวรถแข่งรูปแบบอาร์เคดภาคใหม่ที่ยกระดับโลกโอเพนเวิลด์ให้กว้างใหญ่และเต็มไปด้วยรายละเอียดมากขึ้น 
                     ผู้เล่นจะได้เดินทางสู่ดินแดน O'ahu ในฮาวาย ท่องไปบนถนนสายความเร็ว
                   </p>
-                  <a href="{% url 'n7' %}" class="link has-before">Read More</a>
+                  <a href="{% url 'n7L' %}" class="link has-before">Read More</a>
                 </div>
 
               </div>
@@ -447,7 +447,7 @@
                     เกมแนวแอ็กชันสวมบทบาทพร้อมเกมเพลย์ Souls-like ที่ท้าทายความสามารถ 
                     พร้อมธีมของเรื่องราวได้รับแรงบันดาลใจมาจากนิทานเรื่อง 'พิน็อกคิโอ' แต่ดัดแปลงให้มีความสยองขวัญแบบหลอนๆ 
                   </p>
-                  <a href="{% url 'n8' %}" class="link has-before">Read More</a>
+                  <a href="{% url 'n8L' %}" class="link has-before">Read More</a>
                 </div>
 
               </div>
@@ -489,7 +489,7 @@
                     เกมต่อสู้ภาคใหม่ล่าสุดจาก NetherRelam Studios โดยมีเนื้อหาอยู่ในไทม์ไลน์ใหม่ที่ถูกสร้างขึ้นมาโดย 
                     Liu Kang หลังจากเนื้อหาเกมภาค XI ซึ่งเจ้าตัวต้องการสร้างประวัติศาสตร์ใหม่ที่มีแต่ความสงบสุข 
                   </p>
-                  <a href="{% url 'n9' %}" class="link has-before">Read More</a>
+                  <a href="{% url 'n9L' %}" class="link has-before">Read More</a>
                 </div>
 
               </div>
@@ -535,7 +535,7 @@
                     สามปีเต็มๆ ที่เกมเมอร์สายฮารอคอยกับเกมปาร์ตี้หัวร้อน รับบทเป็นสัตว์ตัวจิ๋ว 
                     ตบตีกับเพื่อนด้วยอาวุธต่างๆ เช่นไม้เบสบอล อมยิ้ม หรือจะจับสัตว์มาต่อยกันก็ได้ 
                   </p>
-                  <a href="{% url 'n10' %}" class="link has-before">Read More</a>
+                  <a href="{% url 'n10L' %}" class="link has-before">Read More</a>
                 </div>
 
               </div>

@@ -3,14 +3,14 @@ from django.urls import path,include,re_path
 from django.urls import re_path as url
   
 # importing views from views..py
-from .views import (home,home2, register, LoginView, LogoutView, news, game, chat, about, 
-                    n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, g1, g2, g3, g4, g5, g6, g7, g8, g9, g10,
+from .views import (home,home2, register, LoginView, LogoutView, news, game, chat, about, news2, game2, chat2, about2, 
+                    n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, n1L, n2L, n3L, n4L, n5L, n6L, n7L, n8L, n9L, n10L, g1, g2, g3, g4, g5, g6, g7, g8, g9, g10,
                     g11, g12, g13, g14, g15, g16, g17, g18, g19, g20,
 )
 urlpatterns = [
     url(r'^admin$', admin.site.urls),
     url(r'^$', home, name='home'),
-    url(r'^$', home2, name='home2'),
+    url(r'^home$', home2, name='home2'),
     url(r'^register$', register, name='register'),
     
     url(r'^Login$', LoginView, name='LoginView'),
@@ -20,6 +20,12 @@ urlpatterns = [
     url(r'^game$', game, name='game'),
     url(r'^chat$', chat, name='chat'),
     url(r'^aboutus$', about, name='about'),
+    
+    url(r'^news/user$', news2, name='news2'),
+    url(r'^game/user$', game2, name='game2'),
+    url(r'^chat/user$', chat2, name='chat2'),
+    url(r'^aboutus/user$', about2, name='about2'),
+    
     url(r'^news/news1$', n1, name='n1'),
     url(r'^news/news2$', n2, name='n2'),
     url(r'^news/news3$', n3, name='n3'),
@@ -30,6 +36,18 @@ urlpatterns = [
     url(r'^news/news8$', n8, name='n8'),
     url(r'^news/news9$', n9, name='n9'),
     url(r'^news/news10$', n10, name='n10'),
+
+    url(r'^news/news1/user$', n1L, name='n1L'),
+    url(r'^news/news2/user$', n2L, name='n2L'),
+    url(r'^news/news3/user$', n3L, name='n3L'),
+    url(r'^news/news4/user$', n4L, name='n4L'),
+    url(r'^news/news5/user$', n5L, name='n5L'),
+    url(r'^news/news6/user$', n6L, name='n6L'),
+    url(r'^news/news7/user$', n7L, name='n7L'),
+    url(r'^news/news8/user$', n8L, name='n8L'),
+    url(r'^news/news9/user$', n9L, name='n9L'),
+    url(r'^news/news10/user$', n10L, name='n10L'),
+
     url(r'^game/game1$', g1, name='g1'),
     url(r'^game/game2$', g2, name='g2'),
     url(r'^game/game3$', g3, name='g3'),

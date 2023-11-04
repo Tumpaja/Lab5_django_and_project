@@ -58,15 +58,15 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <a href="{% url 'home' %}" class="navbar-link" data-nav-link>home</a>
+            <a href="{% url 'home2' %}" class="navbar-link" data-nav-link>home</a>
           </li>
           
           <li class="navbar-item">
-            <a href="{% url 'news' %}" class="navbar-link" data-nav-link>news</a>
+            <a href="{% url 'news2' %}" class="navbar-link" data-nav-link>news</a>
           </li>
 
           <li class="navbar-item">
-            <a href="{% url 'game' %}" class="navbar-link" data-nav-link>game</a>
+            <a href="{% url 'game2' %}" class="navbar-link" data-nav-link>game</a>
           </li>
 
           <li class="navbar-item">
@@ -74,14 +74,14 @@
           </li>
           
           <li class="navbar-item">
-            <a href="{% url 'about' %}" class="navbar-link" data-nav-link>about us</a>
+            <a href="{% url 'about2' %}" class="navbar-link" data-nav-link>about us</a>
           </li>
 
         </ul>
       </nav>
 
-      <a href="{% url 'LoginView' %}" class="btn" data-btn>Login</a>
-      <a href="{% url 'register' %}"" class="btn" data-btn>register</a> 
+      <a href="" class="btn" data-btn>{{username}}</a>
+      <a href="{% url 'LogoutView' %}" class="btn" data-btn>Logout</a>
 
       <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
         <span class="line line-1"></span>
@@ -103,7 +103,7 @@
         <div class="container">
 
           <h2 class="h2 section-title" data-reveal="bottom">
-            2.	Fae Farm
+            5.	Super Bomberman R 2
           </h2>
           <ul class="news-list2">
 
@@ -111,7 +111,7 @@
               <div class="news-card">
 
                 <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                  <img src="{% static 'webgame/assets/images/n_2_1.jpg' %}" width="600" height="400" loading="lazy"
+                  <img src="{% static 'webgame/assets/images/n_5_1.jpg' %}" width="600" height="400" loading="lazy"
                     alt="Innovative Business All Over The World." class="img-cover">
                 </figure>
 
@@ -120,16 +120,15 @@
                   <a href="#" class="card-tag">news</a>
 
                   <p class="card-text">
-                    เกมแนว Farm Sim RPG ที่มาพร้อมระบบการจำลองชีวิตสุดน่ารักในโลกที่เต็มไปด้วยความมหัศจรรย์ ผู้เล่นจะได้สร้างชีวิตชาวไร่ 
-                    เป็นนักรบ หรือคราฟต์สิ่งของต่างๆ เช่นเดียวกับสร้างบ้านบนฝันในเกาะ Azoria เรียนรู้เวทมนตร์คาถาใหม่ๆ และเดินทางในมิติสุดพิศวง
-                    ร่วมกับเพื่อนๆ ในรูปแบบมัลติเพลเยอร์ หรือสานสัมพันธ์เพื่อนบ้าน นอกจากนี้เรายังมีอิสระในการสร้างตัวละครด้วยการออกแบบเครื่องแต่งกาย
-                    ที่เป็นสไตล์ของตัวเอง รองรับการเล่นแบบ Online Cross-platform
+                    เกมวางระเบิดที่มาพร้อมกับประสบการณ์ใหม่ๆ มากมายไม่ว่าจะเป็นโหมด Castle ที่ให้ผู้เล่นจัดทีมรวมกันป้องกันประสาทแบบ 
+                    PvP หรือจะเป็นโหมดสร้างฉากเองที่จะมีพื้นที่หรืออุปสรรคแปลกๆ ให้เลือกใช้ โดยในส่วนของเนื้อเรื่องหลักผู้เล่นจะได้รับบทเป็น 8 
+                    พี่น้องบอมเบอร์และกลุ่ม Ellons ที่ต้องร่วมมือปกป้องจักรวาลกันอีกครั้งจากภัยคุกคามครั้งใหม่
                   </p>
 
                 </div>
                 
                 <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                  <img src="{% static 'webgame/assets/images/n_2_2.jpg' %}" width="600" height="400" loading="lazy"
+                  <img src="{% static 'webgame/assets/images/n_5_2.jpg' %}" width="600" height="400" loading="lazy"
                     alt="Innovative Business All Over The World." class="img-cover">
                 </figure>
                 
@@ -140,7 +139,7 @@
                 </div>
                 
                 <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
-                  <img src="{% static 'webgame/assets/images/n_2_3.jpg' %}" width="600" height="400" loading="lazy"
+                  <img src="{% static 'webgame/assets/images/n_5_3.jpg' %}" width="600" height="400" loading="lazy"
                     alt="Innovative Business All Over The World." class="img-cover">
                 </figure>
 

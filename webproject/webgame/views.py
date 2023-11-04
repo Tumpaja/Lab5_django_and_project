@@ -8,7 +8,8 @@ def home(request):
     return render(request, "home.html")
 
 def home2(request):
-    return render(request, "home2.html")
+    username = request.session['fname']
+    return render(request, "home2.html",{'username': username})
 
 def register(request):
     if request.method == 'POST':
@@ -40,7 +41,8 @@ def LoginView(request):
                 # ทำสิ่งที่คุณต้องการหากเข้าสู่ระบบเรียบร้อย
                 request.session['fname'] = user_firstname
                 request.session['lname'] = user_lastname
-                return render(request,"home2.html",)  # แสดงหน้าสำเร็จหรือใด ๆ
+                username = request.session['fname']
+                return render(request,"home2.html",{'username': username}) # แสดงหน้าสำเร็จหรือใด ๆ
 
             if not user_firstname:
                 messages.info(request, "ชื่อไม่ถูกต้อง")
@@ -68,6 +70,20 @@ def chat(request):
     return render(request, "chat.html")
 def about(request):
     return render(request, "about.html")
+
+def news2(request):
+    username = request.session['fname']
+    return render(request, "news2.html",{'username': username})
+def game2(request):
+    username = request.session['fname']
+    return render(request, "game2.html",{'username': username})
+def chat2(request):
+    username = request.session['fname']
+    return render(request, "chat2.html",{'username': username})
+def about2(request):
+    username = request.session['fname']
+    return render(request, "about2.html",{'username': username})
+
 def n1(request):
     return render(request, "n1.html")
 def n2(request):
@@ -88,6 +104,37 @@ def n9(request):
     return render(request, "n9.html")
 def n10(request):
     return render(request, "n10.html")
+
+def n1L(request):
+    username = request.session['fname']
+    return render(request, "n1L.html",{'username': username})
+def n2L(request):
+    username = request.session['fname']
+    return render(request, "n2L.html",{'username': username})
+def n3L(request):
+    username = request.session['fname']
+    return render(request, "n3L.html",{'username': username})
+def n4L(request):
+    username = request.session['fname']
+    return render(request, "n4L.html",{'username': username})
+def n5L(request):
+    username = request.session['fname']
+    return render(request, "n5L.html",{'username': username})
+def n6L(request):
+    username = request.session['fname']
+    return render(request, "n6L.html",{'username': username})
+def n7L(request):
+    username = request.session['fname']
+    return render(request, "n7L.html",{'username': username})
+def n8L(request):
+    username = request.session['fname']
+    return render(request, "n8L.html",{'username': username})
+def n9L(request):
+    username = request.session['fname']
+    return render(request, "n9L.html",{'username': username})
+def n10L(request):
+    username = request.session['fname']
+    return render(request, "n10L.html",{'username': username})
 
 def g1(request):
     return render(request, "g1.html")
