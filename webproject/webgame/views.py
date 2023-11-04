@@ -24,7 +24,7 @@ def register(request):
         member.password = details['password'].value()
 
         member.save()
-        return redirect("/admin") 
+        return render(request,"home.html") 
     else:
         context={}
         context['form'] = registerform()
