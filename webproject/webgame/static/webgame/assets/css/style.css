@@ -121,8 +121,8 @@
 li { list-style: none; }
 
 a,
-img,
 time,
+img,
 span,
 input,
 button,
@@ -184,7 +184,7 @@ body {
   #REUSED STYLE
 \*-----------------------------------*/
 
-.container { padding-inline: 12px;}
+.container { padding-inline: 12px; }
 
 .has-before,
 .has-after {
@@ -787,7 +787,6 @@ body {
    */
 
   .header .logo img { width: 160px; }
-
 
 
   /**
