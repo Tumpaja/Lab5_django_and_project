@@ -35,28 +35,30 @@ def register(request):
 def LoginView(request):
     if request.method == 'POST':
         # รับข้อมูลจากฟอร์มใน request.POST
-            members = Member.objects.all()
-            for member in members:
-                user_firstname = member.firstname
-                user_lastname = member.lastname
-                user_password = member.password
-            # ตรวจสอบชื่อและรหัสผ่าน
-            if user_firstname and user_password:
-                # ทำสิ่งที่คุณต้องการหากเข้าสู่ระบบเรียบร้อย
-                request.session['fname'] = user_firstname
-                request.session['lname'] = user_lastname
-                username = request.session['fname']
-                return render(request,"home2.html",{'username': username}) # แสดงหน้าสำเร็จหรือใด ๆ
+        form = loginform(request.POST)  # สร้างฟอร์มด้วยข้อมูลที่ผู้ใช้ส่งมา
 
-            if not user_firstname:
-                messages.info(request, "ชื่อไม่ถูกต้อง")
-            if not user_password:
-                messages.info(request, "รหัสผ่านไม่ถูกต้อง")
+        if form.is_valid():  # ตรวจสอบว่าฟอร์มถูกต้อง
+            user_firstname = form.cleaned_data.get('first_name')  # รับชื่อจากฟอร์ม
+            user_password = form.cleaned_data.get('password')  # รับรหัสผ่านจากฟอร์ม
+
+            # ค้นหาสมาชิกโดยใช้ชื่อและรหัสผ่าน
+            try:
+                member = Member.objects.get(firstname=user_firstname, password=user_password)
+                request.session['fname'] = member.firstname
+                request.session['lname'] = member.lastname
+                username = request.session['fname']
+                return render(request, "home2.html", {'username': username})
+            except Member.DoesNotExist:
+                messages.error(request, "ชื่อหรือรหัสผ่านไม่ถูกต้อง")
+        else:
+            messages.error(request, "ข้อมูลในฟอร์มไม่ถูกต้อง")
 
     else:
         form = loginform()  # สร้างฟอร์มใหม่
-        context = {'form': form}
+
+    context = {'form': form}
     return render(request, "login.html", context)
+
 
 
 def LogoutView(request):
